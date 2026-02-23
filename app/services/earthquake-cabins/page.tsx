@@ -1,15 +1,46 @@
 import { FaCheckCircle, FaShieldAlt, FaTools } from "react-icons/fa";
-
+import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
 import arkaplanNav from "@/images/arkaplan_nav.png";
-
+import depremKabiniImg from "@/images/blog_images/deprem_kabini.png";
+import celikDepremDayaniklilikImg from "@/images/blog_images/celik_deprem_dayaniklilik.png";
+import { getBlogPost } from "@/app/lib/blog-data";
+import { getServicePageData } from "@/app/lib/service-page-data";
 import "../../about/about.css";
 
 const NAVBAR_HEIGHT = 90;
 const HERO_MIN_HEIGHT = 360;
+const SERVICE_ID = "earthquake-cabins" as const;
+
+const ORNEK_PROJELER = [
+  { title: "Deprem Kabini - Okul & Kampüs", image: depremKabiniImg },
+  { title: "Çelik Deprem Dayanıklılığı Projesi", image: celikDepremDayaniklilikImg },
+];
+
+export async function generateMetadata(): Promise<Metadata> {
+  const data = getServicePageData(SERVICE_ID);
+  return {
+    title: data.metaTitle,
+    description: data.metaDescription,
+    openGraph: {
+      title: data.metaTitle,
+      description: data.metaDescription,
+      type: "website",
+      locale: "tr_TR",
+    },
+  };
+}
 
 export default function EarthquakeCabinsPage() {
+  const data = getServicePageData(SERVICE_ID);
+  const relatedPosts = data.relatedBlogSlugs
+    .map((slug) => getBlogPost(slug))
+    .filter((p): p is NonNullable<typeof p> => p != null);
+
   return (
     <main className="about-page-enter min-h-screen bg-white">
+      {/* Hero */}
       <section
         className="relative flex flex-col items-center justify-center overflow-hidden bg-cover bg-center px-4 text-center"
         style={{
@@ -23,64 +54,214 @@ export default function EarthquakeCabinsPage() {
           style={{ backgroundImage: `url(${arkaplanNav.src})` }}
         />
         <div className="about-hero-overlay pointer-events-none absolute inset-0 bg-black/45" />
-
         <div className="about-hero-content relative z-10 mx-auto flex w-full max-w-5xl flex-col items-center">
           <p className="about-eyebrow text-white/90">Tezel Çelik Sistemleri</p>
           <h1 className="text-5xl font-extrabold tracking-wide text-white sm:text-6xl">
-            Deprem Kabinleri
+            {data.title}
           </h1>
           <p className="mt-4 max-w-3xl text-base leading-relaxed text-white/90 sm:text-lg">
-            Deprem ve acil durumlarda güvenli barınma ve çalışma alanı sunan
-            deprem kabinleri; dayanıklı çelik konstrüksiyon ve standartlara uygun
-            tasarım ile üretilmektedir.
+            {data.heroDescription}
           </p>
         </div>
       </section>
 
+      {/* Foto solda, yazı sağda; foto büyük */}
       <section className="py-14 sm:py-18">
         <div className="container mx-auto px-4 lg:px-8">
-          <p className="about-eyebrow text-gray-600">Hizmetlerimiz</p>
+          <div className="service-intro-grid">
+            <div className="service-intro-image-wrap">
+              <Image
+                src={depremKabiniImg}
+                alt="Deprem kabini - çelik güvenlik kabini"
+                width={800}
+                height={600}
+                className="h-full min-h-[320px] w-full object-cover sm:min-h-[400px] lg:min-h-[520px]"
+                priority
+              />
+            </div>
+            <div>
+              <div className="inline-flex items-center gap-2 rounded-full bg-[#FFF3ED] px-4 py-2 text-[11px] font-extrabold uppercase tracking-[0.18em] text-[#FF5A3C]">
+                <span className="h-1.5 w-1.5 rounded-full bg-[#FF5A3C]" />
+                <span>DEPREM KABİNLERİ</span>
+              </div>
+              <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                Deprem kabini çözümleri
+              </h2>
+              <p className="mt-6 max-w-xl text-base leading-relaxed text-gray-700">
+                {data.introParagraph}
+              </p>
+              <div className="mt-7 service-feature-grid">
+                <div className="service-feature-card">
+                  <div className="service-feature-header">
+                    <span className="service-feature-title">Çelik Güvenlik Çekirdeği</span>
+                  </div>
+                  <p className="service-feature-desc">
+                    Enkaz altında yaşam üçgeni oluşturan, darbelere dayanıklı ve yüksek taşıma kapasiteli kabin yapısı sunuyoruz.
+                  </p>
+                </div>
+                <div className="service-feature-card">
+                  <div className="service-feature-header">
+                    <span className="service-feature-title">Modüler Tasarım &amp; Analiz</span>
+                  </div>
+                  <p className="service-feature-desc">
+                    Farklı oda tiplerine uyan modüler ölçüler ile deprem yönetmeliğine uygun statik analiz ve sertifikalı üretim sağlıyoruz.
+                  </p>
+                </div>
+              </div>
+              <div className="mt-8 flex flex-wrap items-center gap-3">
+                <span className="about-badge">Okul &amp; Kampüs</span>
+                <span className="about-badge">Hastane</span>
+                <span className="about-badge">Fabrika</span>
+                <span className="about-badge">Kamu Binaları</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Projelerimiz */}
+      <section className="bg-gray-50 py-14 sm:py-18">
+        <div className="container mx-auto px-4 lg:px-8">
+          <p className="about-eyebrow text-gray-600">Referanslar</p>
           <h2 className="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-            Deprem kabini çözümleri
+            Projelerimiz
           </h2>
           <div className="about-title-underline mt-4 h-1 w-20 bg-[#FF5A3C]" />
-
-          <p className="mt-6 max-w-3xl text-base leading-relaxed text-gray-700">
-            Deprem kabinleri; okul, hastane, fabrika ve kamu binalarında acil
-            durum toplanma ve yönetim alanı olarak kullanılmak üzere tasarlanır.
-            Çelik taşıyıcı sistem, yangına dayanıklı kaplama ve gerekli donanımlarla
-            güvenli alanlar oluşturuyoruz.
+          <p className="mt-4 max-w-2xl text-base leading-relaxed text-gray-700">
+            Deprem kabini ve güvenlik alanında gerçekleştirdiğimiz projelerden örnekler. Tüm projeleri incelemek için tıklayın.
           </p>
+          <div className="service-projects-gallery mt-10">
+            {ORNEK_PROJELER.map((proje) => (
+              <Link
+                key={proje.title}
+                href="/projects"
+                className="service-project-card"
+              >
+                <div className="service-project-image">
+                  <Image
+                    src={proje.image}
+                    alt={proje.title}
+                    fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  />
+                </div>
+                <div className="service-project-body">
+                  <h3 className="service-project-title">{proje.title}</h3>
+                  <span className="service-project-link-text">
+                    Projeleri inceleyin →
+                  </span>
+                </div>
+              </Link>
+            ))}
+          </div>
+          <div className="mt-8 text-center">
+            <Link
+              href="/projects"
+              className="inline-flex items-center gap-2 rounded-full bg-[#FF5A3C] px-8 py-3 text-sm font-bold uppercase tracking-wide text-white shadow-md transition-all hover:bg-[#e04a2f] hover:shadow-lg"
+            >
+              Tüm projeler
+            </Link>
+          </div>
+        </div>
+      </section>
 
-          <ul className="mt-7 grid gap-3 text-gray-800 sm:grid-cols-1 lg:grid-cols-2">
-            <li className="flex items-start gap-3">
-              <FaShieldAlt className="mt-0.5 shrink-0 text-[#FF5A3C]" />
-              <span>
-                <strong>Deprem yönetmeliğine uyum</strong> – İlgili deprem ve
-                yapısal standartlara uygun projelendirme.
-              </span>
-            </li>
-            <li className="flex items-start gap-3">
-              <FaTools className="mt-0.5 shrink-0 text-[#FF5A3C]" />
-              <span>
-                <strong>Modüler tasarım</strong> – İhtiyaca göre boyut ve donanım
-                seçenekleri.
-              </span>
-            </li>
-            <li className="flex items-start gap-3">
-              <FaCheckCircle className="mt-0.5 shrink-0 text-[#FF5A3C]" />
-              <span>
-                <strong>Montaj ve devreye alma</strong> – Sahada kurulum ve
-                teslim.
-              </span>
-            </li>
-          </ul>
+      {/* Nasıl çalışıyoruz */}
+      <section className="py-14 sm:py-18">
+        <div className="container mx-auto px-4 lg:px-8">
+          <h2 className="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
+            Nasıl çalışıyoruz?
+          </h2>
+          <p className="mt-2 max-w-2xl text-base text-gray-600">
+            {data.shortTitle} hizmetinde keşiften teslimata kadar izlediğimiz adımlar.
+          </p>
+          <ol className="service-how-list mt-8">
+            {data.howWeWorkSteps.map((step, idx) => (
+              <li key={step.title} className="service-how-item">
+                <span className="service-how-num">{idx + 1}</span>
+                <div>
+                  <h3>{step.title}</h3>
+                  <p>{step.desc}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
 
-          <div className="mt-8 flex flex-wrap items-center gap-3">
-            <span className="about-badge">Okul &amp; Kampüs</span>
-            <span className="about-badge">Hastane</span>
-            <span className="about-badge">Fabrika</span>
-            <span className="about-badge">Kamu Binaları</span>
+      {/* İlgili blog */}
+      {relatedPosts.length > 0 && (
+        <section className="bg-gray-50 py-14 sm:py-18">
+          <div className="container mx-auto px-4 lg:px-8">
+            <h2 className="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
+              İlgili yazılarımız
+            </h2>
+            <div className="about-title-underline mt-4 h-1 w-20 bg-[#FF5A3C]" />
+            <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {relatedPosts.map((post) => (
+                <Link
+                  key={post.slug}
+                  href={`/blog/${post.slug}`}
+                  className="service-related-blog-card group flex flex-col overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-black/5 transition-all hover:-translate-y-1 hover:shadow-lg"
+                >
+                  <div className="relative aspect-[16/10] bg-gray-100">
+                    <Image
+                      src={post.image}
+                      alt={post.imageAlt ?? post.title}
+                      fill
+                      className="object-cover transition-transform duration-300 group-hover:scale-105"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                  </div>
+                  <div className="flex flex-1 flex-col p-5">
+                    <h3 className="font-bold text-gray-900 line-clamp-2 group-hover:text-[#FF5A3C]">
+                      {post.title}
+                    </h3>
+                    <p className="mt-2 line-clamp-2 text-sm text-gray-600">
+                      {post.excerpt}
+                    </p>
+                    <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-[#FF5A3C]">
+                      Yazıyı oku →
+                    </span>
+                  </div>
+                </Link>
+              ))}
+            </div>
+            <div className="mt-8 text-center">
+              <Link
+                href="/blog"
+                className="inline-flex items-center gap-2 rounded-full border border-gray-900/15 bg-white px-6 py-3 text-sm font-bold uppercase tracking-wide text-gray-900 shadow-sm hover:bg-gray-50"
+              >
+                Tüm blog yazıları
+              </Link>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* İletişim CTA */}
+      <section className="about-cta py-16">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="about-cta-card mx-auto max-w-4xl rounded-3xl px-6 py-12 text-center shadow-xl ring-1 ring-black/5 sm:px-10">
+            <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+              Bu hizmet için teklif alın
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-gray-700">
+              {data.shortTitle} projenizi birlikte değerlendirelim; keşif ve teklif için hemen iletişime geçin.
+            </p>
+            <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+              <Link
+                href="/contact"
+                className="rounded-full bg-[#FF5A3C] px-9 py-3 text-sm font-bold uppercase tracking-wide text-white shadow-md transition-transform hover:-translate-y-0.5 hover:shadow-lg"
+              >
+                İletişime Geç
+              </Link>
+              <Link
+                href="/blog"
+                className="rounded-full border border-gray-900/15 bg-white/60 px-9 py-3 text-sm font-bold uppercase tracking-wide text-gray-900 shadow-md backdrop-blur hover:bg-white"
+              >
+                Blog
+              </Link>
+            </div>
           </div>
         </div>
       </section>
