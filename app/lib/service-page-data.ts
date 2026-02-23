@@ -64,6 +64,7 @@ export const servicePageData: Record<ServiceId, ServicePageData> = {
     relatedBlogSlugs: [
       "deprem-kabini-rehberi-enkaz-altinda-hayatta-kalmanin-bilimsel-yolu",
       "celik-yapilarda-deprem-dayanikliligi-neden-en-guvenli-secenek",
+      "sismik-izolatorler-ve-celik-yapilar-sarsintiya-karsi-aktif-koruma",
     ],
     projectsCtaTitle: "Deprem Kabini ve Güvenlik Projelerimiz",
     projectsCtaDescription: "Okul, hastane ve kamu binaları için gerçekleştirdiğimiz deprem kabini projelerini inceleyin.",

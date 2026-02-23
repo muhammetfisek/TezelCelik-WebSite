@@ -136,7 +136,13 @@ export default function ConstructionContractPage() {
           </h2>
           <div className="about-title-underline mt-4 h-1 w-20 bg-[#FF5A3C]" />
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-gray-700">
-            İnşaat taahhüt kapsamında tamamladığımız projelerden örnekler. Tüm projeleri incelemek için tıklayın.
+            İnşaat taahhüt kapsamında tamamladığımız projelerden örnekler. Tüm projeleri incelemek için{" "}
+            <Link
+              href="/projects"
+              className="font-semibold text-[#FF5A3C] hover:underline"
+            >
+              tıklayın.
+            </Link>
           </p>
           <div className="contract-projects-gallery mt-10">
             {ORNEK_PROJELER.map((proje) => (
@@ -237,9 +243,9 @@ export default function ConstructionContractPage() {
             <div className="mt-8 text-center">
               <Link
                 href="/blog"
-                className="inline-flex items-center gap-2 rounded-full border border-gray-900/15 bg-white px-6 py-3 text-sm font-bold uppercase tracking-wide text-gray-900 shadow-sm hover:bg-gray-50"
+                className="inline-flex items-center gap-2 rounded-full bg-[#FF5A3C] px-8 py-3 text-sm font-bold uppercase tracking-wide text-white shadow-md transition-all hover:bg-[#e04a2f] hover:shadow-lg"
               >
-                Tüm blog yazıları
+                Tüm blog yazıları için tıklayınız.
               </Link>
             </div>
           </div>

@@ -7,6 +7,7 @@ import celikDepremDayaniklilikImg from "@/images/blog_images/celik_deprem_dayani
 import kumlamaNedirImg from "@/images/blog_images/kumlama_nedir.png";
 import nervurDemirImg from "@/images/blog_images/nervur_demir.png";
 import celikSuVermeImg from "@/images/blog_images/celik_su_verme.png";
+import sismikIzaImg from "@/images/blog_images/sismik_ıza.png";
 
 export interface BlogPost {
   slug: string;
@@ -330,6 +331,48 @@ export const blogPosts: BlogPost[] = [
 <p>Depremle yaşamayı öğrenmek, binalarımızı çeliğin sarsılmaz gücüyle inşa etmekten geçer. Tezel Çelik olarak, hayata geçirdiğimiz her fabrikada, her hangarda ve her konutta; mühendisliğin verdiği bu güveni müşterilerimize taahhüt ediyoruz. Çelik yapı, geleceğe atılan en sağlam imzadır.</p>`,
     date: "2026-02-17",
     image: celikDepremDayaniklilikImg.src,
+  },
+  {
+    slug: "sismik-izolatorler-ve-celik-yapilar-sarsintiya-karsi-aktif-koruma",
+    title:
+      "Sismik İzolatörler ve Çelik Yapılar: Sarsıntıya Karşı Aktif Koruma",
+    excerpt:
+      "Deprem güvenliğinde yeni nesil yaklaşım, yapının yıkılmamasından çok, sarsıntıyı içeriye almamaya odaklanır. Sismik izolatörler ile çelik konstrüksiyonun birleşimi, binayı zeminden kısmen ayırarak deprem enerjisini binaya ulaşmadan sönümleyen aktif bir koruma kalkanı sunar. [...]",
+    metaDescription:
+      "Sismik izolatör nedir, çelik yapılarda nasıl çalışır? Sarsıntıyı zeminde sönümleyen izolatör sistemleriyle deprem güvenliği ve aktif koruma yaklaşımı.",
+    imageAlt:
+      "Sismik İzolatör ve Çelik Yapı - Temel ile Kolon Arasında Deprem İzolatörü - Tezel Çelik",
+    content: `Deprem güvenliği denildiğinde akla ilk gelen genellikle yapının yıkılmamasıdır. Modern mühendislikte ise hedef artık sadece "yıkılmamak" değil, sarsıntının enerjisini yapıya almadan zeminde sönümlemektir. Sismik izolatörler ve çelik konstrüksiyon birlikte kullanıldığında, bina zeminden kontrollü biçimde ayrılarak deprem anında adeta kendi güvenlik kabuğunun içinde hareket eder.`,
+    contentHtml: `<p>Deprem güvenliği denildiğinde akla ilk gelen genellikle yapının yıkılmamasıdır. Modern mühendislikte ise hedef artık sadece "yıkılmamak" değil, sarsıntının enerjisini yapıya almadan zeminde sönümlemektir. <strong>Sismik izolatör</strong> ve <strong>çelik konstrüksiyon</strong> birlikteliği, binayı zeminden kontrollü biçimde ayırarak deprem anında adeta kendi güvenlik kabuğunun içinde hareket etmesini sağlar.</p>
+
+<h2>Sismik izolatör nedir, yapıyı nasıl korur?</h2>
+<p>Sismik izolatör; temel ile üst yapı arasına yerleştirilen, deprem dalgalarının binaya doğrudan geçişini engelleyen özel bir taşıyıcı elemandır.</p>
+<ul>
+<li><strong>Bağlantı kesme:</strong> Zeminin ani ve sert hareketi, izolatör sayesinde üst yapıya olduğu gibi aktarılmaz.</li>
+<li><strong>Enerji sönümleme:</strong> Çeliğin sünek (esnek) yapısı ile izolatörün hareket kabiliyeti birleştiğinde, deprem enerjisinin çok büyük bir kısmı yapıya ulaşmadan sönümlenir.</li>
+<li><strong>Konfor ve güvenlik:</strong> Sadece taşıyıcı sistem değil, bina içindeki makineler, mobilyalar ve insanlar sarsıntıyı minimum düzeyde hisseder.</li>
+</ul>
+
+<h2>Çelik konstrüksiyon ve izolatör uyumu</h2>
+<p>Betonarme yapılarda yüksek kütle nedeniyle izolatör uygulamaları daha zor ve maliyetliyken, hafifliği ile öne çıkan çelik yapılar bu teknoloji için ideal bir zemin sunar.</p>
+<ul>
+<li><strong>Hafiflik avantajı:</strong> Çelik yapının düşük ağırlığı, izolatörlerin çok daha verimli çalışmasını sağlar.</li>
+<li><strong>Esnek birleşimler:</strong> Çelik kolon-izolatör bağlantıları, yüksek dayanımlı cıvatalar ve özel kaynak detaylarıyla milimetrik olarak kurgulanır.</li>
+<li><strong>Kesintisiz kullanım:</strong> Deprem sonrası yapıda neredeyse hiç hasar oluşmadığı için fabrika, tesis veya konut kullanımı kesintisiz devam edebilir.</li>
+</ul>
+
+<h2>Hangi projeler için kritik?</h2>
+<p>Sismik izolatörlü çelik yapılar özellikle şu projelerde stratejik önem taşır:</p>
+<ul>
+<li><strong>Hassas üretim tesisleri:</strong> Makine kalibrasyonunun bozulmaması gereken sanayi yapıları.</li>
+<li><strong>Veri merkezleri:</strong> Sarsıntı kaynaklı kesinti ve ekipman hasarının kabul edilemeyeceği data center binaları.</li>
+<li><strong>Lüks konut projeleri:</strong> Yalnızca güvenliği değil, sarsıntısız bir yaşam konforunu hedefleyen üst segment konutlar.</li>
+</ul>
+
+<h2>Sonuç: Depremi yapının dışına almak</h2>
+<p>Tezel Çelik olarak, çelik konstrüksiyonun esnekliğini sismik izolatör teknolojisiyle birleştirerek projelerinizi sadece "sağlam" değil, aynı zamanda "sarsıntıya karşı aktif korumalı" hale getiriyoruz. Bireysel güvenlik çözümleriyle ilgilenenler için, <a href="/blog/deprem-kabini-rehberi-enkaz-altinda-hayatta-kalmanin-bilimsel-yolu">Deprem Kabini Rehberi</a> yazımıza da göz atmanızı öneririz.</p>`,
+    date: "2026-02-23",
+    image: sismikIzaImg.src,
   },
   {
     slug: "kumlama-nedir-celik-sektorunde-neden-kullanilir",
