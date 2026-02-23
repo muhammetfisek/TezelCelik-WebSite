@@ -1,0 +1,39 @@
+/* Sağ altta sabit iletişim widget'ı */
+
+.contact-widget-root {
+  position: fixed;
+  right: 1.25rem; /* ~20px */
+  bottom: 1.5rem; /* ~24px */
+  z-index: 60;
+}
+
+@keyframes contact-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 90, 60, 0.6);
+    transform: scale(1);
+  }
+  70% {
+    box-shadow: 0 0 0 14px rgba(255, 90, 60, 0);
+    transform: scale(1.04);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 90, 60, 0);
+    transform: scale(1);
+  }
+}
+
+.contact-main-button {
+  animation: contact-pulse 1.8s ease-out infinite;
+}
+
+.contact-panel-enter {
+  opacity: 0;
+  transform: translateX(40px);
+}
+
+.contact-panel-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 0.25s ease-out, transform 0.25s ease-out;
+}
+

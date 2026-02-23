@@ -1,0 +1,91 @@
+/* Home hero title animations – sadece anasayfa için */
+
+/* 1) Giriş animasyonları (sayfa açılışında sağdan/alıttan kayarak gelsin) */
+@keyframes hero-title-enter {
+  0% {
+    opacity: 0;
+    transform: translateX(40px) translateY(10px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+  }
+}
+
+/* 2) Renk ve hafif dalga animasyonları (loop) */
+@keyframes hero-title-pulse {
+  0% {
+    color: #ffffff;
+    transform: translateY(0);
+  }
+  50% {
+    color: #ffd1c4;
+    transform: translateY(-2px);
+  }
+  100% {
+    color: #dc2403;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hero-subtitle-wave {
+  0% {
+    letter-spacing: 0.2em;
+    opacity: 0.9;
+  }
+  50% {
+    letter-spacing: 0.32em;
+    opacity: 1;
+  }
+  100% {
+    letter-spacing: 0.2em;
+    opacity: 0.9;
+  }
+}
+
+@keyframes hero-subtitle-enter {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px) translateY(10px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+  }
+}
+
+/* Başlangıçta yazılar tamamen gizli olsun (sadece resim görünsün) */
+.hero-title-anim,
+.hero-subtitle-anim {
+  opacity: 0;
+}
+
+/* Önce tek seferlik giriş, sonra yavaş renk/dalga loop'u */
+.hero-title-anim {
+  /* Önce resim yüklensin, sonra başlık yumuşak ama biraz daha hızlı gelsin */
+  animation:
+    hero-title-enter 1.5s ease-out 1s forwards,
+    hero-title-pulse 6s ease-in-out 2.7s infinite alternate;
+}
+
+.hero-subtitle-anim {
+  /* Alt yazı başlıktan biraz daha geç ve biraz daha hızlı gelsin */
+  animation:
+    hero-subtitle-enter 2.1s ease-out 1.3s forwards,
+    hero-subtitle-wave 7s ease-in-out 3.4s infinite alternate;
+}
+
+/* Butonlar da yazılardan hemen sonra aynı tarzda gelsin */
+.hero-buttons-anim {
+  opacity: 0;
+  animation: hero-subtitle-enter 1.8s ease-out 1.7s forwards;
+}
+

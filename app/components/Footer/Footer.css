@@ -1,0 +1,221 @@
+.footer-container {
+  width: 100%;
+  background-color: #363434;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 18px 50px;
+  margin: 0;
+  margin-top: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Telif hakkı - Ortada */
+.footer-copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+/* Sağ spacer – sol ile aynı genişlikte, orta blok ortada kalsın */
+.footer-spacer {
+  flex: 0 0 auto;
+  min-width: 250px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.copyright-text {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.3;
+  text-align: center;
+}
+
+/* Orta taraf - Logo ve sosyal medya (absolute kaldırıldı – yükseklik hesabı düzgün olsun) */
+.footer-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  flex: 1;
+  min-width: 250px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  height: 100%;
+  align-self: stretch;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  bottom: 43px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer-logo:hover {
+  opacity: 0.8;
+}
+
+.footer-logo-img {
+  height: auto;
+  width: auto;
+  max-height: 88px;
+  object-fit: contain;
+}
+
+.footer-logo-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.footer-logo-text .logo-accent {
+  color: #FF5A3C;
+}
+
+/* Sosyal medya ikonları */
+.footer-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.social-icon:hover {
+  color: #FF5A3C;
+  transform: translateY(-2px);
+}
+
+.social-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Responsive tasarım */
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 14px 20px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-copyright {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-center {
+    order: 1;
+    width: 100%;
+    flex: none;
+  }
+
+  .footer-logo {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    margin-bottom: 15px;
+  }
+
+  .footer-spacer {
+    display: none;
+  }
+
+  .copyright-text {
+    font-size: 14px;
+  }
+
+  .footer-logo-img {
+    max-height: 72px;
+  }
+
+  .footer-social {
+    gap: 15px;
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    width: auto;
+    max-width: none;
+    padding: 0;
+    margin-top: 15px;
+  }
+
+  .social-icon {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 12px 15px;
+  }
+
+  .copyright-text {
+    font-size: 13px;
+  }
+
+  .footer-logo-img {
+    max-height: 70px;
+  }
+
+  .footer-center {
+    gap: 12px;
+    padding-bottom: 20px;
+  }
+
+  .footer-logo {
+    margin-bottom: 12px;
+  }
+
+  .footer-social {
+    margin-top: 0;
+  }
+}

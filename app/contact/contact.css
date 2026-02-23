@@ -1,0 +1,382 @@
+/* Contact Sayfası Özel Stilleri */
+
+/* Sayfa giriş animasyonu (About ile aynı premium his) */
+.contact-page-enter {
+  --contact-enter-duration: 640ms;
+  --contact-enter-ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --contact-enter-stagger: 95ms;
+}
+
+.contact-page-enter > section:not(:first-of-type) {
+  opacity: 0;
+  transform: translateY(14px) scale(0.994);
+  filter: blur(1px);
+  animation: contactSectionEnter var(--contact-enter-duration)
+    var(--contact-enter-ease) both;
+  will-change: transform, opacity, filter;
+}
+
+.contact-page-enter > section:nth-of-type(2) {
+  animation-delay: 80ms;
+}
+.contact-page-enter > section:nth-of-type(3) {
+  animation-delay: calc(80ms + (var(--contact-enter-stagger) * 1));
+}
+.contact-page-enter > section:nth-of-type(4) {
+  animation-delay: calc(80ms + (var(--contact-enter-stagger) * 2));
+}
+.contact-page-enter > section:nth-of-type(5) {
+  animation-delay: calc(80ms + (var(--contact-enter-stagger) * 3));
+}
+
+@keyframes contactSectionEnter {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(0.994);
+    filter: blur(1px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+/* Hero animasyonları */
+.contact-hero-bg {
+  transform: scale(1.06);
+  animation: contactHeroBg 1150ms var(--contact-enter-ease) both;
+  will-change: transform;
+}
+
+@keyframes contactHeroBg {
+  to {
+    transform: scale(1);
+  }
+}
+
+.contact-hero-overlay {
+  opacity: 0.65;
+  animation: contactHeroOverlay 900ms ease both;
+}
+
+@keyframes contactHeroOverlay {
+  from {
+    opacity: 0.85;
+  }
+  to {
+    opacity: 0.65;
+  }
+}
+
+.contact-hero-content > * {
+  opacity: 0;
+  transform: translateY(16px);
+  filter: blur(1.5px);
+  animation: contactHeroItem 760ms var(--contact-enter-ease) both;
+  will-change: transform, opacity, filter;
+}
+
+.contact-hero-content > :nth-child(1) {
+  animation-delay: 140ms;
+}
+.contact-hero-content > :nth-child(2) {
+  animation-delay: 240ms;
+}
+
+@keyframes contactHeroItem {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-page-enter > section:not(:first-of-type),
+  .contact-hero-bg,
+  .contact-hero-overlay,
+  .contact-hero-content > * {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+  }
+}
+
+/* Grid Ayırıcı Çizgi */
+.contact-grid-divider {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(to bottom, transparent, #e5e7eb, transparent);
+  transform: translateX(-50%);
+}
+
+/* Form Input Animasyonları */
+.contact-input {
+  transition: all 0.3s ease;
+}
+
+.contact-input:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 90, 60, 0.15);
+}
+
+/* Sosyal Medya Butonları Hover Efekti */
+.contact-social-btn {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-social-btn:hover {
+  transform: translateY(-3px) scale(1.05);
+}
+
+.contact-social-btn:active {
+  transform: translateY(-1px) scale(1.02);
+}
+
+/* Form Butonu Animasyonu */
+.contact-submit-btn {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.contact-submit-btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.contact-submit-btn:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+.contact-submit-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* İletişim Bilgisi Kartları */
+.contact-info-item {
+  transition: all 0.3s ease;
+}
+
+.contact-info-item:hover {
+  transform: translateX(5px);
+}
+
+.contact-info-item:hover .contact-info-icon {
+  transform: scale(1.1);
+}
+
+.contact-info-icon {
+  transition: transform 0.3s ease;
+}
+
+/* Başlık Alt Çizgisi Animasyonu */
+.contact-title-underline {
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-title-underline::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #FF5A3C, #ff7a5c);
+  transform: translateX(-100%);
+  animation: slideIn 0.8s ease forwards;
+}
+
+@keyframes slideIn {
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Form Kartı Gölge Animasyonu */
+.contact-form-card {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.contact-form-card:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Başarı/Hata Mesajları Animasyonu */
+.contact-status-message {
+  animation: slideDown 0.4s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Loading Spinner */
+.contact-loading-spinner {
+  display: inline-block;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive İyileştirmeler */
+@media (max-width: 768px) {
+  .contact-info-item:hover {
+    transform: none;
+  }
+  
+  .contact-form-card {
+    padding: 1.5rem;
+  }
+}
+
+/* Form Input Placeholder Stili */
+.contact-input::placeholder {
+  color: #9ca3af;
+  transition: color 0.3s ease;
+}
+
+.contact-input:focus::placeholder {
+  color: #d1d5db;
+}
+
+/* Checkbox Özel Stil */
+.contact-checkbox {
+  accent-color: #FF5A3C;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.contact-checkbox:hover {
+  transform: scale(1.1);
+}
+
+/* Link Hover Efekti */
+.contact-link {
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.contact-link:hover {
+  color: #FF5A3C;
+}
+
+.contact-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #FF5A3C;
+  transition: width 0.3s ease;
+}
+
+.contact-link:hover::after {
+  width: 100%;
+}
+
+/* İkon Animasyonları */
+/* E-posta İkonu - Yukarı Aşağı Hareket Animasyonu */
+.contact-email-icon {
+  transition: transform 0.3s ease;
+}
+
+.contact-info-item:hover .contact-email-icon {
+  animation: bounceUpDown 0.6s ease-in-out infinite;
+}
+
+@keyframes bounceUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* Telefon İkonu - Titreme Animasyonu */
+.contact-phone-icon {
+  transition: transform 0.3s ease;
+}
+
+.contact-info-item:hover .contact-phone-icon {
+  animation: shake 0.5s ease-in-out infinite;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0) rotate(0deg);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(3px) rotate(2deg);
+  }
+}
+
+/* Harita Container */
+.contact-map-container {
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.contact-map-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15) !important;
+}
+
+.contact-map-container iframe {
+  transition: opacity 0.3s ease;
+}
+
+.contact-map-container:hover iframe {
+  opacity: 0.95;
+}
+
+/* Yol Tarifi Al Butonu */
+.contact-directions-btn {
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.contact-directions-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(255, 90, 60, 0.3);
+}
+
+.contact-directions-btn:active {
+  transform: translateY(0);
+}

@@ -1,0 +1,26 @@
+/* Navbar animasyonları – özellikle bayrak dalgalanması */
+
+@keyframes navbar-flag-wave {
+  0%,
+  100% {
+    transform: skewX(0deg) rotate(0deg);
+  }
+  25% {
+    transform: skewX(-6deg) rotate(-3deg);
+  }
+  50% {
+    transform: skewX(0deg) rotate(0deg);
+  }
+  75% {
+    transform: skewX(6deg) rotate(3deg);
+  }
+}
+
+.navbar-flag-tr span {
+  display: inline-block;
+}
+
+.navbar-flag-tr:hover span {
+  animation: navbar-flag-wave 0.5s ease-in-out infinite;
+}
+

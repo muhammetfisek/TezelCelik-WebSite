@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overscroll-behavior: none;
+}
+
+html {
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  max-width: 100%;
+  overflow-x: clip;
+  background-color: #363434;
+  color: #000000;
+}
+
+main {
+  background-color: #ffffff;
+}
+
+body > * {
+  flex-shrink: 0;
+}
