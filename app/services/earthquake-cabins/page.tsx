@@ -169,13 +169,13 @@ export default function EarthquakeCabinsPage() {
       {/* Nasıl çalışıyoruz */}
       <section className="py-14 sm:py-18">
         <div className="container mx-auto px-4 lg:px-8">
-          <h2 className="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
+          <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
             Nasıl çalışıyoruz?
           </h2>
-          <p className="mt-2 max-w-2xl text-base text-gray-600">
+          <p className="mt-4 max-w-2xl text-base leading-relaxed text-gray-600">
             {data.shortTitle} hizmetinde keşiften teslimata kadar izlediğimiz adımlar.
           </p>
-          <ol className="quake-how-list mt-8">
+          <ol className="quake-how-list mt-24">
             {data.howWeWorkSteps.map((step, idx) => (
               <li key={step.title} className="quake-how-item">
                 <span className="quake-how-num">{idx + 1}</span>

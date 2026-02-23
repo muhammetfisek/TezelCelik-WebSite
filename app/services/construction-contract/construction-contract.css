@@ -147,7 +147,7 @@
 .contract-how-list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 1.5rem 0 0 0;
   display: grid;
   gap: 1rem;
 }
@@ -159,7 +159,7 @@
 .contract-how-item {
   display: flex;
   gap: 1rem;
-  padding: 1.25rem 1.5rem;
+  padding: 1.75rem 1.5rem 1.5rem;
   background: #fff;
   border-radius: 1rem;
   border: 1px solid rgba(0, 0, 0, 0.06);
@@ -171,27 +171,27 @@
 }
 .contract-how-num {
   flex-shrink: 0;
-  width: 2.25rem;
-  height: 2.25rem;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 50%;
   background: #FF5A3C;
   color: #fff;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 900;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .contract-how-item h3 {
-  font-size: 0.9375rem;
+  font-size: 1.05rem;
   font-weight: 800;
   color: #111827;
   margin: 0 0 0.35rem 0;
 }
 .contract-how-item p {
-  font-size: 0.8125rem;
-  color: #6b7280;
-  line-height: 1.5;
+  font-size: 0.9rem;
+  color: #4b5563;
+  line-height: 1.65;
   margin: 0;
 }
 
