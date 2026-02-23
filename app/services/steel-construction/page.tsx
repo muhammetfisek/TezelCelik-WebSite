@@ -9,6 +9,7 @@ import celikBetonImg from "@/images/blog_images/celik_beton.png";
 import { getBlogPost } from "@/app/lib/blog-data";
 import { getServicePageData } from "@/app/lib/service-page-data";
 import "../../about/about.css";
+import "./steel-construction.css";
 
 const NAVBAR_HEIGHT = 90;
 const HERO_MIN_HEIGHT = 360;
@@ -70,14 +71,14 @@ export default function SteelConstructionPage() {
       {/* Foto solda, yazı sağda; foto büyük */}
       <section className="py-14 sm:py-18">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="service-intro-grid">
-            <div className="service-intro-image-wrap">
+          <div className="steel-intro-grid">
+            <div className="steel-intro-image-wrap">
               <Image
                 src={celikKonstruksiyonImg}
                 alt="Çelik konstrüksiyon - endüstriyel yapı ve montaj"
                 width={800}
                 height={600}
-                className="h-full min-h-[320px] w-full object-cover sm:min-h-[400px] lg:min-h-[520px]"
+                className="h-full w-full object-cover"
                 priority
               />
             </div>
@@ -92,20 +93,20 @@ export default function SteelConstructionPage() {
               <p className="mt-6 max-w-xl text-base leading-relaxed text-gray-700">
                 {data.introParagraph}
               </p>
-              <div className="mt-7 service-feature-grid">
-                <div className="service-feature-card">
-                  <div className="service-feature-header">
-                    <span className="service-feature-title">Mühendislik &amp; Proje</span>
+              <div className="mt-7 steel-feature-grid">
+                <div className="steel-feature-card">
+                  <div className="steel-feature-header">
+                    <span className="steel-feature-title">Mühendislik &amp; Proje</span>
                   </div>
-                  <p className="service-feature-desc">
+                  <p className="steel-feature-desc">
                     Statik hesap, detay çizim ve vinç yolları dahil endüstriyel projeler için net ve kontrollü bir proje kurgusu sunuyoruz.
                   </p>
                 </div>
-                <div className="service-feature-card">
-                  <div className="service-feature-header">
-                    <span className="service-feature-title">İmalat &amp; Montaj</span>
+                <div className="steel-feature-card">
+                  <div className="steel-feature-header">
+                    <span className="steel-feature-title">İmalat &amp; Montaj</span>
                   </div>
-                  <p className="service-feature-desc">
+                  <p className="steel-feature-desc">
                     Fabrikada kesim, kaynak, kumlama ve boya; sahada güvenli montaj ve planlanan tarihte eksiksiz teslim ile projeyi tamamlıyoruz.
                   </p>
                 </div>
@@ -132,14 +133,14 @@ export default function SteelConstructionPage() {
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-gray-700">
             Çelik konstrüksiyon alanında gerçekleştirdiğimiz projelerden örnekler. Tüm projeleri incelemek için tıklayın.
           </p>
-          <div className="service-projects-gallery mt-10">
+          <div className="steel-projects-gallery mt-10">
             {ORNEK_PROJELER.map((proje) => (
               <Link
                 key={proje.title}
                 href="/projects"
-                className="service-project-card"
+                className="steel-project-card"
               >
-                <div className="service-project-image">
+                <div className="steel-project-image">
                   <Image
                     src={proje.image}
                     alt={proje.title}
@@ -147,9 +148,9 @@ export default function SteelConstructionPage() {
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
                 </div>
-                <div className="service-project-body">
-                  <h3 className="service-project-title">{proje.title}</h3>
-                  <span className="service-project-link-text">
+                <div className="steel-project-body">
+                  <h3 className="steel-project-title">{proje.title}</h3>
+                  <span className="steel-project-link-text">
                     Projeleri inceleyin →
                   </span>
                 </div>
@@ -176,10 +177,10 @@ export default function SteelConstructionPage() {
           <p className="mt-2 max-w-2xl text-base text-gray-600">
             {data.shortTitle} hizmetinde keşiften teslimata kadar izlediğimiz adımlar.
           </p>
-          <ol className="service-how-list mt-8">
+          <ol className="steel-how-list mt-8">
             {data.howWeWorkSteps.map((step, idx) => (
-              <li key={step.title} className="service-how-item">
-                <span className="service-how-num">{idx + 1}</span>
+              <li key={step.title} className="steel-how-item">
+                <span className="steel-how-num">{idx + 1}</span>
                 <div>
                   <h3>{step.title}</h3>
                   <p>{step.desc}</p>

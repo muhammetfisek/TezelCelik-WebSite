@@ -8,6 +8,7 @@ import celikDepremDayaniklilikImg from "@/images/blog_images/celik_deprem_dayani
 import { getBlogPost } from "@/app/lib/blog-data";
 import { getServicePageData } from "@/app/lib/service-page-data";
 import "../../about/about.css";
+import "./earthquake-cabins.css";
 
 const NAVBAR_HEIGHT = 90;
 const HERO_MIN_HEIGHT = 360;
@@ -68,8 +69,8 @@ export default function EarthquakeCabinsPage() {
       {/* Foto solda, yazı sağda; foto büyük */}
       <section className="py-14 sm:py-18">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="service-intro-grid">
-            <div className="service-intro-image-wrap">
+          <div className="quake-intro-grid">
+            <div className="quake-intro-image-wrap">
               <Image
                 src={depremKabiniImg}
                 alt="Deprem kabini - çelik güvenlik kabini"
@@ -90,20 +91,20 @@ export default function EarthquakeCabinsPage() {
               <p className="mt-6 max-w-xl text-base leading-relaxed text-gray-700">
                 {data.introParagraph}
               </p>
-              <div className="mt-7 service-feature-grid">
-                <div className="service-feature-card">
-                  <div className="service-feature-header">
-                    <span className="service-feature-title">Çelik Güvenlik Çekirdeği</span>
+              <div className="mt-7 quake-feature-grid">
+                <div className="quake-feature-card">
+                  <div className="quake-feature-header">
+                    <span className="quake-feature-title">Çelik Güvenlik Çekirdeği</span>
                   </div>
-                  <p className="service-feature-desc">
+                  <p className="quake-feature-desc">
                     Enkaz altında yaşam üçgeni oluşturan, darbelere dayanıklı ve yüksek taşıma kapasiteli kabin yapısı sunuyoruz.
                   </p>
                 </div>
-                <div className="service-feature-card">
-                  <div className="service-feature-header">
-                    <span className="service-feature-title">Modüler Tasarım &amp; Analiz</span>
+                <div className="quake-feature-card">
+                  <div className="quake-feature-header">
+                    <span className="quake-feature-title">Modüler Tasarım &amp; Analiz</span>
                   </div>
-                  <p className="service-feature-desc">
+                  <p className="quake-feature-desc">
                     Farklı oda tiplerine uyan modüler ölçüler ile deprem yönetmeliğine uygun statik analiz ve sertifikalı üretim sağlıyoruz.
                   </p>
                 </div>
@@ -130,14 +131,14 @@ export default function EarthquakeCabinsPage() {
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-gray-700">
             Deprem kabini ve güvenlik alanında gerçekleştirdiğimiz projelerden örnekler. Tüm projeleri incelemek için tıklayın.
           </p>
-          <div className="service-projects-gallery mt-10">
+          <div className="quake-projects-gallery mt-10">
             {ORNEK_PROJELER.map((proje) => (
               <Link
                 key={proje.title}
                 href="/projects"
-                className="service-project-card"
+                className="quake-project-card"
               >
-                <div className="service-project-image">
+                <div className="quake-project-image">
                   <Image
                     src={proje.image}
                     alt={proje.title}
@@ -145,9 +146,9 @@ export default function EarthquakeCabinsPage() {
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
                 </div>
-                <div className="service-project-body">
-                  <h3 className="service-project-title">{proje.title}</h3>
-                  <span className="service-project-link-text">
+                <div className="quake-project-body">
+                  <h3 className="quake-project-title">{proje.title}</h3>
+                  <span className="quake-project-link-text">
                     Projeleri inceleyin →
                   </span>
                 </div>
@@ -174,10 +175,10 @@ export default function EarthquakeCabinsPage() {
           <p className="mt-2 max-w-2xl text-base text-gray-600">
             {data.shortTitle} hizmetinde keşiften teslimata kadar izlediğimiz adımlar.
           </p>
-          <ol className="service-how-list mt-8">
+          <ol className="quake-how-list mt-8">
             {data.howWeWorkSteps.map((step, idx) => (
-              <li key={step.title} className="service-how-item">
-                <span className="service-how-num">{idx + 1}</span>
+              <li key={step.title} className="quake-how-item">
+                <span className="quake-how-num">{idx + 1}</span>
                 <div>
                   <h3>{step.title}</h3>
                   <p>{step.desc}</p>

@@ -14,6 +14,7 @@ import nervurDemirImg from "@/images/blog_images/nervur_demir.png";
 import { getBlogPost } from "@/app/lib/blog-data";
 import { getServicePageData } from "@/app/lib/service-page-data";
 import "../../about/about.css";
+import "./construction-contract.css";
 
 const NAVBAR_HEIGHT = 90;
 const HERO_MIN_HEIGHT = 360;
@@ -75,8 +76,8 @@ export default function ConstructionContractPage() {
       {/* Foto solda, yazı sağda; foto büyük */}
       <section className="py-14 sm:py-18">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="service-intro-grid">
-            <div className="service-intro-image-wrap">
+          <div className="contract-intro-grid">
+            <div className="contract-intro-image-wrap">
               <Image
                 src={insaatTaahhutImg}
                 alt="İnşaat taahhüt - anahtar teslim projeler"
@@ -97,20 +98,20 @@ export default function ConstructionContractPage() {
               <p className="mt-6 max-w-xl text-base leading-relaxed text-gray-700">
                 {data.introParagraph}
               </p>
-              <div className="mt-7 service-feature-grid">
-                <div className="service-feature-card">
-                  <div className="service-feature-header">
-                    <span className="service-feature-title">Tek Muhatap Sözleşme</span>
+              <div className="mt-7 contract-feature-grid">
+                <div className="contract-feature-card">
+                  <div className="contract-feature-header">
+                    <span className="contract-feature-title">Tek Muhatap Sözleşme</span>
                   </div>
-                  <p className="service-feature-desc">
+                  <p className="contract-feature-desc">
                     Keşif, teklif, bütçe ve sözleşme süreçlerinde tüm teknik ve idari işleri tek muhatap üzerinden şeffaf biçimde yönetiyoruz.
                   </p>
                 </div>
-                <div className="service-feature-card">
-                  <div className="service-feature-header">
-                    <span className="service-feature-title">Şantiye Yönetimi &amp; Teslim</span>
+                <div className="contract-feature-card">
+                  <div className="contract-feature-header">
+                    <span className="contract-feature-title">Şantiye Yönetimi &amp; Teslim</span>
                   </div>
-                  <p className="service-feature-desc">
+                  <p className="contract-feature-desc">
                     İş programı, ekip ve iş güvenliği yönetimi ile sahayı koordine eder, projeyi zamanında ve eksiksiz şekilde teslim ederiz.
                   </p>
                 </div>
@@ -137,14 +138,14 @@ export default function ConstructionContractPage() {
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-gray-700">
             İnşaat taahhüt kapsamında tamamladığımız projelerden örnekler. Tüm projeleri incelemek için tıklayın.
           </p>
-          <div className="service-projects-gallery mt-10">
+          <div className="contract-projects-gallery mt-10">
             {ORNEK_PROJELER.map((proje) => (
               <Link
                 key={proje.title}
                 href="/projects"
-                className="service-project-card"
+                className="contract-project-card"
               >
-                <div className="service-project-image">
+                <div className="contract-project-image">
                   <Image
                     src={proje.image}
                     alt={proje.title}
@@ -152,9 +153,9 @@ export default function ConstructionContractPage() {
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
                 </div>
-                <div className="service-project-body">
-                  <h3 className="service-project-title">{proje.title}</h3>
-                  <span className="service-project-link-text">
+                <div className="contract-project-body">
+                  <h3 className="contract-project-title">{proje.title}</h3>
+                  <span className="contract-project-link-text">
                     Projeleri inceleyin →
                   </span>
                 </div>
@@ -181,10 +182,10 @@ export default function ConstructionContractPage() {
           <p className="mt-2 max-w-2xl text-base text-gray-600">
             {data.shortTitle} hizmetinde keşiften teslimata kadar izlediğimiz adımlar.
           </p>
-          <ol className="service-how-list mt-8">
+          <ol className="contract-how-list mt-8">
             {data.howWeWorkSteps.map((step, idx) => (
-              <li key={step.title} className="service-how-item">
-                <span className="service-how-num">{idx + 1}</span>
+              <li key={step.title} className="contract-how-item">
+                <span className="contract-how-num">{idx + 1}</span>
                 <div>
                   <h3>{step.title}</h3>
                   <p>{step.desc}</p>
