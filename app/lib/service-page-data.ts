@@ -62,9 +62,9 @@ export const servicePageData: Record<ServiceId, ServicePageData> = {
       },
     ],
     relatedBlogSlugs: [
-      "deprem-kabini-rehberi-enkaz-altinda-hayatta-kalmanin-bilimsel-yolu",
+      "celik-binalar-rehberi-depreme-dayanikli-ve-ekonomik-yapi-cozumleri",
       "celik-yapilarda-deprem-dayanikliligi-neden-en-guvenli-secenek",
-      "sismik-izolatorler-ve-celik-yapilar-sarsintiya-karsi-aktif-koruma",
+      "celik-vs-betonarme-maliyet-ve-hiz-karsilastirmasi",
     ],
     projectsCtaTitle: "Deprem Kabini ve Güvenlik Projelerimiz",
     projectsCtaDescription: "Okul, hastane ve kamu binaları için gerçekleştirdiğimiz deprem kabini projelerini inceleyin.",
@@ -138,9 +138,9 @@ export const servicePageData: Record<ServiceId, ServicePageData> = {
       },
     ],
     relatedBlogSlugs: [
-      "insaat-taahhut-nedir-anahtar-teslim-projelerde-profesyonel-yaklasim",
       "celik-konstruksiyon-rehberi-dayaniklilik-hiz-ve-estetigin-bulustugu-nokta",
-      "nervurlu-demir-ve-yapi-guvenligi-neden-hayati-onem-tasir",
+      "celik-vs-betonarme-maliyet-ve-hiz-karsilastirmasi",
+      "celik-binalar-rehberi-depreme-dayanikli-ve-ekonomik-yapi-cozumleri",
     ],
     projectsCtaTitle: "İnşaat Taahhüt Projelerimiz",
     projectsCtaDescription: "Anahtar teslim ve taahhüt kapsamında tamamladığımız projelere göz atın.",

@@ -18,11 +18,19 @@ const NAVBAR_HEIGHT = 90;
 const GAP_NAV_LINKS = 32;
 
 /** Alt menülü (dropdown) – ana sayfa yok, tıklanınca ilk alt sayfaya gider */
-const SERVICES_HREF = "/services/steel-construction";
+const SERVICES_HREF = "/services/steel-buildings";
 const SERVICES_SUBITEMS = [
-  { label: "Çelik Konstrüksiyon", href: "/services/steel-construction" },
-  { label: "Deprem Kabinleri", href: "/services/earthquake-cabins" },
-  { label: "İnşaat Taahhüt", href: "/services/construction-contract" },
+  { label: "Çelik Binalar", href: "/services/steel-buildings" },
+  { label: "Geniş Açıklıklı Çatılar", href: "/services/wide-span-roofs" },
+  { label: "Arakat ve Platform", href: "/services/mezzanine-platforms" },
+  { label: "Giriş Saçağı ve Kanopiler", href: "/services/entrance-canopies" },
+  {
+    label: "Asansör Bölme Çelikleri ve Taşıyıcıları",
+    href: "/services/elevator-structures",
+  },
+  { label: "Yaya Geçiş Köprüleri", href: "/services/pedestrian-bridges" },
+  { label: "Çelik Merdiven", href: "/services/steel-stairs" },
+  { label: "Korkuluk", href: "/services/railings" },
 ] as const;
 
 /** Üst menüde görünen sayfa linkleri (label + href) veya dropdown (label + children) */
@@ -32,7 +40,7 @@ const NAV_ITEMS: Array<
 > = [
   { label: "Anasayfa", href: "/" },
   { label: "Hakkımızda", href: "/about" },
-  { label: "Hizmetlerimiz", href: SERVICES_HREF, children: SERVICES_SUBITEMS },
+  { label: "Faaliyet Alanlarımız", href: SERVICES_HREF, children: SERVICES_SUBITEMS },
   { label: "Projeler", href: "/projects" },
   { label: "Blog", href: "/blog" },
   { label: "İletişim", href: "/contact" },

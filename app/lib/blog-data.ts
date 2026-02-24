@@ -1,4 +1,3 @@
-import depremKabiniImg from "@/images/blog_images/deprem_kabini.png";
 import celikKonstruksiyonImg from "@/images/blog_images/celik_konstruksiyon.png";
 import insaatTaahhutImg from "@/images/blog_images/insaat_taahhut.png";
 import fabrikaHangarImg from "@/images/blog_images/fabrika_hangar.jpeg";
@@ -23,52 +22,64 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
-    slug: "deprem-kabini-rehberi-enkaz-altinda-hayatta-kalmanin-bilimsel-yolu",
-    title: "Deprem Kabini Rehberi: Enkaz Altında Hayatta Kalmanın Bilimsel Yolu",
+    slug: "celik-binalar-rehberi-depreme-dayanikli-ve-ekonomik-yapi-cozumleri",
+    title: "Çelik Binalar Rehberi: Depreme Dayanıklı, Hızlı ve Ekonomik Yapı Çözümleri",
     excerpt:
-      "Deprem anında pasif beklemek yerine, yaşam alanınızın içine çelikten bir güvenlik çekirdeği yerleştirmek mümkün. Deprem Kabini (Deprem Kafesi), enkaz altında hayatta kalma ihtimalinizi bilimsel olarak artıran bir mühendislik çözümüdür. [...]",
+      "Depreme dayanıklı, hızlı inşa edilen ve uzun ömürlü yapılar mı arıyorsunuz? Çelik binalar; hafif taşıyıcı sistemleri, geniş açıklıkları ve düşük bakım maliyetleriyle modern inşaat dünyasının en avantajlı çözümlerinden biridir. [...]",
     metaDescription:
-      "Deprem kabini kaç ton yük taşır? Çelik deprem kafesi satın alırken nelere dikkat edilmeli? Tezel Çelik'in statik analiz raporları ve sertifikalı malzemelerle ürettiği deprem kabinleri hakkında kapsamlı rehber.",
+      "Çelik binalar neden tercih edilmeli? Depreme dayanıklı çelik yapılarla hızlı, ekonomik ve uzun ömürlü projeler için kapsamlı rehber. Çelik bina maliyeti, avantajları ve uygulama alanları.",
     imageAlt:
-      "Deprem Kabini - Deprem Kafesi - Enkaz Altında Hayatta Kalma Kabini - Tezel Çelik",
-    content: `Deprem anında pasif bir bekleyiş yerine, yaşam alanınızın içinde çelikten bir güvenlik çekirdeği oluşturmak mümkündür. Deprem Kabini (veya Deprem Kafesi), enkaz altında hayatta kalma ihtimalini bilimsel olarak artıran bir mühendislik çözümüdür.`,
-    contentHtml: `<p>Türkiye'nin sismik hareketliliği ve mevcut yapı stoğunun durumu düşünüldüğünde, deprem anında pasif bir bekleyiş yerine <strong>aktif bir korunma stratejisi</strong> geliştirmek hayati önem taşır. Yapısal güçlendirme projeleri zaman ve maliyet açısından her zaman mümkün olmayabilir. İşte bu noktada <strong>Deprem Kabini</strong> (veya Deprem Kafesi) sistemleri, yaşam alanınızın içinde adeta "aşılması imkânsız bir kale" oluşturur. Tezel Çelik olarak, yüksek mühendislik standartlarıyla ürettiğimiz çelik kabinlerin çalışma prensiplerini ve neden bir zorunluluk haline geldiğini detaylıca inceliyoruz.</p>
+      "Çelik Binalar - Depreme Dayanıklı Çelik Yapılar - Tezel Çelik",
+    content: `Çelik binalar; deprem güvenliği, hızlı montaj süresi ve uzun ömürlü kullanım avantajlarıyla modern yapı projelerinin vazgeçilmez tercihleri arasındadır.`,
+    contentHtml: `<p>Türkiye'nin deprem gerçeği ve hızla dönüşen yapı stoğu düşünüldüğünde, <strong>çelik binalar</strong> hem güvenlik hem de hız açısından öne çıkan en akılcı çözümlerden biridir. Geleneksel betonarme sistemlere kıyasla çok daha hafif, esnek ve kontrol edilebilir olan çelik yapılar; endüstriyel tesislerden konut projelerine kadar geniş bir yelpazede tercih edilmektedir. Tezel Çelik olarak, projelerinizi geleceğe güvenle taşıyacak çelik bina çözümlerini mühendislik disiplinimizle birleştiriyoruz.</p>
 
-<h2>Deprem Kabini (Deprem Kafesi) Nedir?</h2>
-<p>Deprem kabini, klasik mobilya veya dekoratif ürünlerden çok farklı olarak, tamamen <strong>hayat kurtarmaya odaklı</strong> bir mühendislik ürünüdür. Amaç, binanın kısmen veya tamamen çökmesi durumunda, içinde bulunan kişilere <strong>yıkıntıya rağmen korunabilecekleri rijit bir hacim</strong> sunmaktır.</p>
+<h2>Çelik Bina Nedir?</h2>
+<p><strong>Çelik bina</strong>; taşıyıcı sistemi tamamen veya büyük oranda çelik profillerden oluşan, deprem ve rüzgar gibi yatay yüklere karşı üstün performans gösteren modern bir yapı türüdür. Kolon, kiriş, makas ve çapraz elemanlar fabrika ortamında hazırlanır, şantiyede sadece montaj yapılır. Bu sayede hem imalat kalitesi artar hem de iş programı netleşir.</p>
 
-<h2>Deprem Kabini Tam Olarak Ne Yapar?</h2>
-<p>Bir deprem kabini, sadece üstten gelen yükü taşımakla kalmaz; aynı zamanda yanal basınçlara (duvarların devrilmesi, moloz yığılması) ve dinamik darbelere karşı bir "yaşam çekirdeği" oluşturur. Betonarme bir yapıda kolonlar iflas ettiğinde tavan plakaları üst üste biner (<em>pancake collapse</em>). Deprem kabini, bu plakalar arasında ezilmeyen, çelikten bir kutu görevi görerek, enkaz altında kalan kişilere müdahale edilene kadar güvenli ve nefes alınabilir bir alan sağlar.</p>
+<h2>Çelik Binaların Öne Çıkan Avantajları</h2>
+<p>Bir yatırımcı veya işveren için doğru yapı sistemini seçmek; maliyet, hız ve güvenlik dengesini doğru kurmak anlamına gelir. Çelik binalar bu dengenin tam merkezinde yer alır:</p>
 
-<h2>Teknik Üstünlük: Neden Çelik?</h2>
-<p>Betona kıyasla çelik, <strong>sünek</strong> (esneyebilen) bir malzemedir. Bu süneklik, deprem gibi sarsıntılı yükler altında malzemenin kırılmadan enerji yutmasını ve dağıtmasını sağlar.</p>
-<p><strong>Statik Yük Kapasitesi:</strong> Profesyonel şekilde tasarlanmış bir deprem kabini, tasarım ve profil kesitlerine bağlı olarak yaklaşık <strong>40 tondan 100 tona kadar</strong> dikey yükü taşıyabilecek şekilde hesaplanır.</p>
-<p><strong>Dinamik Darbe Direnci:</strong> Deprem sırasında tavan blokları ve ağır elemanlar sadece yavaşça aşağı inmez; büyük bir hızla kabine çarpar. Çelik kafes yapı, bu ani darbeleri dağıtarak içeriye iletilmesini minimuma indirir.</p>
-<p><strong>Korozyon ve Uzun Ömür:</strong> Kumlama ve elektrostatik toz boya gibi yüzey işlemleriyle korunan çelik kabinler, evinizin içinde on yıllarca ilk günkü sağlamlığını korur.</p>
+<h3>1. Üstün Deprem Güvenliği</h3>
+<p>Çelik, doğası gereği <strong>sünek</strong> yani esneyebilen bir malzemedir. Deprem anında betonarme gibi kırılmak yerine enerjiyi bünyesinde sönümler ve tekrar eski formuna döner. Ayrıca çelik binalar betonarme eşdeğerlerine göre çok daha hafif olduğu için, yapıya etkiyen deprem yükleri önemli ölçüde azalır. Bu da çelik binaları deprem kuşağında yer alan bölgeler için en güvenli seçenek haline getirir.</p>
 
-<h2>Bir Deprem Kabininde Bulunması Gereken Hayati Detaylar</h2>
-<p>Tezel Çelik mühendisliğinde, bir kabinin sadece "sağlam" olması yeterli değildir. Gerçek bir yaşam alanı aşağıdaki donanımlara sahip olmalıdır:</p>
-<p><strong>Zemin Ankrajı:</strong> Kabinin, sarsıntı sırasında odanın içinde kontrolsüz şekilde kaymaması için kimyasal dübellerle döşemeye sabitlenmesi gerekir.</p>
-<p><strong>İç Yumuşak Kaplama:</strong> Sarsıntı sırasında kişinin çelik duvarlara çarpıp yaralanmaması için iç yüzeyler darbe emici malzemelerle kaplanmalıdır.</p>
-<p><strong>Havalandırma Menfezleri:</strong> Olası bir enkaz altında kalma durumunda hava sirkülasyonunu sağlayacak, molozla tıkanmayacak şekilde konumlandırılmış menfezler yaşamsaldır.</p>
-<p><strong>Sinyal ve İletişim:</strong> Kabin dışına ses veya ışık sinyali gönderebilen, kurtarma ekiplerinin yer tespiti yapmasını kolaylaştıran sistemler için ayrılmış bölmeler olmalıdır.</p>
-<p><strong>Erişilebilirlik:</strong> Kapı mekanizması, dışarıdan moloz baskısı olsa dahi içeriden kolayca açılabilecek veya kurtarma ekiplerinin müdahalesine uygun bir tasarıma sahip olmalıdır.</p>
+<h3>2. Hızlı İnşaat ve Erken Kullanım</h3>
+<p>Çelik binalarda üretimin büyük kısmı fabrikada tamamlandığı için, sahada geçirilen süre minimuma iner. Beton dökümü ve priz süresi gibi beklemeler olmadığı için projeleriniz <strong>geleneksel yöntemlere göre %40–50 daha hızlı</strong> tamamlanabilir. Fabrika, depo veya ticari yapınızı ne kadar erken kullanmaya başlarsanız, yatırımınız o kadar hızlı geri döner.</p>
 
-<h2>Yerleşim Stratejisi: Kabini Nereye Koymalıyız?</h2>
-<p>Senior bir tavsiye olarak; <strong>kabinin konumu en az sağlamlığı kadar önemlidir.</strong></p>
-<p><strong>Yatak Odaları:</strong> Depremlerin önemli bir kısmı gece gerçekleştiği için, kabinin yatağın hemen yanında ya da yatağı içine alacak şekilde konumlandırılması en verimli çözümdür.</p>
-<p><strong>Çıkış Yollarına Yakınlık:</strong> Binanın dış cephesine, balkon ya da pencere yakınına yerleştirilen kabinler, kurtarma ekiplerinin size çok daha hızlı ulaşmasını sağlar.</p>
-<p><strong>Kolonlardan Uzak Konumlandırma:</strong> Kabini odanın tam ortasına veya kolonlardan uzağa yerleştirmek, kolon patlaması durumunda doğrudan darbe alma riskini azaltır.</p>
+<h3>3. Geniş ve Kolonsuz İç Mekanlar</h3>
+<p>Çelik sistemler sayesinde 30–50 metre ve üzeri açıklıkları, araya kolon koymadan geçmek mümkündür. Bu sayede üretim alanları, depolar veya showroomlar daha esnek yerleşim planlarına kavuşur; makine yerleşimi, raf dizaynı veya ofis bölümlendirmesi çok daha verimli yapılabilir.</p>
 
-<h2>Güven Faktörü: Neden Tezel Çelik?</h2>
-<p>Deprem kabini, bir mobilya değil, <strong>bir güvenlik yatırımı</strong>dır. Tasarımdan üretime kadar her aşamasında mühendislik hesapları yapılmamış, sertifikasız ürünler, deprem anında hayal kırıklığı yaratabilir.</p>
-<p><strong>Tüm tasarımlarımız statik analiz raporlarına ve malzeme sertifikalarına dayanmaktadır.</strong> Bu sayede, sadece çeliğin taşıma kapasitesine değil, kullanılan her bir profilin ve bağlantı elemanının uluslararası standartlara uygunluğuna güvenebilirsiniz.</p>
+<h3>4. Hafif Temel ve Düşük Zemin Maliyeti</h3>
+<p>Çelik binalar, betonarme yapılara kıyasla çok daha hafif olduğundan temel boyutları küçülür, zemin iyileştirme ihtiyacı çoğu projede azalır. Bu da <strong>toplam maliyette ciddi tasarruf</strong> anlamına gelir. Özellikle zemin koşullarının zayıf olduğu bölgelerde çelik bina, ekonomik bir çözüm sunar.</p>
 
-<h2>Sonuç: Çelikten Bir Hayat Sigortası</h2>
-<p>Deprem kabini, betonarme yapıların sınırlarının zorlandığı noktalarda devreye giren, çeliğin sarsılmaz gücüne dayanan bir çözüm sunar. Tezel Çelik olarak biz, sadece çelik konstrüksiyon üretmiyoruz; her bir kaynağımızda ve her bir plakamızda <strong>insan hayatını koruma sorumluluğunu</strong> taşıyoruz.</p>
-<p>Deprem Kabini (Deprem Kafesi) sistemleri hakkında daha detaylı bilgi almak ve yaşam alanınıza en uygun çözümü tasarlamak için bizimle iletişime geçebilirsiniz.</p>`,
-    date: "2026-02-18",
-    image: depremKabiniImg.src,
+<h3>5. Sürdürülebilirlik ve Geri Dönüşüm</h3>
+<p>Çelik, <strong>%100 geri dönüştürülebilir</strong> bir malzemedir. Yapınız ömrünü tamamladığında, içindeki çelik elemanlar tekrar işlenerek yeni projelerde kullanılabilir. Bu da çelik binaları sadece güvenli değil, aynı zamanda çevre dostu bir çözüm haline getirir.</p>
+
+<h2>Çelik Binalar Nerelerde Kullanılır?</h2>
+<p>Tezel Çelik olarak, çok farklı sektörlerde çelik bina çözümleri üretiyoruz:</p>
+<ul>
+  <li><strong>Fabrika ve üretim tesisleri:</strong> Vinç yolları, ağır makine yükleri ve geniş açıklık gerektiren endüstriyel yapılar.</li>
+  <li><strong>Depo ve lojistik merkezleri:</strong> Yüksek raf sistemleri ve geniş iç hacim ihtiyacı olan depolama alanları.</li>
+  <li><strong>Showroom ve ticari yapılar:</strong> Prestijli cephe tasarımları ve fleksibl iç mekan çözümleri.</li>
+  <li><strong>Çelik konut ve villa projeleri:</strong> Depreme dayanıklı, hafif ve modern yaşam alanları.</li>
+</ul>
+
+<h2>Çelik Bina Maliyeti Nasıl Hesaplanır?</h2>
+<p>Çelik bina maliyetini değerlendirirken yalnızca ton fiyatına bakmak yanıltıcı olabilir. <strong>Toplam sahip olma maliyeti</strong> dikkate alınmalıdır:</p>
+<ul>
+  <li>Temel ve zemin iyileştirme giderleri</li>
+  <li>Şantiye süresi boyunca oluşan sabit giderler</li>
+  <li>Bakım, onarım ve olası güçlendirme maliyetleri</li>
+  <li>Yapının erken kullanıma açılmasından doğan gelir avantajı</li>
+</ul>
+<p>Çelik binalar; kısa inşaat süresi, hafif temel ihtiyacı ve uzun ömürlü kullanım avantajı sayesinde, orta–uzun vadede çoğu zaman betonarmeye göre daha ekonomik bir çözüm sunar.</p>
+
+<h2>Tezel Çelik ile Çelik Bina Tasarımı</h2>
+<p>Projelerinize sadece taşıyıcı sistem değil, uçtan uca bir <strong>mühendislik hizmeti</strong> sunuyoruz. Keşif ve ihtiyaç analizinden statik projelendirmeye, imalat ve montaj süreçlerine kadar her adımı Tezel Çelik güvencesiyle yönetiyoruz. Bölgenizin deprem, rüzgar ve kar yüklerine uygun olarak hesaplanan çelik binalarınız için modern yazılımlarla statik analizler yapıyor; sahada ise deneyimli montaj ekiplerimizle uygulamayı gerçekleştiriyoruz.</p>
+
+<h2>Sonuç: Geleceğe Çelik Gibi Yatırım</h2>
+<p>Depreme dayanıklı, hızlı inşa edilen ve uzun ömürlü bir yapı arıyorsanız, çelik binalar en mantıklı tercihtir. Tezel Çelik olarak, fabrika, depo, ticari yapı veya konut projelerinizde çeliğin tüm avantajlarını maksimum verimle kullanabileceğiniz çözümler üretiyoruz. Projeniz için çelik bina alternatifi düşünüyorsanız, <strong>ücretsiz ön fizibilite ve keşif</strong> çalışması için <a href="/contact" style="color: #FF5A3C; font-weight: 600; text-decoration: none;">bizimle iletişime geçebilirsiniz.</a></p>`,
+    date: "2026-02-24",
+    image: celikDepremDayaniklilikImg.src,
   },
   {
     slug: "celik-konstruksiyon-rehberi-dayaniklilik-hiz-ve-estetigin-bulustugu-nokta",
@@ -110,109 +121,212 @@ export const blogPosts: BlogPost[] = [
 
 <p><strong>Hassas Statik Hesaplama:</strong> Her projenin rüzgar, kar ve deprem yükleri modern yazılımlarla hesaplanır.</p>
 
-<p><strong>Kumlama ve Boya:</strong> Çeliği korozyona karşı koruyan, ömrünü uzatan özel yüzey işlemlerini standart olarak uygularız. Daha detaylı bilgi için <a href="/blog/kumlama-nedir-celik-sektorunde-neden-kullanilir">Kumlama Nedir?</a> yazımızı inceleyebilirsiniz.</p>
+<p><strong>Kumlama ve Boya:</strong> Çeliği korozyona karşı koruyan, ömrünü uzatan özel yüzey işlemlerini standart olarak uygularız. Projelerinize uygun yüzey hazırlığı ve boya sistemleri için ekibimizden teknik danışmanlık alabilirsiniz.</p>
 
 <p><strong>Sertifikalı Kaynak İşçiliği:</strong> Tüm birleşim noktaları, uluslararası sertifikalı kaynak operatörlerimiz tarafından titizlikle işlenir.</p>
 
 <h2>Sonuç</h2>
 <p>Çelik konstrüksiyon, sadece bir yapı sistemi değil; güvenli, ekonomik ve estetik bir geleceğin inşasıdır. Endüstriyel yatırımlarınızda veya hayalinizdeki konut projesinde çeliğin gücünü tercih ederek, nesiller boyu ayakta kalacak yapılar oluşturabilirsiniz.</p>
 
-<p><strong>Sizin de bir çelik yapı projeniz mi var? Ücretsiz keşif ve statik analiz için profesyonel ekibimizle iletişime geçin.</strong></p>`,
+<p><strong>Sizin de bir çelik yapı projeniz mi var? Ücretsiz keşif ve statik analiz için profesyonel ekibimizle <a href="/contact" style="color: #FF5A3C; text-decoration: none;">iletişime geçin.</a></strong></p>`,
     date: "2026-02-20",
     image: celikKonstruksiyonImg.src,
   },
   {
-    slug: "insaat-taahhut-nedir-anahtar-teslim-projelerde-profesyonel-yaklasim",
-    title: "İnşaat Taahhüt Nedir? Anahtar Teslim Projelerde Profesyonel Yaklaşım",
+    slug: "genis-aciklikli-celik-catilar-verimlilik-ve-estetik",
+    title:
+      "Geniş Açıklı Çatılarda Çelik Çözümleri: Verimlilik ve Estetik Bir Arada",
     excerpt:
-      "Büyük bir inşaat projesine başlamak, sadece malzeme tedarik etmekten çok daha fazlasıdır. Bütçe planlamasından yasal izinlere, mühendislik hesaplarından saha operasyonlarına kadar uzanan bu devasa süreci tek başınıza yönetmek hem zaman kaybına hem de maliyet artışlarına neden olabilir. [...]",
+      "Endüstriyel tesislerden spor salonlarına, depolardan hangarlara kadar geniş açıklıklı alanlar için en güvenli ve ekonomik çözüm çelik çatılardır. Kolonsuz büyük açıklıklar, maksimum kullanım alanı ve modern mimari estetiği bir araya getirir.",
     metaDescription:
-      "Anahtar teslim inşaat taahhüt süreci nasıl işler? Proje planlama, bütçelendirme ve denetim aşamalarında Tezel Çelik güvencesi.",
+      "Geniş açıklıklı çelik çatılar ile fabrikanız, deponuz veya spor salonunuz için kolonsuz, güvenli ve ekonomik çözümler. Uzay kafes sistemler, çelik makaslar ve endüstriyel çatı çözümleri Tezel Çelik güvencesiyle.",
+    imageAlt: "Tezel Çelik Geniş Açıklıklı Çatı Uygulaması",
+    content: `Geniş açıklıklı çelik çatılar; kolonsuz büyük alanlar, yüksek deprem güvenliği ve modern mimari görünüm sunarak endüstriyel tesisler, depolar, spor salonları ve hangarlar için en ideal çözümlerden biridir.`,
+    contentHtml: `<p>Endüstriyel tesislerden spor salonlarına, hangarlardan modern depo alanlarına kadar günümüz mimarisinin en büyük ihtiyaçlarından biri <strong>geniş açıklıklı alanlar</strong>dır. İçeride kolon desteği olmadan büyük alanları kapatabilmek, hem operasyonel özgürlük hem de görsel ferahlık sağlar. Bu noktada en güvenilir çözüm ortağı olarak <strong>çelik konstrüksiyon çatı sistemleri</strong> öne çıkar.</p>
+
+<p>Peki, geniş açıklıklı çatılarda neden çelik tercih edilmelidir? Aşağıda bu sorunun teknik ve mimari açıdan yanıtlarını bulabilirsiniz.</p>
+
+<h2>1. Neden Geniş Açıklıklı Çatılar?</h2>
+<p>Geleneksel betonarme yapılarla çok geniş alanları kolonsuz geçmek, hem maliyetli hem de statik açıdan oldukça zordur. <strong>Geniş açıklıklı çelik çatı</strong> sistemleri ise hafifliği ve yüksek taşıma kapasitesi sayesinde 30, 60 ve hatta 100 metreyi aşan açıklıkların güvenle geçilmesine olanak tanır.</p>
+
+<ul>
+  <li><strong>Maksimum kullanım alanı:</strong> İç mekânda kolon olmaması; forklift trafiği, raf sistemleri, makine yerleşimi veya saha organizasyonu için hiçbir engel oluşturmaz.</li>
+  <li><strong>Esneklik:</strong> Çelik konstrüksiyon, ihtiyaca göre modüler ve gelecekte büyütülebilir bir yapı sunar.</li>
+</ul>
+
+<h2>2. Kullanılan Başlıca Çelik Çatı Sistemleri</h2>
+<p>Geniş açıklıkları güvenle geçmek için projenin türüne ve mimari beklentilere göre farklı çelik çatı sistemleri tercih edilir:</p>
+
+<h3>Uzay kafes sistemler</h3>
+<p>Üç boyutlu geometrik yapısıyla yükü her yöne eşit dağıtan <strong>uzay kafes sistemler</strong>, hem hafif hem de son derece dayanıklıdır. Estetik görünümleri sayesinde stadyum, terminal, AVM ve temsil yapılarında sıkça kullanılır.</p>
+
+<h3>Çelik makas sistemleri (Truss systems)</h3>
+<p>Daha klasik ve ekonomik bir çözüm arayan projelerde <strong>çelik makas sistemleri</strong> (truss) öne çıkar. Fabrika, depo ve sanayi yapılarında en yaygın kullanılan yöntemdir. Doğru statik hesaplarla tasarlandığında hem uzun açıklıklar hem de vinç yükleri güvenle taşınabilir.</p>
+
+<h3>Tonoz ve kavisli çatılar</h3>
+<p><strong>Tonoz çatılar</strong> ve kavisli çelik çatı sistemleri, geniş hacimli iç mekânlar ve yüksek tavan isteyen projeler için idealdir. Kar ve rüzgar yüküne karşı yüksek mukavemet sağlarken, yapıya güçlü bir mimari karakter kazandırır.</p>
+
+<h2>3. Avantajları: Neden Çelik?</h2>
+<p>Çelik, sadece bir taşıyıcı malzeme değil, aynı zamanda projeniz için uzun vadeli bir yatırımdır.</p>
+
+<ul>
+  <li><strong>Hızlı montaj:</strong> Çelik elemanlar fabrika ortamında milimetrik hassasiyetle hazırlanır, sahada sadece montaj yapılır. Bu sayede inşaat süresi kısalır, operasyonlarınızı daha erken başlatabilirsiniz.</li>
+  <li><strong>Hafiflik ve deprem güvenliği:</strong> Çelik yapılar betonarmeye göre çok daha hafiftir. Daha düşük bina ağırlığı, deprem sırasında yapıya etkiyen dinamik yükleri azaltır ve deprem performansını artırır.</li>
+  <li><strong>Geri dönüştürülebilirlik:</strong> Çelik, %100 geri dönüştürülebilir bir malzemedir. Ömrünü tamamlayan yapılardan çıkan çelik elemanlar yeniden değerlendirilerek çevre dostu bir döngü oluşturur.</li>
+  <li><strong>Korozyon direnci:</strong> Modern yüzey hazırlama (kumlama) ve boya/galvaniz uygulamaları sayesinde çelik çatılar dış etkenlere karşı on yıllarca dayanabilir.</li>
+  </ul>
+
+<h2>4. Tezel Çelik ile Profesyonel Çözümler</h2>
+<p>Geniş açıklıklı bir çatı projesi; sadece malzeme kalitesi değil, aynı zamanda hassas bir <strong>mühendislik hesabı</strong> gerektirir. Kar yükü, rüzgar hızı ve bölgenin sismik verileri dikkate alınmadan tasarlanan hiçbir sistem uzun ömürlü olamaz.</p>
+
+<p>Tezel Çelik olarak, her projede;</p>
+<ul>
+  <li>Bölgenize özel kar, rüzgar ve deprem yükü analizleri yapıyoruz.</li>
+  <li>Uzay kafes, çelik makas veya tonoz sistemler arasından projenize en uygun çözümü birlikte belirliyoruz.</li>
+  <li>Statik projelendirme, fabrika imalatı ve saha montaj süreçlerini uçtan uca yönetiyoruz.</li>
+</ul>
+
+<p>Fabrika, depo, spor salonu veya hangar projeniz için <strong>geniş açıklıklı çelik çatı</strong> çözümlerini değerlendiriyorsanız, Tezel Çelik mühendislik ekibiyle <a href="/contact" style="color: #FF5A3C; font-weight: 600; text-decoration: none;">iletişime geçerek ücretsiz ön görüşme ve keşif talep edebilirsiniz.</a></p>`,
+    date: "2026-02-24",
+    image: fabrikaHangarImg.src,
+  },
+  {
+    slug: "celik-arakat-ve-platform-sistemleri-ile-alan-yonetimi",
+    title:
+      "İşletmenizde Yer Açın: Çelik Arakat ve Platform Sistemleri ile Alanınızı İkiye Katlayın",
+    excerpt:
+      "Depo veya üretim tesisinizde tavan yüksekliğiniz var ama zemin alanınız yetersiz mi? Çelik arakat ve endüstriyel platform sistemleriyle mevcut binanızın hacmini dikeyde büyüterek, yeni bina yatırımına girmeden alanınızı verimli ve güvenli şekilde ikiye katlayabilirsiniz.",
+    metaDescription:
+      "Çelik arakat (asma kat) ve endüstriyel platform sistemleri ile fabrikanızda veya deponuzda alanı verimli kullanın. Taşınabilir çelik arakat çözümleri, makine platformları ve lojistik platformlar Tezel Çelik mühendisliğiyle.",
     imageAlt:
-      "İnşaat Taahhüt - Anahtar Teslim Projeler - Şantiye Yönetimi - Tezel Çelik",
-    content: `Büyük bir inşaat projesine başlamak, sadece malzeme tedarik etmekten çok daha fazlasıdır. Bütçe planlamasından yasal izinlere, mühendislik hesaplarından saha operasyonlarına kadar uzanan bu devasa süreci tek başınıza yönetmek hem zaman kaybına hem de maliyet artışlarına neden olabilir.`,
-    contentHtml: `<p>Büyük bir inşaat projesine başlamak, sadece malzeme tedarik etmekten çok daha fazlasıdır. Bütçe planlamasından yasal izinlere, mühendislik hesaplarından saha operasyonlarına kadar uzanan bu devasa süreci tek başınıza yönetmek hem zaman kaybına hem de maliyet artışlarına neden olabilir. İşte bu noktada devreye giren <strong>İnşaat Taahhüt</strong> hizmeti, işverenin tüm yükünü omuzlarından alarak projenin profesyonel standartlarda tamamlanmasını sağlar. Tezel Çelik olarak, hayallerinizi somut ve güvenli yapılara dönüştürürken "anahtar teslim" bir disiplinle hareket ediyoruz.</p>
+      "Tezel Çelik Çelik Arakat ve Endüstriyel Platform Uygulaması",
+    content: `Çelik arakat ve endüstriyel platform sistemleri; tavan yüksekliği olan ancak zemin alanı yetersiz kalan işletmelerde, mevcut hacmi dikeyde büyütmenin en pratik ve ekonomik yoludur.`,
+    contentHtml: `<p>Bir depo veya üretim tesisinde en büyük maliyet kalemlerinden biri, alanı verimli kullanamamaktır. Eğer tavan yüksekliğiniz varsa ancak zemin alanınız yetersiz geliyorsa, yeni bir bina kiralamak veya inşa etmek yerine mevcut hacminizi dikeyde büyütmek en mantıklı çözümdür. İşte tam bu noktada <strong>çelik arakat (asma kat)</strong> ve <strong>endüstriyel platform</strong> sistemleri devreye girer.</p>
 
-<h2>İnşaat Taahhüt Hizmeti Neleri Kapsar?</h2>
-<p><strong>İnşaat taahhüt</strong>, bir yapının fikir aşamasından anahtar teslimine kadar olan tüm sürecin, belirlenen bütçe ve süre dahilinde yönetilmesidir. Tezel Çelik bünyesinde bu süreç şu temel aşamalardan oluşur:</p>
+<h2>Çelik Arakat (Asma Kat) Nedir?</h2>
+<p>Çelik asma katlar, mevcut bir yapının tavan yüksekliğini kullanarak oluşturulan, ana taşıyıcı sistemi çelikten imal edilen ara katlardır. Betonarme yapılara kıyasla çok daha hafif olan bu sistemler, binanın statiğini bozmadan ekstra kullanım alanı yaratır.</p>
 
-<p><strong>Planlama ve Projelendirme:</strong> İhtiyaca yönelik mimari tasarımın ve statik hesapların yapılması.</p>
+<p><strong>Neden çelik arakat tercih edilmeli?</strong></p>
+<ul>
+  <li><strong>Genellikle inşaat ruhsatı gerektirmez:</strong> Çoğu arakat sistemi taşınabilir (demonte) yapıda tasarlandığı için kalıcı betonarme eklentiler gibi ağır prosedürlere tabi değildir.</li>
+  <li><strong>Hızlı kurulum:</strong> Tüm parçalar fabrikada önceden hazırlanır ve sahada sadece montaj yapılır. Böylece işletmenizin üretimi durmadan alan kazanabilirsiniz.</li>
+  <li><strong>Esnek tasarım:</strong> İhtiyaca göre ofis, depo alanı veya showroom olarak düzenlenebilir; ileride sökülüp başka bir alana taşınabilir.</li>
+</ul>
 
-<p><strong>Bütçe Yönetimi:</strong> Malzeme, işçilik ve lojistik giderlerinin şeffaf bir şekilde kalem kalem hesaplanması.</p>
+<h2>Endüstriyel Platformların Kullanım Alanları</h2>
+<p>Çelik platformlar yalnızca kat çıkmak için değil, ağır makinelerin yerleşimi veya lojistik akışın yönetimi için de kritik rol oynar.</p>
+<ul>
+  <li><strong>Makine platformları:</strong> Ağır sanayi cihazlarının yerden yükseltilerek daha güvenli ve erişilebilir bir şekilde çalışmasını sağlar; bakım süreçlerini kolaylaştırır.</li>
+  <li><strong>Yükleme ve lojistik platformları:</strong> Depo içi trafiği düzenlemek, yükleme-boşaltma operasyonlarını hızlandırmak ve sevkiyat süreçlerini optimize etmek için kullanılır.</li>
+  <li><strong>Bakım ve yürüyüş yolları:</strong> Yüksekte bulunan tesisat veya makinelere güvenli erişim imkânı sunar; korkuluk ve kaymaz zeminlerle iş güvenliğini destekler.</li>
+</ul>
 
-<p><strong>Resmi İzinler ve Ruhsatlandırma:</strong> Belediyeler ve ilgili kamu kurumlarıyla olan bürokratik süreçlerin takibi.</p>
+<h2>Güvenlik ve Mukavemet: Tezel Çelik Farkı</h2>
+<p>Arakat ve platform sistemlerinde en kritik nokta, yapılacak alanın <strong>statik hesaplarıdır</strong>. Kat üzerine binecek hareketli ve sabit yüklerin metrekare başına kaç kilogram olacağı titizlikle hesaplanmalıdır.</p>
+<ul>
+  <li><strong>Yüksek taşıma kapasitesi:</strong> Tezel Çelik olarak, ağır tonajlı yüklerden hassas ofis alanlarına kadar her ihtiyaca uygun profil seçimi ve kesit tasarımı yapıyoruz.</li>
+  <li><strong>İSG uyumluluğu:</strong> Korkuluk sistemleri, kaymaz zemin seçenekleri ve ergonomik merdiven tasarımları ile İş Sağlığı ve Güvenliği standartlarını eksiksiz karşılıyoruz.</li>
+  <li><strong>Korozyona karşı koruma:</strong> Galvaniz veya özel endüstriyel boya uygulamalarıyla platformlarınızı nem ve dış etkenlere karşı uzun yıllar koruyoruz.</li>
+</ul>
 
-<p><strong>Saha Operasyonları ve İnşaat:</strong> Şantiye kurulumundan montaja kadar tüm fiili yapım süreci.</p>
+<h2>Yatırımın Geri Dönüşü (ROI)</h2>
+<p>Yeni bir arazi alıp bina inşa etmek yerine, çelik arakat ile mevcut alanınızı önemli ölçüde artırmak; kira, inşaat ve zaman maliyetlerinizi ciddi oranda düşürür. Bu, özellikle sanayi bölgelerinde metrekare maliyetlerinin yüksek olduğu durumlarda, işletmeler için en akıllıca yatırım kararlarından biridir.</p>
 
-<p><strong>Denetim ve Teslim:</strong> Yapılan işin uluslararası standartlara uygunluğunun denetlenmesi ve projenin eksiksiz teslimi.</p>
-
-<h2>Anahtar Teslim Modelin Avantajları</h2>
-<p>Neden projenizi parçalı yönetmek yerine bir taahhüt firmasına emanet etmelisiniz?</p>
-
-<p><strong>Tek Muhatap Güveni:</strong> Mühendis, mimar ve taşeronlarla ayrı ayrı uğraşmak yerine, tüm süreç için karşınızda tek bir profesyonel muhatap olur.</p>
-
-<p><strong>Zaman ve Maliyet Kontrolü:</strong> İşin başında belirlenen takvime ve bütçeye sadık kalınır. Öngörülemeyen "sürpriz" harcamaların önüne geçilir.</p>
-
-<p><strong>Hata Payının Minimize Edilmesi:</strong> Üretim ve montaj ekiplerinin aynı çatı altında olması (Tezel Çelik fabrikası gibi), iletişim hatalarını ve uygulama yanlışlarını sıfıra indirir.</p>
-
-<h2>Çelik Konstrüksiyon ile Entegre Taahhüt</h2>
-<p>Tezel Çelik olarak bizi diğer taahhüt firmalarından ayıran en büyük fark; çelik imalatını kendi fabrikamızda yapmamızdır. Bu sayede:</p>
-
-<p>Hammadde kalitesini bizzat kontrol ediyoruz.</p>
-
-<p>Fabrikada hazırlanan modüler parçaları sahada hızla birleştirerek projeyi <strong>%50 daha hızlı</strong> teslim ediyoruz.</p>
-
-<p>Endüstriyel tesislerdeki teknik gereksinimleri (vinç yolları, tesisat geçişleri vb.) taahhüt aşamasında eksiksiz çözüyoruz.</p>
-
-<p>Çelik konstrüksiyon yapıların avantajları hakkında daha detaylı bilgi için <a href="/blog/celik-konstruksiyon-rehberi-dayaniklilik-hiz-ve-estetigin-bulustugu-nokta">Çelik Konstrüksiyon Rehberi</a> yazımızı inceleyebilirsiniz.</p>
-
-<h2>Sonuç</h2>
-<p>İnşaat taahhüt hizmeti, bir kağıt üzerindeki çizginin güvenli bir yapıya dönüşme yolculuğudur. Bu yolculukta doğru partnerle çalışmak, hem yatırımınızı korur hem de yapınızın ömrünü uzatır. Tezel Çelik olarak, taahhüdümüz altındaki her projede "sıfır hata" ve "maksimum güvenlik" prensibiyle çalışıyoruz.</p>`,
-    date: "2026-02-15",
+<p>Depo, fabrika veya lojistik tesisinizde alanı daha verimli kullanmak, üretimi aksatmadan ilave metrekare kazanmak istiyorsanız; Tezel Çelik'in <strong>çelik arakat ve endüstriyel platform çözümleri</strong> ile tanışın. Projeniz için ücretsiz keşif ve projelendirme desteği almak üzere <a href="/contact" style="color: #FF5A3C; font-weight: 600; text-decoration: none;">bizimle iletişime geçebilirsiniz.</a></p>`,
+    date: "2026-02-24",
     image: insaatTaahhutImg.src,
   },
   {
-    slug: "fabrika-ve-hangar-yapimi-endustriyel-tesislerde-celik-gucu",
-    title: "Fabrika ve Hangar Yapımı: Endüstriyel Tesislerde Çelik Gücü",
+    slug: "asansor-bolme-celikleri-ve-tasiyici-sistemler-guvenli-dikey-tasimacilik",
+    title:
+      "Asansör Bölme Çelikleri ve Taşıyıcı Sistemler: Güvenli Dikey Taşımacılık",
     excerpt:
-      "Endüstriyel yatırımların başarısı, üretim ve depolama süreçlerinin gerçekleşeceği tesisin kalitesine bağlıdır. Modern sanayide hız, geniş açıklıklar ve yüksek dayanım gereksinimi, Çelik Konstrüksiyon Fabrika ve Hangar yapılarını bir standart haline getirmiştir. [...]",
+      "Asansörler modern yapıların can damarıdır. Ancak sessiz, sarsıntısız ve güvenli bir dikey taşımacılık için asansör kuyusu içindeki çelik bölme ve taşıyıcı sistemlerin, ray konsollarından bölme kirişlerine kadar, kusursuz bir mühendislikle tasarlanıp uygulanması gerekir.",
     metaDescription:
-      "Çelik fabrika ve hangar yapımının avantajları nelerdir? Geniş açıklıklı sanayi yapıları ve endüstriyel depo çözümlerinde Tezel Çelik uzmanlığı.",
+      "Asansör bölme çelikleri ve taşıyıcı sistemler ile güvenli dikey taşımacılık. Asansör kuyu içi çelik karkas, ray taşıyıcı konsollar, çelik asansör kulesi imalatı ve EN 81-20/50 standartlarına uygun çözümler.",
     imageAlt:
-      "Fabrika ve Hangar Yapımı - Endüstriyel Tesisler - Çelik Konstrüksiyon - Tezel Çelik",
-    content: `Endüstriyel yatırımların başarısı, üretim ve depolama süreçlerinin gerçekleşeceği tesisin kalitesine bağlıdır. Modern sanayide hız, geniş açıklıklar ve yüksek dayanım gereksinimi, Çelik Konstrüksiyon Fabrika ve Hangar yapılarını bir standart haline getirmiştir.`,
-    contentHtml: `<p>Endüstriyel yatırımların başarısı, üretim ve depolama süreçlerinin gerçekleşeceği tesisin kalitesine bağlıdır. Modern sanayide hız, geniş açıklıklar ve yüksek dayanım gereksinimi, <strong>Çelik Konstrüksiyon Fabrika ve Hangar</strong> yapılarını bir standart haline getirmiştir. Tezel Çelik olarak, projelendirme aşamasından montaja kadar, sanayicinin ihtiyacı olan fonksiyonel ve güvenli tesisleri ileri mühendislik çözümleriyle inşa ediyoruz.</p>
+      "Çelik Asansör Kulesi ve Asansör Kuyu İçi Çelik Taşıyıcı Sistem",
+    content: `Asansörler, modern yapıların can damarıdır. Ancak bir asansörün sessiz, sarsıntısız ve güvenli çalışması için asansör kuyusu içerisindeki çelik bölme ve taşıyıcı sistemlerin kusursuz bir mühendislikle tasarlanmış olması gerekir.`,
+    contentHtml: `<p>Asansörler, modern yapıların can damarıdır. Özellikle çok katlı konut, ofis ve AVM projelerinde, kullanıcı konforu kadar güvenlik de doğrudan asansör sisteminin kalitesiyle ilişkilidir. Ancak bir asansörün sessiz, sarsıntısız ve en önemlisi güvenli çalışması için; asansör kuyusu içerisindeki <strong>çelik bölme</strong> ve <strong>taşıyıcı sistemlerin</strong> kusursuz bir mühendislikle tasarlanmış olması gerekir. Tezel Çelik olarak, asansör ray taşıyıcılarından bölme kirişlerine ve tam çelik asansör kulelerine kadar tüm konstrüksiyon süreçlerinde yüksek hassasiyetle çözümler sunuyoruz.</p>
 
-<h2>Neden Çelik Fabrika ve Hangar?</h2>
-<p>Geleneksel betonarme yapılara kıyasla çelik sistemler, endüstriyel tesisler için vazgeçilmez avantajlar sunar:</p>
+<h2>Asansör Bölme Çeliği Nedir, Neden Gereklidir?</h2>
+<p>Özellikle birden fazla asansörün aynı kuyu (şaft) içerisinde çalıştığı projelerde, her bir asansörün çalışma alanını birbirinden ayırmak hayati önem taşır.</p>
+<ul>
+  <li><strong>Güvenlik separasyonu:</strong> Kuyu içinde bakım yapılırken diğer asansörün güvenli şekilde çalışmaya devam etmesine imkân tanır ve bakım personelini korur.</li>
+  <li><strong>Ray taşıyıcı desteği:</strong> Asansör raylarının monte edileceği ana çelik karkası oluşturarak, rayların zamanla oynamasını ve hizadan kaçmasını engeller.</li>
+  <li><strong>Yapısal rijitlik:</strong> Kuyu içerisindeki vibrasyonu absorbe ederek, binaya iletilen yükü dengeler ve yolcu konforunu artırır.</li>
+</ul>
 
-<p><strong>Geniş ve Kolonsuz Alanlar:</strong> Fabrika içinde makine yerleşimi ve lojistik hareketlilik için geniş açıklıklar hayati önem taşır. Çelik konstrüksiyon sayesinde, araya kolon koymadan <strong>30-50 metre ve üzeri açıklıklar</strong> geçilebilir. Bu, maksimum kullanım alanı ve operasyonel esneklik sağlar.</p>
+<h2>Asansör Taşıyıcı Konstrüksiyon Türleri</h2>
+<p>Projenin mimari yapısına, taşıyıcı sistemine ve kullanım amacına göre iki ana yaklaşım öne çıkar:</p>
 
-<p><strong>Statik Güvenlik ve Vinç Yükleri:</strong> Ağır sanayi tesislerinde tavan vinçleri ve hareketli yükler statik yapıyı zorlar. Çelik yapılar, bu dinamik yükleri karşılamak için en güvenilir ve hesaplanabilir sistemlerdir.</p>
+<h3>Kuyu içi çelik karkas (betonarme kuyular için)</h3>
+<p>Betonarme bir asansör kuyusu mevcutsa, rayların sabitleneceği çelik kuşaklar ve bölme kirişleri kuyu içerisine ankrajlanır. Bu sistemde <strong>UPE</strong>, <strong>IPE</strong> veya kutu profiller kullanılarak yüksek dayanım ve rijitlik sağlanır. Böylece hem mevcut betonarme yapının yükü kontrollü şekilde çeliğe aktarılır hem de asansör montaj ekibi için güvenli bir çalışma altyapısı oluşturulur.</p>
 
-<p><strong>Hızlı Geri Dönüş (ROI):</strong> Yatırımın bir an önce üretime geçmesi gerekir. Çelik fabrikalar betonarmeye göre çok daha kısa sürede tamamlanır, bu da yatırımın geri dönüş süresini kısaltır.</p>
+<h3>Tam çelik asansör kulesi (panoramik ve dış cephe çözümleri)</h3>
+<p>Eğer binada hazır bir betonarme kuyu yoksa veya dış cephede panoramik cam asansör planlanıyorsa, asansörün tüm yükünü taşıyan bağımsız bir <strong>çelik asansör kulesi</strong> inşa edilir. Bu sistemlerde hem mukavemet hem de estetik tasarım birlikte ele alınır; çelik taşıyıcılar cam cephelerle birleşerek yapının mimari değerini artırır.</p>
 
-<p><strong>Genişletilebilirlik:</strong> İşleriniz büyüdüğünde çelik yapıya ekleme yapmak, mevcut yapıyı büyütmek veya modifiye etmek betonarmeye göre çok daha kolay ve az maliyetlidir.</p>
+<h2>Mühendislikte Hassasiyet: Tolerans ve Montaj</h2>
+<p>Asansör sistemlerinde hataya yer yoktur. Milimetrik sapmalar bile asansörün sarsıntılı çalışmasına, raylarda aşınmaya veya konfor kaybına neden olabilir.</p>
+<ul>
+  <li><strong>Lazerli ölçüm:</strong> Montaj sırasında ray eksenlerinin birbirine ve kuyunun geometrisine tam paralel olması için lazerli ölçüm cihazları kullanılır.</li>
+  <li><strong>Vibrasyon sönümleme:</strong> Çelik bağlantı noktalarında kullanılan özel detaylar ile metalin metale sürtünme sesi ve titreşimi minimize edilir, yolcu kabininde sessiz bir sürüş sağlanır.</li>
+  <li><strong>Korozyon koruması:</strong> Kuyu içerisindeki nemli ortama karşı tüm çelik aksamlar antipas boya veya galvaniz kaplama ile korunur; bu sayede sistem uzun yıllar güvenle hizmet verir.</li>
+</ul>
 
-<h2>Fabrika Yapım Sürecinde Tezel Çelik Standartları</h2>
-<p>Bir sanayi tesisi inşa edilirken sadece "dikmek" yetmez, mühendislik detayları fark yaratır:</p>
+<h2>Tezel Çelik ile Standartlara Uygun Asansör Çözümleri</h2>
+<p>Asansör bölme çelikleri ve taşıyıcı sistemlerimiz, güncel asansör yönetmeliklerine (örneğin <strong>EN 81-20/50</strong>) tam uyumlu olarak projelendirilir ve üretilir. Proje aşamasından montaja kadar her adımda, asansör montaj ekibinin işini kolaylaştıracak ve son kullanıcının güvenliğini garanti altına alacak çözümler geliştiriyoruz.</p>
 
-<p><strong>Zemin ve Statik Analizi:</strong> Tesisin yapılacağı bölgenin zemin özelliklerine ve kar/rüzgar yüklerine göre hassas mühendislik hesapları yapılır.</p>
+<p>Yeni inşaat projelerinizde ya da asansör revizyon çalışmalarınızda; kuyu içi çelik karkas, ray taşıyıcı konsolları veya dış cephe çelik asansör kuleleri için statik hesaplamalı, belgeli ve uzun ömürlü çelik çözümler sunuyoruz. <strong>Asansör revizyon projeleriniz veya yeni inşaatlarınız için statik hesaplamalı çelik çözümler</strong> arıyorsanız, <a href="/contact" style="color: #FF5A3C; font-weight: 600; text-decoration: none;">projenizi bize ileterek kısa sürede teklif ve mühendislik desteği alabilirsiniz.</a></p>`,
+    date: "2026-02-24",
+    image: celikKonstruksiyonImg.src,
+  },
+  {
+    slug: "giris-sacagi-ve-kanopi-sistemleri-estetik-ve-koruma",
+    title: "Giriş Saçağı ve Kanopi Sistemleri: Yapılarınıza Estetik ve Koruma Katın",
+    excerpt:
+      "Bir binanın ilk izlenimi girişinde başlar ve bu ilk temas çoğu zaman saniyeler içinde şekillenir. Giriş saçakları ve kanopi sistemleri, sadece yağmurdan veya güneşten korunmak için yapılan basit eklemeler değil; yapıların cephesine karakter, derinlik ve prestij kazandıran mimari dokunuşlardır. [...]",
+    metaDescription:
+      "Çelik kanopi ve giriş saçağı sistemleri ile binalarınıza estetik ve koruma katın. Cam kanopi, askılı saçak, kolon destekli kanopi ve modern çelik sundurma çözümleri Tezel Çelik mühendisliğiyle.",
+    imageAlt:
+      "Tezel Çelik Çelik Kanopi ve Giriş Saçağı Uygulaması",
+    content: `Giriş saçakları ve kanopi sistemleri; binaların yağmur, güneş ve rüzgâra karşı korunmasını sağlarken, aynı zamanda yapının mimari kimliğini güçlendiren en önemli çelik çözümlerden biridir.`,
+    contentHtml: `<p>Bir binanın ilk izlenimi girişinde başlar ve bu ilk temas çoğu zaman saniyeler içinde şekillenir. <strong>Giriş saçakları ve kanopi sistemleri</strong>, sadece yağmurdan veya güneşten korunmak için yapılan basit eklemeler değil; yapıların cephesine karakter, derinlik ve prestij kazandıran mimari dokunuşlardır. Çeliğin zarafeti ve dayanıklılığı ile birleşen modern kanopi çözümleri, otel girişlerinden kurumsal plaza ve AVM’lere, villa girişlerinden endüstriyel tesislere kadar pek çok yapıda hem fonksiyonel hem de estetik bir karşılama alanı oluşturur. Doğru tasarlanmış bir çelik kanopi, bina girişini günün her saatinde konforlu, güvenli ve dikkat çekici hale getirerek, markanızın algısını güçlendirir ve yapı bütünlüğünü tamamlayan önemli bir mimari unsur görevi görür.</p>
 
-<p><strong>İzolasyon ve Çatı Çözümleri:</strong> Enerji verimliliği için sandviç panel veya özel kaplama sistemleri ile ısı ve ses yalıtımı optimize edilir.</p>
+<h2>Giriş Saçağı (Canopy) Nedir?</h2>
+<p>Giriş saçağı; bina girişlerinin üzerine yerleştirilen, kolon destekli veya askılı sistemlerle taşınan koruyucu örtülerdir. Genellikle otel girişlerinde, hastanelerde, iş merkezlerinde ve villa girişlerinde hem prestij hem de konfor sağlamak amacıyla tercih edilir. Doğru tasarlanmış bir çelik canopy, misafirlerinizi daha kapıdan içeri girmeden etkilemenizi sağlar.</p>
 
-<p><strong>Korozyon Koruması:</strong> Endüstriyel ortamlardaki nem ve kimyasallara karşı, tüm çelik elemanlar yüksek standartlarda kumlama ve boyama işleminden geçirilir.</p>
+<h2>Çelik Kanopi ve Saçak Sistemlerinde Avantajlar</h2>
+<p>Neden betonarme veya hafif malzemeler yerine <strong>çelik kanopi sistemleri</strong> tercih edilmelidir?</p>
+<ul>
+  <li><strong>Zarif tasarım:</strong> Çelik, yüksek taşıma kapasitesi sayesinde ince kesitlerle geniş alanları geçmeye olanak tanır. Bu da kaba görünmeyen, hafif ve estetik giriş saçağı tasarımları demektir.</li>
+  <li><strong>Hızlı uygulama:</strong> Kanopi iskeleti fabrikada hazırlanır, sahada kısa sürede monte edilir. Böylece binanın günlük işleyişi minimum kesintiyle devam eder.</li>
+  <li><strong>Farklı kaplama seçenekleri:</strong> Çelik gövde üzerine cam, polikarbon, kompozit panel veya tonoz çatı gibi pek çok farklı kaplama malzemesi uygulanabilir.</li>
+  <li><strong>Uzun ömür ve dayanıklılık:</strong> Paslanmaz çelik veya endüstriyel boyalı sistemler, dış mekân koşullarına (kar yükü, rüzgâr, yağmur ve UV ışınları) karşı yıllarca direnç gösterir.</li>
+</ul>
 
-<p><strong>Aydınlatma ve Havalandırma:</strong> Tesis içi çalışma konforu için doğal aydınlatma (polikarbon paneller) ve mekanik havalandırma sistemleri projeye entegre edilir.</p>
+<h2>Kullanım Alanlarına Göre Kanopi Türleri</h2>
+<p>Tezel Çelik olarak, farklı yapı tipleri ve ihtiyaçlar için özelleştirilmiş <strong>çelik kanopi sistemleri</strong> tasarlıyoruz:</p>
+<ul>
+  <li><strong>Askılı (gergi) saçaklar:</strong> Alttan kolon desteği olmadan, binanın cephesine çelik halat veya kollarla tutturulan modern ve minimalist sistemlerdir. Ofis ve rezidans girişlerinde sıkça tercih edilir.</li>
+  <li><strong>Kolon destekli kanopiler:</strong> Özellikle akaryakıt istasyonları, fabrika sevkiyat alanları veya büyük otel girişleri için kullanılan, yüksek taşıma kapasiteli ve geniş açıklıklı yapılardır.</li>
+  <li><strong>Dekoratif cam kanopiler:</strong> Cam ve çeliğin birlikteliğiyle şeffaflığı ve şıklığı ön plana çıkaran bu çözümler, kurumsal binalar ve modern ticari yapılar için idealdir.</li>
+</ul>
 
-<h2>Hangar Yapılarında Özel Çözümler</h2>
-<p>Uçak hangarlarından lojistik depolara kadar, büyük hacimli yapılar için özel makas sistemleri tasarlıyoruz. Bu yapılar, hem hafif hem de rüzgar gibi dış etkenlere karşı son derece dirençli şekilde kurgulanır.</p>
+<h2>Tezel Çelik ile Mühendislik ve Tasarım Uyumu</h2>
+<p>Bir giriş saçağı sadece güzel görünmemeli, aynı zamanda güvenli olmalıdır. Bu nedenle her projede, bölgenin rüzgâr ve kar yükü verilerini dikkate alarak detaylı <strong>statik hesaplama</strong> yapıyoruz.</p>
+<ul>
+  <li><strong>Statik optimizasyon:</strong> Çelik profillerin kesitleri ve bağlantı detayları, taşıyacağı yüklere göre hesaplanır; gereksiz malzeme kullanımının önüne geçilir.</li>
+  <li><strong>Su tahliye sistemleri:</strong> Tasarıma entegre edilen gizli dere ve oluk sistemleri ile yağmur suyunun bina girişine akması engellenir; kullanıcı konforu ve cephe temizliği korunur.</li>
+  <li><strong>Montaj hassasiyeti:</strong> Mevcut yapıya zarar vermeden, cephe kaplamaları ve taşıyıcı sistemle uyum içinde profesyonel montaj yapıyoruz.</li>
+</ul>
 
-<p>Çelik konstrüksiyon yapıların teknik detayları ve avantajları hakkında daha fazla bilgi için <a href="/blog/celik-konstruksiyon-rehberi-dayaniklilik-hiz-ve-estetigin-bulustugu-nokta">Çelik Konstrüksiyon Rehberi</a> yazımızı inceleyebilirsiniz.</p>
+<h2>Geniş Açıklıklı Çelik Çatılarla Birlikte Kullanım</h2>
+<p>Giriş saçakları ve kanopiler, özellikle <a href="/blog/genis-aciklikli-celik-catilar-verimlilik-ve-estetik">geniş açıklıklı çelik çatı</a> çözümleriyle birlikte düşünüldüğünde, hem işlevsel hem de mimari bütünlük sağlar. Fabrika, depo veya ticari binalarda ana çatı ile giriş kanopisinin aynı çelik konstrüksiyon mantığıyla tasarlanması, bakım ve işletme maliyetlerinde önemli avantajlar sunar.</p>
 
-<h2>Sonuç</h2>
-<p>Doğru tasarlanmış bir fabrika binası, sadece bir kabuk değil, üretimin verimliliğini artıran bir araçtır. Tezel Çelik olarak, sanayicilerimizin yatırım hedeflerini anlıyor ve onlara on yıllar boyu sorunsuz hizmet verecek, depreme dayanıklı ve modern tesisler taahhüt ediyoruz.</p>`,
-    date: "2026-02-16",
+<h2>Sonuç: İlk İzlenimi Çelikle Güçlendirin</h2>
+<p>Modern, güvenli ve estetik bir giriş tasarlamak istiyorsanız, çelik giriş saçağı ve kanopi sistemleri en doğru seçimdir. Tezel Çelik olarak; tasarım, statik projelendirme, imalat ve montaj süreçlerinin tamamını tek elden yöneterek, yapınıza değer katan çözümler sunuyoruz. Projenize özel <strong>çelik kanopi ve giriş saçağı</strong> alternatifi için <a href="/contact" style="color: #FF5A3C; font-weight: 600; text-decoration: none;">bizimle iletişime geçebilir, ücretsiz ön görüşme ve keşif talebinde bulunabilirsiniz.</a></p>`,
+    date: "2026-02-24",
     image: fabrikaHangarImg.src,
   },
   {
@@ -325,7 +439,7 @@ export const blogPosts: BlogPost[] = [
 <h2>Enkaz Riskini Ortadan Kaldıran Sistem</h2>
 <p>Betonarme binaların çökmesi durumunda ortaya çıkan devasa beton bloklar, yaşam üçgeni ihtimalini azaltır. Çelik yapılar ise çökme anında (en kötü senaryoda bile) parçalanıp dağılmak yerine bir bütün halinde kalma eğilimi gösterir. Bu da arama kurtarma süreçlerini kolaylaştırır ve hayatta kalma şansını maksimize eder.</p>
 
-<p>Bireysel güvenlik çözümlerimiz için <a href="/blog/deprem-kabini-rehberi-enkaz-altinda-hayatta-kalmanin-bilimsel-yolu">Deprem Kabini Rehberi</a> yazımızı inceleyebilirsiniz.</p>
+<p>Çelik binaların deprem performansı ve yatırım avantajları hakkında daha fazla bilgi için <a href="/blog/celik-binalar-rehberi-depreme-dayanikli-ve-ekonomik-yapi-cozumleri">Çelik Binalar Rehberi</a> yazımızı inceleyebilirsiniz.</p>
 
 <h2>Sonuç</h2>
 <p>Depremle yaşamayı öğrenmek, binalarımızı çeliğin sarsılmaz gücüyle inşa etmekten geçer. Tezel Çelik olarak, hayata geçirdiğimiz her fabrikada, her hangarda ve her konutta; mühendisliğin verdiği bu güveni müşterilerimize taahhüt ediyoruz. Çelik yapı, geleceğe atılan en sağlam imzadır.</p>`,
@@ -333,168 +447,139 @@ export const blogPosts: BlogPost[] = [
     image: celikDepremDayaniklilikImg.src,
   },
   {
-    slug: "sismik-izolatorler-ve-celik-yapilar-sarsintiya-karsi-aktif-koruma",
-    title:
-      "Sismik İzolatörler ve Çelik Yapılar: Sarsıntıya Karşı Aktif Koruma",
+    slug: "celik-yaya-gecis-kopru-projeleri-sehirleri-baglayan-estetik",
+    title: "Şehirleri Bağlayan Estetik: Çelik Yaya Geçiş Köprüleri",
     excerpt:
-      "Deprem güvenliğinde yeni nesil yaklaşım, yapının yıkılmamasından çok, sarsıntıyı içeriye almamaya odaklanır. Sismik izolatörler ile çelik konstrüksiyonun birleşimi, binayı zeminden kısmen ayırarak deprem enerjisini binaya ulaşmadan sönümleyen aktif bir koruma kalkanı sunar. [...]",
+      "Yoğun trafikli yollarda, demiryolu ve nehir gibi engeller üzerinde güvenli ve kesintisiz yaya ulaşımı sağlamak için çelik yaya geçiş köprüleri en ideal çözümdür. Dayanıklılık, hafiflik ve mimari estetik bu yapılarda bir araya gelir.",
     metaDescription:
-      "Sismik izolatör nedir, çelik yapılarda nasıl çalışır? Sarsıntıyı zeminde sönümleyen izolatör sistemleriyle deprem güvenliği ve aktif koruma yaklaşımı.",
-    imageAlt:
-      "Sismik İzolatör ve Çelik Yapı - Temel ile Kolon Arasında Deprem İzolatörü - Tezel Çelik",
-    content: `Deprem güvenliği denildiğinde akla ilk gelen genellikle yapının yıkılmamasıdır. Modern mühendislikte ise hedef artık sadece "yıkılmamak" değil, sarsıntının enerjisini yapıya almadan zeminde sönümlemektir. Sismik izolatörler ve çelik konstrüksiyon birlikte kullanıldığında, bina zeminden kontrollü biçimde ayrılarak deprem anında adeta kendi güvenlik kabuğunun içinde hareket eder.`,
-    contentHtml: `<p>Deprem güvenliği denildiğinde akla ilk gelen genellikle yapının yıkılmamasıdır. Modern mühendislikte ise hedef artık sadece "yıkılmamak" değil, sarsıntının enerjisini yapıya almadan zeminde sönümlemektir. <strong>Sismik izolatör</strong> ve <strong>çelik konstrüksiyon</strong> birlikteliği, binayı zeminden kontrollü biçimde ayırarak deprem anında adeta kendi güvenlik kabuğunun içinde hareket etmesini sağlar.</p>
+      "Çelik yaya üst geçit ve yaya köprüsü projeleri ile şehir içi ulaşımı güvenli hale getirin. Çelik konstrüksiyon yaya köprüsü imalatı, üst geçit modelleri ve modern tasarım çözümleri Tezel Çelik güvencesiyle.",
+    imageAlt: "Gece Aydınlatmalı Çelik Yaya Geçiş Köprüsü - Tezel Çelik Projesi",
+    content: `Giderek hızlanan şehir hayatında, yaya güvenliğini sağlamak ve ulaşımı kesintisiz hale getirmek modern şehirciliğin en önemli önceliklerinden biridir. Yoğun trafik akışının olduğu yollarda veya nehir, demiryolu gibi doğal ve yapay engellerin üzerinden güvenli geçiş imkanı sunan çelik yaya köprüleri, dayanıklılığı ve mimari esnekliği ile en ideal çözümler arasındadır.`,
+    contentHtml: `<p>Giderek hızlanan şehir hayatında, yaya güvenliğini sağlamak ve ulaşımı kesintisiz hale getirmek modern şehirciliğin en önemli önceliklerinden biridir. Yoğun trafik akışının olduğu yollarda veya nehir, demiryolu gibi doğal/yapay engellerin üzerinden güvenli geçiş imkânı sunan <strong>çelik yaya geçiş köprüleri</strong>, hem dayanıklılığı hem de mimari esnekliği ile en ideal çözümdür. Tezel Çelik olarak, sadece iki noktayı birbirine bağlamıyor; emniyetli, uzun ömürlü ve estetik yaya köprüleri inşa ediyoruz.</p>
 
-<h2>Sismik izolatör nedir, yapıyı nasıl korur?</h2>
-<p>Sismik izolatör; temel ile üst yapı arasına yerleştirilen, deprem dalgalarının binaya doğrudan geçişini engelleyen özel bir taşıyıcı elemandır.</p>
+<h2>Neden Çelik Yaya Köprüsü?</h2>
+<p>Yaya köprülerinde <strong>çelik konstrüksiyon</strong> tercih edilmesinin pek çok kritik sebebi vardır:</p>
 <ul>
-<li><strong>Bağlantı kesme:</strong> Zeminin ani ve sert hareketi, izolatör sayesinde üst yapıya olduğu gibi aktarılmaz.</li>
-<li><strong>Enerji sönümleme:</strong> Çeliğin sünek (esnek) yapısı ile izolatörün hareket kabiliyeti birleştiğinde, deprem enerjisinin çok büyük bir kısmı yapıya ulaşmadan sönümlenir.</li>
-<li><strong>Konfor ve güvenlik:</strong> Sadece taşıyıcı sistem değil, bina içindeki makineler, mobilyalar ve insanlar sarsıntıyı minimum düzeyde hisseder.</li>
+  <li><strong>Geniş açıklık kabiliyeti:</strong> Çelik, yüksek mukavemeti sayesinde çok uzun mesafeleri minimum ara destekle geçebilir. Bu, altındaki trafik akışını bozmadan geniş yolların, demiryollarının veya vadilerin üzerine köprü inşa etmeyi sağlar.</li>
+  <li><strong>Hızlı ve modüler montaj:</strong> Köprü bileşenleri fabrikada üretilir, şantiyede sadece montaj yapılır. Böylece yol kapatma süreleri minimuma iner, şehir trafiği aksamadan projeler tamamlanır.</li>
+  <li><strong>Hafiflik:</strong> Betonarme köprülere göre çok daha hafif olan çelik yapılar, zemin iyileştirme maliyetlerini düşürür ve deprem yüklerine karşı daha avantajlıdır.</li>
 </ul>
 
-<h2>Çelik konstrüksiyon ve izolatör uyumu</h2>
-<p>Betonarme yapılarda yüksek kütle nedeniyle izolatör uygulamaları daha zor ve maliyetliyken, hafifliği ile öne çıkan çelik yapılar bu teknoloji için ideal bir zemin sunar.</p>
+<h2>Tasarımda Fonksiyonellik ve Estetik</h2>
+<p>Bir yaya köprüsü yalnızca bir geçiş yolu değil, aynı zamanda bulunduğu bölgenin simgesi olabilir.</p>
 <ul>
-<li><strong>Hafiflik avantajı:</strong> Çelik yapının düşük ağırlığı, izolatörlerin çok daha verimli çalışmasını sağlar.</li>
-<li><strong>Esnek birleşimler:</strong> Çelik kolon-izolatör bağlantıları, yüksek dayanımlı cıvatalar ve özel kaynak detaylarıyla milimetrik olarak kurgulanır.</li>
-<li><strong>Kesintisiz kullanım:</strong> Deprem sonrası yapıda neredeyse hiç hasar oluşmadığı için fabrika, tesis veya konut kullanımı kesintisiz devam edebilir.</li>
+  <li><strong>Engelsiz erişim:</strong> Tasarımlarımızda engelli, yaşlı ve bebek arabası kullanan vatandaşların konforu için asansör ve rampa sistemlerini standartlara uygun şekilde entegre ediyoruz.</li>
+  <li><strong>Görsel çeşitlilik:</strong> Kafes sistem (truss), kemerli yapılar veya modern gergili (cable-stayed) sistemlerle çevrenin mimari dokusuna uyumlu, güçlü bir siluet oluşturan çözümler sunuyoruz.</li>
+  <li><strong>Zemin seçenekleri:</strong> Kaymaz özellikli metal ızgaralar, epoksi kaplamalar veya ahşap detaylarla yürüyüş konforunu ve estetiği bir araya getiriyoruz.</li>
 </ul>
 
-<h2>Hangi projeler için kritik?</h2>
-<p>Sismik izolatörlü çelik yapılar özellikle şu projelerde stratejik önem taşır:</p>
+<h2>Mühendislik ve Güvenlik Standartları</h2>
+<p>Yaya köprüleri kendi ağırlıklarının yanı sıra rüzgâr yükü, kar yükü ve yoğun insan trafiğinin oluşturduğu dinamik yükleri de güvenle taşımak zorundadır.</p>
 <ul>
-<li><strong>Hassas üretim tesisleri:</strong> Makine kalibrasyonunun bozulmaması gereken sanayi yapıları.</li>
-<li><strong>Veri merkezleri:</strong> Sarsıntı kaynaklı kesinti ve ekipman hasarının kabul edilemeyeceği data center binaları.</li>
-<li><strong>Lüks konut projeleri:</strong> Yalnızca güvenliği değil, sarsıntısız bir yaşam konforunu hedefleyen üst segment konutlar.</li>
+  <li><strong>Vibrasyon analizi:</strong> Çelik köprülerde yayaların yürümesiyle oluşabilecek sallantıları kontrol altına almak için hassas statik ve dinamik analizler yapıyoruz.</li>
+  <li><strong>Korozyon koruması:</strong> Dış mekâna açık olan bu yapıları sıcak daldırma galvaniz, epoksi boya veya özel koruyucu kaplamalarla paslanmaya karşı uzun ömürlü hale getiriyoruz.</li>
+  <li><strong>Aydınlatma entegrasyonu:</strong> Gece güvenliğini sağlamak için estetik ve enerji verimli LED aydınlatma sistemlerini tasarıma dahil ediyoruz.</li>
 </ul>
 
-<h2>Sonuç: Depremi yapının dışına almak</h2>
-<p>Tezel Çelik olarak, çelik konstrüksiyonun esnekliğini sismik izolatör teknolojisiyle birleştirerek projelerinizi sadece "sağlam" değil, aynı zamanda "sarsıntıya karşı aktif korumalı" hale getiriyoruz. Bireysel güvenlik çözümleriyle ilgilenenler için, <a href="/blog/deprem-kabini-rehberi-enkaz-altinda-hayatta-kalmanin-bilimsel-yolu">Deprem Kabini Rehberi</a> yazımıza da göz atmanızı öneririz.</p>`,
-    date: "2026-02-23",
+<h2>Tezel Çelik ile Güvenli Geçişler</h2>
+<p>Projelendirmeden montaja kadar her aşamada uluslararası standartlara bağlı kalarak; belediyeler, organize sanayi bölgeleri ve özel projeler için anahtar teslim <strong>çelik yaya üst geçit</strong> çözümleri üretiyoruz. Üst geçitlerimizde kullanılan asansör ve taşıyıcı sistemler hakkında daha fazla bilgi için <a href="/blog/asansor-bolme-celikleri-ve-tasiyici-sistemler-guvenli-dikey-tasimacilik">Asansör Bölme Çelikleri</a> yazımıza da göz atabilirsiniz. Detaylı bilgi ve teklif için <a href="/contact" style="color: #FF5A3C; font-weight: 600; text-decoration: none;">bizimle iletişime geçebilirsiniz.</a></p>`,
+    date: "2026-02-24",
     image: sismikIzaImg.src,
   },
   {
-    slug: "kumlama-nedir-celik-sektorunde-neden-kullanilir",
-    title: "Kumlama Nedir ve Çelik Sektöründe Neden Kullanılır?",
+    slug: "celik-merdiven-sistemleri-dayaniklilik-guvenlik-ve-modern-tasarim",
+    title:
+      "Çelik Merdiven Sistemleri: Dayanıklılık, Güvenlik ve Modern Tasarımın Buluştuğu Nokta",
     excerpt:
-      "Çelik sektöründe ürün kalitesi yalnızca kullanılan ham maddenin özellikleriyle değil, üretim sürecinde uygulanan yüzey hazırlama işlemleriyle de doğrudan ilişkilidir. Özellikle sanayi uygulamalarında çeliğin kaplama, boyama veya [...]",
+      "Çelik merdivenler, geleneksel betonarme merdivenlerin kaba ve ağır görüntüsünün aksine; hafifliği, zarafeti ve yüksek dayanımı ile modern mimarinin vazgeçilmez bir parçası haline gelmiştir. Hem endüstriyel tesislerde hem de estetik öncelikli yaşam alanlarında ideal çözümler sunar.",
     metaDescription:
-      "Çelik yapıların ömrünü uzatan kumlama işlemi nedir? Kumlama standartları ve çelik sektöründeki önemi hakkında detaylı bilgi.",
-    imageAlt: "Tezel Çelik Kumlama Uygulaması - Çelik Konstrüksiyon Kumlama İşlemi",
-    content: `Çelik sektöründe ürün kalitesi yalnızca kullanılan ham maddenin özellikleriyle değil, üretim sürecinde uygulanan yüzey hazırlama işlemleriyle de doğrudan ilişkilidir.`,
-    contentHtml: `<p>Çelik, modern mimarinin ve endüstriyel devrimin en temel yapı taşıdır. Ancak en güçlü çelik konstrüksiyon projeleri bile, doğru yüzey hazırlığı yapılmadığında zamanın ve doğanın yıpratıcı etkilerine yenik düşebilir. İşte bu noktada devreye giren <strong>kumlama</strong> işlemi, çeliğin ömrünü on yıllarca uzatan, estetik ve güvenliği bir araya getiren en kritik süreçtir.</p>
+      "Çelik merdiven modelleri, endüstriyel merdiven imalatı, çelik yangın merdiveni ve modern döner merdiven tasarımları. Dayanıklı, güvenli ve estetik çelik merdiven sistemleri için Tezel Çelik çözümleri.",
+    imageAlt:
+      "Modern Çelik Merdiven - Ahşap Basamaklı Loft Tarzı Çelik Merdiven Tasarımı",
+    content: `Bir yapının katları arasındaki bağlantıyı sağlayan merdivenler, artık sadece işlevsel birer geçiş elemanı değil, yapının mimari karakterini belirleyen önemli tasarım unsurlarıdır. Çelik merdivenler; hafiflik, zarafet ve sarsılmaz dayanıklılığı bir araya getirerek modern mimarinin vazgeçilmez unsurlarından biri haline gelmiştir.`,
+    contentHtml: `<p>Bir yapının katları arasındaki bağlantıyı sağlayan merdivenler, artık sadece işlevsel bir araç değil, yapının mimari karakterini belirleyen önemli bir tasarım unsurudur. <strong>Çelik merdivenler</strong>, geleneksel betonarme merdivenlerin kaba ve ağır görüntüsünün aksine; hafifliği, zarafeti ve sarsılmaz dayanıklılığı ile modern mimarinin vazgeçilmezi haline gelmiştir. Tezel Çelik olarak, hem endüstriyel tesisler hem de estetik öncelikli yaşam alanları için yüksek standartlarda çelik merdiven çözümleri sunuyoruz.</p>
 
-<h2>Kumlama (Sandblasting) Nedir?</h2>
-<p>Teknik tanımıyla kumlama; metal yüzeylerin zamanla maruz kaldığı <strong>korozyon</strong>, pas, hadde pulları (mill scale), yağ ve eski boya kalıntılarından mekanik yolla temizlenmesi işlemidir. Bu işlem, yüksek basınçlı hava yardımıyla çeşitli aşındırıcı granüllerin (çelik grit, cam küreciği, kuvars kumu vb.) metal yüzeyine yüksek hızla çarptırılması prensibine dayanır.</p>
+<h2>Neden Çelik Merdiven Tercih Edilmeli?</h2>
+<p>Çelik, merdiven tasarımında mimarlara ve mühendislere benzersiz avantajlar sunar:</p>
+<ul>
+  <li><strong>Yerden tasarruf:</strong> Çelik, yüksek mukavemeti sayesinde çok daha ince ve zarif taşıyıcılarla inşa edilebilir. Bu da dar alanlarda daha ferah ve kullanışlı çözümler yaratmanızı sağlar.</li>
+  <li><strong>Hızlı ve temiz kurulum:</strong> Yerinde kalıp ve beton dökme işlemi gerektirmez. Fabrikada hazırlanan parçalar, şantiyede kısa sürede monte edilir; etrafı kirletmez ve inşaat sürecini hızlandırır.</li>
+  <li><strong>Esnek tasarım:</strong> Düz, döner (spiral), L tipi veya U tipi gibi pek çok farklı geometride üretilebilir. Çelik, hayal gücünüzdeki hemen her forma uyum sağlar.</li>
+  <li><strong>Uzun ömür:</strong> Yanmaya, aşınmaya ve ağır yüklere karşı betonarmeden çok daha dirençlidir.</li>
+</ul>
 
-<h2>Çelik Sektöründe Neden Kumlama Yapılmalıdır?</h2>
-<p>Kumlama, sadece bir "temizlik" aşaması değil, bir mühendislik zorunluluğudur. İşte nedenleri:</p>
+<h2>Kullanım Alanlarına Göre Çelik Merdiven Türleri</h2>
+<p>Kullanım amacına göre merdiven tasarımlarımızı optimize ediyoruz:</p>
 
-<h3>1. Korozyonla Mücadele ve Uzun Ömür</h3>
-<p>Çelik, doğası gereği oksijen ve nemle temas ettiğinde kimyasal bir reaksiyona girerek oksitlenir (paslanır). Kumlama, metalin gözeneklerine kadar işlemiş olan bu pası söküp atar. Temizlenmiş bir metal yüzeyi, doğru kaplama ile birleştiğinde çürüme riskini sıfıra indirir.</p>
+<h3>Endüstriyel tip çelik merdivenler</h3>
+<p>Fabrikalar, depolar ve makine dairesi geçişleri için tasarlanan bu merdivenlerde öncelik maksimum güvenlik ve taşıma kapasitesidir. Genellikle kaymaz metal ızgara veya gözlü sac basamaklar kullanılır; korkuluk sistemleri ise iş güvenliği yönetmeliklerine tam uyumlu olarak tasarlanır.</p>
 
-<h3>2. Boya ve Kaplama İçin İdeal Zemin (Anchoring Profile)</h3>
-<p>Pürüzsüz görünen bir çelik yüzeyine boya yaparsanız, o boya bir süre sonra pul pul dökülür. Kumlama, metal yüzeyinde "pürüzlülük profili" (anchor profile) oluşturur. Mikroskobik düzeydeki bu pürüzler, boyanın metale mekanik olarak kilitlenmesini sağlar. Bu sayede <strong>boya ömrü</strong> 2-3 kat artar.</p>
+<h3>Mimari ve dekoratif çelik merdivenler</h3>
+<p>Ofisler, showroomlar ve dubleks/loft daireler için estetiğin ön planda olduğu modellerdir. Çelik iskelet; cam, ahşap veya taş basamaklarla kombinlenerek mekanın havasını tamamen değiştirir. Siyah elektrostatik toz boyalı gövde ile doğal ahşap basamakların birlikteliği, son yılların en popüler tasarım trendlerindendir.</p>
 
-<h3>3. Yapısal Hataların Tespiti</h3>
-<p>Kumlama, çeliğin üzerindeki tüm örttüğü tabakaları kaldırarak "çıplak metali" ortaya çıkarır. Bu işlem sırasında kaynaklardaki gözenekler, döküm hataları veya gizli çatlaklar görünür hale gelir. Projenin güvenliği için kumlama, doğal bir kalite kontrol sürecidir.</p>
+<h3>Yangın merdivenleri ve güvenlik çıkışları</h3>
+<p>Acil durumlarda hayati önem taşıyan bu merdivenler, ulusal ve uluslararası <strong>yangın yönetmeliklerine</strong> tam uyumlu, ısıya dayanıklı ve hızlı tahliye kapasiteli olacak şekilde projelendirilir. Geniş basamaklar, kaymaz yüzeyler ve doğru konumlandırılmış sahanlıklar ile panik anında dahi güvenli kullanım sağlar.</p>
 
-<h2>Dünya Standartlarında Kumlama Dereceleri (ISO 8501-1)</h2>
-<p>Bir Senior Developer projede nasıl standartlara bağlı kalıyorsa, kumlama operatörü de SA standartlarına uymalıdır. Tezel Çelik olarak projelerimizde şu standartları gözetiyoruz:</p>
+<h2>Güvenlik ve Mühendislik Standartları</h2>
+<p>Bir merdiven ne kadar şık olursa olsun, mühendislik hesabı doğru yapılmadığında risklidir. Tezel Çelik olarak şu kriterleri asla göz ardı etmiyoruz:</p>
+<ul>
+  <li><strong>Statik analiz:</strong> Merdivenin taşıyacağı maksimum yük miktarı hesaplanarak en uygun profil seçimi yapılır; titreşim ve esneme değerleri kontrol altına alınır.</li>
+  <li><strong>Ergonomi:</strong> Basamak yüksekliği ve genişliği, yorulmadan ve güvenle çıkılabilecek en ideal ölçülerde, insan anatomisine uygun şekilde tasarlanır.</li>
+  <li><strong>Korkuluk ve küpeşte entegrasyonu:</strong> Düşmeleri önleyen, çocuk güvenliğine uygun ve sağlam tutuş sağlayan korkuluk sistemleri ile merdiven tamamlanır.</li>
+</ul>
 
-<p><strong>SA 1 (Hafif Kumlama)</strong>: Sadece gevşek pas ve yabancı maddeler temizlenir.</p>
-
-<p><strong>SA 2 (Ticari Kumlama)</strong>: Yüzeyin büyük çoğunluğu temizlenir, ancak hafif gölgelenmeler kalabilir.</p>
-
-<p><strong>SA 2.5 (Çok İyi Temizlik)</strong>: Sektörün altın standartıdır. Metal yüzeyi neredeyse tamamen temizlenir, sadece çok hafif lekeler kalabilir. Profesyonel boya uygulamaları için bu derece şarttır.</p>
-
-<p><strong>SA 3 (Beyaz Metal)</strong>: Metalin tamamen orijinal rengine (beyaz/gri) döndüğü, en üst düzey kumlama seviyesidir. Genellikle nükleer santraller veya aşırı korozif ortamlar için tercih edilir.</p>
-
-<h2>Kumlama Sonrası Kritik Adım: Hemen Boyama!</h2>
-<p>Kumlama yapılan çelik, en savunmasız halindedir. Havdaki nemle saniyeler içinde tekrar oksitlenmeye başlayabilir. Bu yüzden senior bir işleyişte, kumlama biter bitmez (genellikle ilk 4 saat içinde) "astar" (primer) boyası uygulanmalıdır.</p>
-
-<h2>Sonuç</h2>
-<p>Tezel Çelik olarak, hayata geçirdiğimiz her çelik konstrüksiyon projesinde kumlama aşamasını bir kalite imzası olarak görüyoruz. Doğru kumlama, projenizin sadece bugün değil, 50 yıl sonra da dimdik ayakta kalmasını sağlar.</p>`,
-    date: "2026-02-12",
-    image: kumlamaNedirImg.src,
+<h2>Tezel Çelik ile Kişiselleştirilmiş Çözümler</h2>
+<p>İster eviniz için minimal bir döner merdiven, ister fabrikanız için ağır hizmet tipi bir geçiş merdiveni olsun; projenize özel ölçü alıyor, 3D tasarım desteği sunuyor ve profesyonel montaj ekibimizle anahtar teslim çözümler üretiyoruz. Yapılarınıza değer katan, güvenli ve estetik <strong>çelik merdiven sistemleri</strong> için <a href="/contact" style="color: #FF5A3C; font-weight: 600; text-decoration: none;">bizimle iletişime geçebilir, projelerinize özel teklif talep edebilirsiniz.</a></p>`,
+    date: "2026-02-24",
+    image: celikKonstruksiyonImg.src,
   },
   {
-    slug: "nervurlu-demir-ve-yapi-guvenligi-neden-hayati-onem-tasir",
-    title: "Nervürlü Demir ve Yapı Güvenliği: Neden Hayati Önem Taşır?",
+    slug: "celik-korkuluk-ve-kupeste-sistemleri-guvenligin-en-sik-hali",
+    title: "Çelik Korkuluk ve Küpeşte Sistemleri: Güvenliğin En Şık Hali",
     excerpt:
-      "İnşaat sektöründe bir yapının sarsılmaz gücü, temelinde ve taşıyıcı sisteminde kullanılan malzemenin kalitesine bağlıdır. Özellikle betonarme ve çelik konstrüksiyonun bir arada kullanıldığı projelerde, betonun içindeki demirin performansı güvenliğin anahtarıdır. [...]",
+      "Merdiven, balkon, teras ve platformlarda kullanıcı güvenliğini sağlayan en kritik unsur korkuluk sistemleridir. Çelik korkuluklar, yüksek dayanıklılığı minimalist ve modern tasarımlarla birleştirerek hem endüstriyel alanlarda hem de mimari projelerde en çok tercih edilen güvenlik çözümüdür.",
     metaDescription:
-      "Nervürlü demir nedir ve yapı güvenliğinde neden kullanılır? Deprem dayanımı ve beton-demir kenetlenmesi hakkında profesyonel rehber.",
+      "Çelik korkuluk ve küpeşte sistemleri ile merdiven, balkon ve platformlarda güvenliği artırın. Paslanmaz çelik korkuluk modelleri, endüstriyel emniyet korkulukları ve camlı çelik korkuluk çözümleri Tezel Çelik'te.",
     imageAlt:
-      "Nervürlü Demir ve Yapı Güvenliği - İnşaat Demiri - Tezel Çelik",
-    content: `İnşaat sektöründe bir yapının sarsılmaz gücü, temelinde ve taşıyıcı sisteminde kullanılan malzemenin kalitesine bağlıdır. Özellikle betonarme ve çelik konstrüksiyonun bir arada kullanıldığı projelerde, betonun içindeki demirin performansı güvenliğin anahtarıdır.`,
-    contentHtml: `<p>İnşaat sektöründe bir yapının sarsılmaz gücü, temelinde ve taşıyıcı sisteminde kullanılan malzemenin kalitesine bağlıdır. Özellikle betonarme ve <a href="/blog/celik-konstruksiyon-rehberi-dayaniklilik-hiz-ve-estetigin-bulustugu-nokta">çelik konstrüksiyon</a>un bir arada kullanıldığı projelerde, betonun içindeki demirin performansı güvenliğin anahtarıdır. Tezel Çelik olarak, inşaat taahhüt projelerimizde kullandığımız nervürlü demir standartlarının, bir binanın ömrünü ve deprem anındaki davranışını nasıl değiştirdiğini inceliyoruz.</p>
+      "Camlı Çelik Korkuluk ve Paslanmaz Küpeşte Sistemi - Modern Merdiven Uygulaması",
+    content: `Bir yapıda merdivenler, balkonlar, teraslar veya platformlar ne kadar sağlam olursa olsun, onları tamamlayan ve kullanıcı güvenliğini sağlayan asıl unsur korkuluk sistemleridir. Çelik korkuluklar, yüksek dayanıklılığı minimalist tasarımlarla birleştirerek hem endüstriyel alanlarda hem de modern mimaride en çok tercih edilen güvenlik çözümü haline gelmiştir.`,
+    contentHtml: `<p>Bir yapıda merdivenler, balkonlar, teraslar veya platformlar ne kadar sağlam olursa olsun, onları tamamlayan ve kullanıcı güvenliğini sağlayan asıl unsur <strong>korkuluk sistemleri</strong>dir. <strong>Çelik korkuluk ve küpeşte sistemleri</strong>, yüksek dayanıklılığı minimalist ve modern tasarımlarla birleştirerek hem endüstriyel alanlarda hem de mimari projelerde en çok tercih edilen güvenlik çözümü haline gelmiştir. Tezel Çelik olarak, sadece birer engel değil; yapınızın mimarisini destekleyen, standartlara uygun ve uzun ömürlü korkuluk sistemleri üretiyoruz.</p>
 
-<h2>Nervürlü Demir Nedir?</h2>
-<p>Geleneksel düz yüzeyli demirlerin aksine, gövdesi üzerinde dişler (çıkıntılar) bulunan inşaat demirine <strong>nervürlü demir</strong> denir. Bu dişli yapı, beton ile demir arasında bir "kenetlenme" (<strong>aderans</strong>) oluşturur. Deprem kuşağında yer alan ülkemizde, düz demir kullanımı riskli kabul edilirken, nervürlü demir kullanımı bir zorunluluktur.</p>
+<h2>Neden Çelik Korkuluk?</h2>
+<p>Korkuluk sistemlerinde malzeme seçimi hayati önem taşır. Çeliğin sunduğu avantajlar diğer malzemelerle kıyaslanamaz:</p>
+<ul>
+  <li><strong>Maksimum rijitlik:</strong> Çelik korkuluklar, darbelere ve yüksek basınç yüklerine karşı esneme yapmaz, kırılmaz. Kalabalık alanlarda tam güvenlik sağlar.</li>
+  <li><strong>Korozyon direnci:</strong> Paslanmaz çelik veya daldırma galvaniz seçenekleri sayesinde yağmur, nem ve dış etkenlere karşı yıllarca ilk günkü formunu korur.</li>
+  <li><strong>Estetik çeşitlilik:</strong> İnce profiller, halatlı geçişler veya camlı kombinasyonlar ile mekanın ışığını kesmeden şık bir görünüm sunar.</li>
+  <li><strong>Düşük bakım maliyeti:</strong> Boya ve bakım ihtiyacı beton veya ahşap korkuluklara göre çok daha düşüktür.</li>
+</ul>
 
-<h2>Yapı Güvenliğinde Nervürlü Demirin Rolü</h2>
-<p><strong>Maksimum Kenetlenme (Aderans):</strong> Nervürlü yapı, betonun demiri çok daha sıkı kavramasını sağlar. Bu sayede sarsıntı anında demirin betonun içinden sıyrılma ihtimali ortadan kalkar.</p>
+<h2>Kullanım Alanlarına Göre Korkuluk Modelleri</h2>
+<p>Kullanım amacına ve mekanın ruhuna göre farklı çözümler geliştiriyoruz:</p>
 
-<p><strong>Yüksek Çekme Dayanımı:</strong> Nervürlü demirler, düz demirlere göre çok daha yüksek çekme gerilmelerine dayanabilir. Bu, binanın esneme kapasitesini artırarak ani kırılmaların önüne geçer.</p>
+<h3>Endüstriyel güvenlik korkulukları</h3>
+<p>Fabrikalarda, depoların arakatlarında ve makine platformlarında kullanılan bu modeller, <strong>İş Sağlığı ve Güvenliği (İSG)</strong> standartlarına göre üretilir. Genellikle çift sıra emniyet şeridi ve alt kısımda malzeme düşmesini engelleyen <strong>tekmelik (toe board)</strong> detayına sahiptir.</p>
 
-<p><strong>Deprem Performansı:</strong> Modern yönetmeliklere uygun olan <strong>B420C</strong> gibi yüksek süneklik sınıfındaki nervürlü demirler, deprem dalgalarının enerjisini sönümlemek üzere tasarlanmıştır.</p>
+<h3>Mimari camlı ve halatlı korkuluklar</h3>
+<p>Modern ofisler, oteller ve konut projeleri için tasarlanan bu modellerde şıklık ön plandadır. Paslanmaz çelik dikmelerin arası temperli cam veya çelik gergi halatları ile geçilerek ferah bir görünüm elde edilir; manzara kesilmeden maksimum güvenlik sağlanır.</p>
 
-<h2>Tezel Çelik Standartları ve Kalite Kontrol</h2>
-<p>Fabrikamızda ve taahhüt projelerimizde kullanılan her bir demir çubuğu, sadece birer metal parçası değil, projenin güvenlik sigortasıdır:</p>
+<h3>Yangın merdiveni ve kaçış yolu korkulukları</h3>
+<p>Acil durum tahliye anında yüksek insan yükünü taşıyabilecek kapasitede, ısıya dayanıklı ve kesintisiz tutunma sağlayan küpeşte detaylı modellerdir. Yangın yönetmeliklerine uygun yükseklik ve dayanım kriterleriyle tasarlanır.</p>
 
-<p><strong>Sertifikalı Malzeme:</strong> Sadece TSE ve uluslararası standartlara (ISO) uygun, akma ve çekme testlerinden başarıyla geçmiş nervürlü demirler kullanılır.</p>
+<h2>Mühendislik ve Standartlar: Önce Güvenlik</h2>
+<p>Tezel Çelik olarak üretimde şu teknik kriterleri standart kabul ediyoruz:</p>
+<ul>
+  <li><strong>Yükseklik standartları:</strong> Konutlarda, iş yerlerinde ve çocukların bulunduğu alanlarda yönetmeliklerin öngördüğü minimum korkuluk yüksekliği kurallarına tam uyum sağlıyoruz.</li>
+  <li><strong>Kaynak kalitesi:</strong> Tüm birleşim noktalarında pürüzsüz ve yüksek mukavemetli kaynak işçiliği ile sarsıntısız ve uzun ömürlü bir yapı elde ediyoruz.</li>
+  <li><strong>Ergonomik küpeşteler:</strong> El ile kavrama kolaylığı sağlayan, kullanıcıyı rahatsız etmeyen pürüzsüz yüzey bitişleri ile konforlu kullanım sunuyoruz.</li>
+</ul>
 
-<p><strong>Korozyon Koruması:</strong> Şantiye sahasında demirlerin paslanmasını önlemek için depolama ve uygulama süreçleri titizlikle yönetilir.</p>
+<h2>Tezel Çelik ile Projeye Özel İmalat</h2>
+<p>Her yapının ihtiyacı farklıdır. Yerinde ölçü alımıyla başlayan sürecimiz, projenize en uygun malzemenin (paslanmaz, boyalı karbon çeliği vb.) seçimi ve profesyonel ekibimiz tarafından gerçekleştirilen titiz montajla son bulur. Merdiven projelerimizi tamamlayan korkuluk seçenekleri hakkında daha fazla bilgi için <a href="/blog/celik-merdiven-sistemleri-dayaniklilik-guvenlik-ve-modern-tasarim">Çelik Merdiven Sistemleri</a> yazımıza da göz atabilirsiniz.</p>
 
-<p><strong>Doğru Uygulama:</strong> Statik projedeki demir sıklığı ve büküm detayları, uzman mühendislerimizin denetiminde milimetrik hassasiyetle uygulanır.</p>
-
-<h2>Sonuç</h2>
-<p>Nervürlü demir, yapının görünmeyen ancak en kritik kahramanıdır. Tezel Çelik olarak, hayata geçirdiğimiz her projede en üst sınıf malzemeleri kullanarak, nesiller boyu güvenle yaşanacak yapılar inşa ediyoruz. Kaliteli malzeme ve doğru mühendislik, geleceği sarsılmaz kılar.</p>`,
-    date: "2026-02-19",
-    image: nervurDemirImg.src,
-  },
-  {
-    slug: "celige-su-verme-nedir-isil-islemle-maksimum-dayaniklilik",
-    title: "Çeliğe Su Verme Nedir? Isıl İşlemle Maksimum Dayanıklılık",
-    excerpt:
-      "Çelik konstrüksiyon projelerinde ve ağır sanayi imalatlarında malzemenin sadece \"çelik\" olması yetmez; o çeliğin projenin gerektirdiği sertlik ve esneklik dengesine sahip olması gerekir. Metalürjinin en eski ama en etkili tekniklerinden biri olan \"Çeliğe Su Verme\" (Quenching), malzemenin moleküler yapısını değiştirerek ona olağanüstü bir mukavemet kazandırır. [...]",
-    metaDescription:
-      "Çeliğe su verme (ısıl işlem) süreci nedir? Sertlik ve esneklik dengesi nasıl sağlanır? Tezel Çelik'in üretim standartları hakkında teknik rehber.",
-    imageAlt:
-      "Çeliğe Su Verme İşlemi - Isıl İşlem - Çelik Sertleştirme - Tezel Çelik",
-    content: `Çelik konstrüksiyon projelerinde ve ağır sanayi imalatlarında malzemenin sadece "çelik" olması yetmez; o çeliğin projenin gerektirdiği sertlik ve esneklik dengesine sahip olması gerekir.`,
-    contentHtml: `<p>Çelik konstrüksiyon projelerinde ve ağır sanayi imalatlarında malzemenin sadece "çelik" olması yetmez; o çeliğin projenin gerektirdiği sertlik ve esneklik dengesine sahip olması gerekir. Metalürjinin en eski ama en etkili tekniklerinden biri olan <strong>"Çeliğe Su Verme"</strong> (Quenching), malzemenin moleküler yapısını değiştirerek ona olağanüstü bir mukavemet kazandırır. Tezel Çelik olarak, üretim süreçlerimizde malzemenin karakterini belirleyen bu kritik ısıl işlem aşamalarını titizlikle yönetiyoruz.</p>
-
-<h2>Çeliğe Su Verme İşlemi Nasıl Çalışır?</h2>
-<p>Teknik olarak çeliğe su verme; metalin belirli bir kritik sıcaklığa (genellikle <strong>800°C - 950°C</strong> arası) kadar ısıtıldıktan sonra, su, yağ veya hava gibi bir ortamda aniden soğutulmasıdır. Bu şok etkisi, çeliğin içindeki atomların yerleşme şeklini değiştirerek <strong>"Martenzit"</strong> adı verilen çok sert ve dayanıklı bir kristal yapı oluşturur.</p>
-
-<h2>Neden Isıl İşlem Yapılır?</h2>
-<p><strong>Aşınma Direnci:</strong> Su verilmiş çelik, sürtünme ve darbelere karşı çok daha dirençli hale gelir. Bu durum, özellikle hareketli parçalar ve ağır yük taşıyan bağlantı elemanları için kritiktir.</p>
-
-<p><strong>Yüksek Sertlik (Hardness):</strong> Malzemenin yüzey sertliği artırılarak, dış etkenlere karşı deforme olması engellenir.</p>
-
-<p><strong>Yorulma Dayanımı:</strong> Sürekli yük altında çalışan çelik elemanların "metal yorgunluğu" yaşamasını geciktirerek yapının toplam ömrünü uzatır.</p>
-
-<h2>Kritik Aşama: Menevişleme (Tempering)</h2>
-<p>Senior bir mühendislik yaklaşımında çeliğe sadece su vermek yetmez. Su verilen çelik çok sertleşir ama aynı zamanda cam gibi kırılgan hale gelir. Bu kırılganlığı gidermek ve metale ihtiyaç duyduğu tokluğu (esnekliği) geri kazandırmak için <strong>"Menevişleme"</strong> işlemi uygulanır. Metal düşük ısılarda tekrar ısıtılarak iç gerilimleri alınır. Tezel Çelik projelerinde, deprem anında kırılmayan ama yük altında eğilmeyen o mükemmel denge bu süreçlerle kurulur.</p>
-
-<h2>Tezel Çelik Üretim Standartları</h2>
-<p>Bizim için her bir profil ve bağlantı elemanı bir mühendislik projesidir. Isıl işlem süreçlerimizde:</p>
-
-<p><strong>Hassas Isı Kontrolü:</strong> Metalin her noktasının eşit ısınması sağlanır.</p>
-
-<p><strong>Kullanım Alanına Göre Özelleştirme:</strong> Projenin ihtiyacına göre (sertlik mi yoksa esneklik mi ön planda?) su verme parametreleri ayarlanır.</p>
-
-<p><strong>Kalite Kontrol:</strong> İşlem sonrası sertlik testleri (Rockwell, Brinell vb.) yapılarak standartlara uygunluk teyit edilir.</p>
-
-<p><em>Tezel Çelik olarak tüm üretim süreçlerimizde uluslararası standartlara (ASTM, EN, ISO) uygun ısıl işlem metodları kullanmaktayız.</em></p>
-
-<h2>Sonuç</h2>
-<p>Çeliğe su verme, ham metale bir "ruh" kazandırma işlemidir. Tezel Çelik olarak, bu teknik derinliğimizle inşa ettiğimiz yapıların sadece bugünün değil, geleceğin ağır şartlarına da göğüs germesini sağlıyoruz. Malzemenin dilinden anlıyor, geleceği çelikle güçlendiriyoruz.</p>`,
-    date: "2026-02-20",
-    image: celikSuVermeImg.src,
+<p>İster fabrika içi sarı boyalı bir güvenlik korkuluğu, ister modern ofis içi camlı korkuluk olsun; geniş ürün yelpazemizle projelerinize en uygun <strong>çelik korkuluk ve küpeşte</strong> çözümlerini sunuyoruz. Detaylı bilgi ve teklif için <a href="/contact" style="color: #FF5A3C; font-weight: 600; text-decoration: none;">bizimle iletişime geçebilirsiniz.</a></p>`,
+    date: "2026-02-24",
+    image: celikKonstruksiyonImg.src,
   },
 ];
 
