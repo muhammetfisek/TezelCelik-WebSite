@@ -116,12 +116,7 @@ export default function SteelBuildingsPage() {
                 </h2>
                 <div className="mt-3 h-1 w-24 rounded-full bg-[#FF5A3C]" />
                 <p className="mt-6 text-base leading-relaxed text-gray-700">
-                  Çelik binalar; geniş açıklık, yüksek taşıma kapasitesi ve hızlı devreye
-                  alma gerektiren projeler için en akılcı yapı sistemidir. Hafif taşıyıcı
-                  iskelet sayesinde deprem yüklerini azaltırken, vinç yolları ve raf
-                  sistemleri için ideal bir altyapı oluşturur. Tezel Çelik olarak
-                  projelendirmeden montaja kadar tüm süreci tek elden ve mühendislik
-                  disipliniyle yönetiyoruz.
+                Geniş açıklık ve yüksek taşıma kapasitesi gerektiren endüstriyel projelerde, statik hesaplardan anahtar teslim montaja kadar tüm süreci mühendislik disipliniyle yönetiyoruz. Çelik binalarımız, deprem yüklerini minimize eden hafif iskelet yapısıyla maksimum güvenlik sunarken; vinç yolları ve ağır yük raf sistemlerine tam uyumlu altyapısı sayesinde operasyonel verimliliğinizi en üst seviyeye taşır.
                 </p>
 
                 <div className="mt-8 grid gap-5 sm:grid-cols-2">
@@ -131,9 +126,7 @@ export default function SteelBuildingsPage() {
                     </h3>
                     <div className="mt-2 h-0.5 w-10 rounded-full bg-[#FF5A3C]" />
                     <p className="mt-3 text-sm leading-relaxed text-gray-700">
-                      Statik hesap, detay çizim ve vinç yolları dahil endüstriyel
-                      projeler için net ve kontrol edilebilir bir proje kurgusu
-                      oluşturuyoruz.
+                    Statik hesap, detay çizim ve vinç yolları dahil endüstriyel projeler için deprem yönetmeliğine tam uyumlu, net ve kontrol edilebilir bir yapı kurgusu oluşturuyoruz.
                     </p>
                   </div>
                   <div className="rounded-2xl bg-[#F9FAFB] px-5 py-5 shadow-sm">
@@ -142,9 +135,7 @@ export default function SteelBuildingsPage() {
                     </h3>
                     <div className="mt-2 h-0.5 w-10 rounded-full bg-[#FF5A3C]" />
                     <p className="mt-3 text-sm leading-relaxed text-gray-700">
-                      Fabrikada kesim, kaynak, kumlama ve boya; sahada ise planlanan
-                      takvime uygun güvenli montajla projelerinizi eksiksiz teslim
-                      ediyoruz.
+                    Sertifikalı malzemelerle fabrikada hassas üretim; sahada ise planlanan takvime uygun, cıvatalı birleşim avantajıyla hızlı ve güvenli bina kurulumu gerçekleştiriyoruz.
                     </p>
                   </div>
                 </div>
@@ -190,28 +181,29 @@ export default function SteelBuildingsPage() {
               {/* 3. Bölüm: Teknik Detay ve Neden Biz */}
               <section className="mt-16 sm:mt-18 rounded-3xl bg-[#F9FAFB] px-6 py-7 sm:px-8 sm:py-8">
                 <h3 className="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
-                  Teknik Avantajlar ve Neden Tezel Çelik?
+                Teknik Avantajlar ve Mühendislik Yaklaşımımız
                 </h3>
                 <div className="about-title-underline mt-3 h-1 w-20 bg-[#FF5A3C]" />
-                <p className="mt-4 max-w-3xl text-base leading-relaxed text-gray-700">
-                  Çelik bina projelerinde; tasarımdan montaja kadar her adımı mühendislik
-                  disipliniyle planlıyor, sahada sürprizleri en aza indiriyoruz.
-                </p>
                 <ul className="mt-6 max-w-3xl list-disc space-y-3 pl-5 text-base leading-relaxed text-gray-700">
-                  <li>Milimetrik montaj hassasiyeti sağlayan detaylı atölye imalatı</li>
                   <li>
-                    Deprem ve çelik yapı yönetmeliklerine tam uyumlu statik hesaplar
+                    <span className="font-semibold text-[#FF5A3C]">Sismik Güvenlik ve Süneklik:</span> Deprem yüklerini sönümleyen yüksek sünekliğe sahip
+                    taşıyıcı sistemlerle yapı güvenliğini maksimize ediyoruz.
                   </li>
                   <li>
-                    Geniş ve kolonsuz iç mekânlar ile operasyonel verimlilik sağlayan
-                    taşıyıcı sistem tasarımı
+                    <span className="font-semibold text-[#FF5A3C]">Endüstriyel Entegrasyon:</span> Projenize özel vinç yolları ve ağır yük raf sistemlerine tam
+                    uyumlu statik projeler üretiyoruz.
                   </li>
                   <li>
-                    Hızlı kurulum, kısa şantiye süresi ve sahada minimum iş duruşu
+                    <span className="font-semibold text-[#FF5A3C]">Maksimum Hacim Verimliliği:</span> Geniş açıklıklı tasarım sayesinde iç mekânda minimum kolon
+                    kullanımıyla operasyonel alanınızı optimize ediyoruz.
                   </li>
                   <li>
-                    Kumlama ve boya/galvaniz uygulamalarıyla uzun ömürlü korozyon
-                    dayanımı
+                    <span className="font-semibold text-[#FF5A3C]">Korozyon Dayanımı:</span> Kumlama ve epoksi boya uygulamalarıyla endüstriyel tesislerin zorlu
+                    şartlarına karşı uzun ömürlü koruma sağlıyoruz.
+                  </li>
+                  <li>
+                    <span className="font-semibold text-[#FF5A3C]">Hızlı Yatırım Dönüşü:</span> Betonarmeye oranla %40 daha hızlı kurulum sayesinde tesisinizin bir
+                    an önce faaliyete geçmesini sağlıyoruz.
                   </li>
                 </ul>
               </section>
