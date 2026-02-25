@@ -105,10 +105,9 @@ export function ProjectLightboxGrid({ items }: ProjectLightboxGridProps) {
               />
             </div>
             <div className="p-4">
-              <h4 className="text-sm font-semibold text-gray-900">{item.title}</h4>
-              <p className="mt-1 text-xs font-medium text-gray-500">
-                Büyütmek için tıklayın
-              </p>
+              <h4 className="text-sm font-bold text-gray-900 transition-colors duration-200 group-hover:text-[#FF5A3C]">
+                {item.title}
+              </h4>
             </div>
           </button>
         ))}
