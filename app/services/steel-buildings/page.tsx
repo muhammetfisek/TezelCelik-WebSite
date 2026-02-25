@@ -4,6 +4,7 @@ import Link from "next/link";
 import arkaplanNav from "@/images/arkaplan_faaliyet.png";
 import "../../about/about.css";
 import { ServicesSidebar } from "@/app/components/ServicesSidebar/ServicesSidebar";
+import { ProjectLightboxGrid } from "../../components/ProjectLightboxGrid/ProjectLightboxGrid";
 import { getServicePageData, type ServiceId } from "@/app/lib/service-page-data";
 import { getBlogPost } from "@/app/lib/blog-data";
 
@@ -165,32 +166,17 @@ export default function SteelBuildingsPage() {
                      tıklayınız.
                   </Link>
                 </p>
-                <div className="mt-6 grid gap-6 sm:grid-cols-2">
-                  {[
+                <ProjectLightboxGrid
+                  items={[
                     "Endüstriyel Üretim Tesisi Çelik Bina",
                     "Lojistik Depo ve Dağıtım Merkezi",
                     "Showroom ve İdari Ofis Binası",
                     "Yüksek Raflı Depo Çelik Yapısı",
-                  ].map((title) => (
-                    <div
-                      key={title}
-                      className="overflow-hidden rounded-2xl border border-gray-200/80 bg-white shadow-sm"
-                    >
-                      <div className="relative h-52 w-full overflow-hidden">
-                        <Image
-                          src={arkaplanNav.src}
-                          alt={title}
-                          fill
-                          sizes="(min-width: 1024px) 320px, 100vw"
-                          className="object-cover"
-                        />
-                      </div>
-                      <div className="p-4">
-                        <h4 className="text-sm font-semibold text-gray-900">{title}</h4>
-                      </div>
-                    </div>
-                  ))}
-                </div>
+                  ].map((title) => ({
+                    title,
+                    imageSrc: arkaplanNav.src,
+                  }))}
+                />
                 <div className="mt-8">
                   <Link
                     href="/projects"
