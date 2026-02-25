@@ -157,7 +157,13 @@ export default function SteelBuildingsPage() {
                 <div className="about-title-underline mt-3 h-1 w-20 bg-[#FF5A3C]" />
                 <p className="mt-4 text-base leading-relaxed text-gray-700">
                   Çelik bina projelerinde farklı sektörlerde hayata geçirdiğimiz
-                  uygulamalardan bazı örnekler:
+                  uygulamalardan bazı örnekler. Tüm projelerimizi incelemek için{" "}
+                  <Link
+                    href="/projects"
+                    className="font-semibold text-[#FF5A3C] hover:underline"
+                  >
+                     tıklayınız.
+                  </Link>
                 </p>
                 <div className="mt-6 grid gap-6 sm:grid-cols-2">
                   {[

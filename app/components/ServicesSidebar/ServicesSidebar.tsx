@@ -26,7 +26,7 @@ interface ServicesSidebarProps {
 
 export function ServicesSidebar({ currentHref }: ServicesSidebarProps) {
   return (
-    <aside className="mt-10 w-full lg:mt-0 lg:max-w-xs lg:ml-auto lg:translate-x-28">
+    <aside className="mt-10 w-full lg:mt-0 lg:max-w-xs lg:ml-auto lg:translate-x-22">
       <div className="sticky top-[120px] rounded-2xl border border-gray-200/80 bg-white shadow-md shadow-black/5 overflow-hidden">
         {/* Başlık */}
         <div className="bg-[#FF5A3C] px-5 py-4">
