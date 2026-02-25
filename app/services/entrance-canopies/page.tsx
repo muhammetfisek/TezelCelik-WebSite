@@ -4,6 +4,7 @@ import Link from "next/link";
 import arkaplanNav from "@/images/arkaplan_faaliyet.png";
 import "../../about/about.css";
 import { ServicesSidebar } from "@/app/components/ServicesSidebar/ServicesSidebar";
+import { ProjectLightboxGrid } from "../../components/ProjectLightboxGrid/ProjectLightboxGrid";
 import { getServicePageData, type ServiceId } from "@/app/lib/service-page-data";
 import { getBlogPost } from "@/app/lib/blog-data";
 
@@ -32,7 +33,7 @@ function RelatedBlogsSection({ serviceId }: { serviceId: ServiceId }) {
   if (relatedPosts.length === 0) return null;
 
   return (
-    <section className="mt-14">
+    <section className="mt-16 sm:mt-18">
       <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-gray-900">
         Bu alanla ilgili teknik rehberlerimizi inceleyin
       </h2>
@@ -69,6 +70,9 @@ function RelatedBlogsSection({ serviceId }: { serviceId: ServiceId }) {
 }
 
 export default function EntranceCanopiesPage() {
+  const data = getServicePageData("entrance-canopies");
+  const steps = data.howWeWorkSteps;
+
   return (
     <main className="about-page-enter min-h-screen bg-white">
       <section
@@ -92,11 +96,11 @@ export default function EntranceCanopiesPage() {
           <p className="about-eyebrow text-white/90 drop-shadow-md">
             Tezel Çelik Sistemleri
           </p>
-          <h1 className="text-4xl sm:text-5xl font-extrabold tracking-wide text-white text-center leading-tight drop-shadow-lg">
-            Giriş Saçağı ve Kanopiler
+          <h1 className="text-5xl sm:text-6xl font-extrabold tracking-wide text-white text-center leading-tight drop-shadow-lg">
+            {data.title}
           </h1>
           <p className="mt-4 max-w-3xl text-base sm:text-lg leading-relaxed text-white/95 drop-shadow-md">
-          Yapınıza değer katan; modern tasarımlı, yüksek dayanımlı çelik giriş saçağı ve kanopi çözümleri.
+            {data.heroDescription}
           </p>
         </div>
       </section>
@@ -105,18 +109,40 @@ export default function EntranceCanopiesPage() {
         <div className="container mx-auto px-4 lg:px-6">
           <div className="grid gap-6 lg:gap-8 lg:grid-cols-[minmax(0,2.1fr)_minmax(0,0.9fr)]">
             <div>
-              {/* 1. Bölüm: Kısa ve Öz Tanıtım */}
-              <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                Tasarım yaklaşımımız
-              </h2>
-              <div className="about-title-underline mt-4 h-1 w-20 bg-[#FF5A3C]" />
-              <p className="mt-6 text-base leading-relaxed text-gray-700">
-                Cepheyle uyumlu, hafif ve şeffaf görünümlü sistemlerden; tam kapalı ve
-                endüstriyel kanopilere kadar geniş bir yelpazede çözüm geliştiriyoruz.
-                Cam, kompozit panel ve polikarbon gibi kaplamalarla farklı tasarım
-                seçenekleri sunuyoruz. Her projede bina kimliğini güçlendiren, işlevsel
-                ve zarif çözümler hedefliyoruz.
-              </p>
+              {/* 1. Bölüm: Öne Çıkan Tanım Bloğu */}
+              <section className="rounded-3xl border border-gray-100/80 bg-white px-6 py-7 shadow-[0_18px_45px_rgba(15,23,42,0.08)] sm:px-8 sm:py-9">
+                <p className="inline-flex items-center rounded-full bg-[#FFF1EC] px-4 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-[#FF5A3C]">
+                  Giriş saçağı ve kanopi hizmeti
+                </p>
+                <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                  Giriş saçağı ve kanopi çözümleri
+                </h2>
+                <div className="mt-3 h-1 w-24 rounded-full bg-[#FF5A3C]" />
+                <p className="mt-6 text-base leading-relaxed text-gray-700">
+                  {data.introParagraph}
+                </p>
+
+                <div className="mt-8 grid gap-5 sm:grid-cols-2">
+                  <div className="rounded-2xl bg-[#FFF7F5] px-5 py-5 shadow-sm">
+                    <h3 className="text-sm font-semibold text-gray-900">
+                      {steps[0]?.title ?? ""}
+                    </h3>
+                    <div className="mt-2 h-0.5 w-10 rounded-full bg-[#FF5A3C]" />
+                    <p className="mt-3 text-sm leading-relaxed text-gray-700">
+                      {steps[0]?.desc ?? ""}
+                    </p>
+                  </div>
+                  <div className="rounded-2xl bg-[#F9FAFB] px-5 py-5 shadow-sm">
+                    <h3 className="text-sm font-semibold text-gray-900">
+                      {steps[1]?.title ?? ""}
+                    </h3>
+                    <div className="mt-2 h-0.5 w-10 rounded-full bg-[#FF5A3C]" />
+                    <p className="mt-3 text-sm leading-relaxed text-gray-700">
+                      {steps[1]?.desc ?? ""}
+                    </p>
+                  </div>
+                </div>
+              </section>
 
               {/* 2. Bölüm: Proje Vitrini */}
               <section className="mt-12">
@@ -125,34 +151,25 @@ export default function EntranceCanopiesPage() {
                 </h3>
                 <div className="about-title-underline mt-3 h-1 w-20 bg-[#FF5A3C]" />
                 <p className="mt-4 text-base leading-relaxed text-gray-700">
-                  Giriş saçağı ve kanopi projelerimizden bazı örnekler:
+                  Giriş saçağı ve kanopi projelerimizden bazı örnekler. Tüm projelerimizi incelemek için{" "}
+                  <Link
+                    href="/projects"
+                    className="font-semibold text-[#FF5A3C] hover:underline"
+                  >
+                    tıklayınız.
+                  </Link>
                 </p>
-                <div className="mt-6 grid gap-6 sm:grid-cols-2">
-                  {[
+                <ProjectLightboxGrid
+                  items={[
                     "Otel Girişi Cam Kanopi",
                     "Kurumsal Plaza Çelik Giriş Saçağı",
                     "Endüstriyel Yükleme Alanı Kanopisi",
                     "Otopark Giriş ve Yaya Saçağı",
-                  ].map((title) => (
-                    <div
-                      key={title}
-                      className="overflow-hidden rounded-2xl border border-gray-200/80 bg-white shadow-sm"
-                    >
-                      <div className="relative h-52 w-full overflow-hidden">
-                        <Image
-                          src={arkaplanNav.src}
-                          alt={title}
-                          fill
-                          sizes="(min-width: 1024px) 320px, 100vw"
-                          className="object-cover"
-                        />
-                      </div>
-                      <div className="p-4">
-                        <h4 className="text-sm font-semibold text-gray-900">{title}</h4>
-                      </div>
-                    </div>
-                  ))}
-                </div>
+                  ].map((title) => ({
+                    title,
+                    imageSrc: arkaplanNav.src,
+                  }))}
+                />
                 <div className="mt-8">
                   <Link
                     href="/projects"
@@ -164,35 +181,26 @@ export default function EntranceCanopiesPage() {
               </section>
 
               {/* 3. Bölüm: Teknik Detay ve Neden Biz */}
-              <section className="mt-14">
+              <section className="mt-16 sm:mt-18 rounded-3xl bg-[#F9FAFB] px-6 py-7 sm:px-8 sm:py-8">
                 <h3 className="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
-                  Teknik Avantajlar ve Neden Tezel Çelik?
+                  Teknik Avantajlar ve Mühendislik Yaklaşımımız
                 </h3>
                 <div className="about-title-underline mt-3 h-1 w-20 bg-[#FF5A3C]" />
-                <p className="mt-4 max-w-3xl text-base leading-relaxed text-gray-700">
-                  Kanopi ve saçak sistemlerinde; mimari beklentiyi, taşıyıcı güvenliği ve
-                  detay çözümünü birlikte ele alıyoruz.
-                </p>
                 <ul className="mt-6 max-w-3xl list-disc space-y-3 pl-5 text-base leading-relaxed text-gray-700">
                   <li>
-                    İnce kesitli çelik profillerle hafif ama yüksek taşıma kapasiteli
-                    tasarımlar
+                    <span className="font-semibold text-[#FF5A3C]">Hafif Taşıyıcı Sistem:</span> İnce kesitli çelik profillerle yüksek taşıma kapasiteli tasarımlar.
                   </li>
                   <li>
-                    Kar ve rüzgâr yükleri için hesaplanmış, yönetmeliklere uygun statik
-                    çözümler
+                    <span className="font-semibold text-[#FF5A3C]">Statik Çözümler:</span> Kar ve rüzgâr yükleri için hesaplanmış, yönetmeliklere uygun projeler.
                   </li>
                   <li>
-                    Cam, kompozit ve polikarbon kaplamalarla uyumlu alt konstrüksiyon
-                    detayları
+                    <span className="font-semibold text-[#FF5A3C]">Kaplama Uyumu:</span> Cam, kompozit ve polikarbon kaplamalarla uyumlu alt konstrüksiyon detayları.
                   </li>
                   <li>
-                    Gizli dere ve yağmur suyu tahliye çözümleriyle cepheyi koruyan
-                    uygulamalar
+                    <span className="font-semibold text-[#FF5A3C]">Su Tahliye:</span> Gizli dere ve yağmur suyu tahliye çözümleriyle cepheyi koruyan uygulamalar.
                   </li>
                   <li>
-                    Hızlı montaj ve kullanım sırasında minimum müdahale gerektiren dayanıklı
-                    yüzey kaplamaları
+                    <span className="font-semibold text-[#FF5A3C]">Dayanıklılık:</span> Hızlı montaj ve minimum müdahale gerektiren yüzey kaplamaları.
                   </li>
                 </ul>
               </section>
@@ -207,4 +215,3 @@ export default function EntranceCanopiesPage() {
     </main>
   );
 }
-

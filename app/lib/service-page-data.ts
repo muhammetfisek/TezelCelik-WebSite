@@ -205,15 +205,15 @@ export const servicePageData: Record<ServiceId, ServicePageData> = {
     heroDescription:
       "Geniş açıklık ve serbest iç hacim isteyen yapılar için çelik çatı ve makas sistemleri tasarlıyoruz.",
     introParagraph:
-      "Fabrika ve endüstriyel tesisler, lojistik depolar, spor salonları ve hangarlar gibi yapılarda; kar, rüzgâr ve deprem yükleri dikkate alınarak ekonomik ve güvenli çelik çatı çözümleri geliştiriyoruz. Geniş açıklıkları kolonsuz geçerek operasyonel verimliliği artırıyoruz.",
+      "Fabrika, depo ve spor salonu gibi geniş alanlarda, iç mekanda kolon engeli olmaksızın maksimum hareket özgürlüğü sağlayan çelik çatı sistemleri tasarlıyoruz. Yüksek mühendislik hesaplarıyla hazırladığımız projelerimiz, en zorlu iklim koşullarında bile kar ve rüzgar yüklerine karşı üstün dayanım sunar.",
     howWeWorkSteps: [
       {
-        title: "Yük Analizi ve Sistem Seçimi",
-        desc: "Kar, rüzgâr ve deprem yüklerine göre uygun çatı sistemi (makas, uzay kafes, tonoz vb.) belirlenir.",
+        title: "Statik Analiz & Tasarım",
+        desc: "Geniş açıklıkların gerektirdiği kompleks yük hesaplamalarını ve rüzgar direnci analizlerini uluslararası yönetmeliklere uygun şekilde projelendiriyoruz.",
       },
       {
-        title: "Statik Proje ve Detaylar",
-        desc: "Taşıyıcı sistem, birleşim detayları ve kaplama alt konstrüksiyonu için uygulama projeleri hazırlanır.",
+        title: "Hassas İmalat & Kurulum",
+        desc: "Fabrika ortamında hazırlanan yüksek mukavemetli çelik makas sistemlerini, sahada iş güvenliği standartlarına uygun olarak hızlı ve hatasız bir şekilde monte ediyoruz.",
       },
       {
         title: "Fabrika İmalatı",

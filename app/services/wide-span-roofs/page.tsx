@@ -4,6 +4,7 @@ import Link from "next/link";
 import arkaplanNav from "@/images/arkaplan_faaliyet.png";
 import "../../about/about.css";
 import { ServicesSidebar } from "@/app/components/ServicesSidebar/ServicesSidebar";
+import { ProjectLightboxGrid } from "../../components/ProjectLightboxGrid/ProjectLightboxGrid";
 import { getServicePageData, type ServiceId } from "@/app/lib/service-page-data";
 import { getBlogPost } from "@/app/lib/blog-data";
 
@@ -32,7 +33,7 @@ function RelatedBlogsSection({ serviceId }: { serviceId: ServiceId }) {
   if (relatedPosts.length === 0) return null;
 
   return (
-    <section className="mt-14">
+    <section className="mt-16 sm:mt-18">
       <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-gray-900">
         Bu alanla ilgili teknik rehberlerimizi inceleyin
       </h2>
@@ -69,6 +70,9 @@ function RelatedBlogsSection({ serviceId }: { serviceId: ServiceId }) {
 }
 
 export default function WideSpanRoofsPage() {
+  const data = getServicePageData("wide-span-roofs");
+  const steps = data.howWeWorkSteps;
+
   return (
     <main className="about-page-enter min-h-screen bg-white">
       <section
@@ -92,11 +96,11 @@ export default function WideSpanRoofsPage() {
           <p className="about-eyebrow text-white/90 drop-shadow-md">
             Tezel Çelik Sistemleri
           </p>
-          <h1 className="text-4xl sm:text-5xl font-extrabold tracking-wide text-white text-center leading-tight drop-shadow-lg">
-            Geniş Açıklıklı Çatılar
+          <h1 className="text-5xl sm:text-6xl font-extrabold tracking-wide text-white text-center leading-tight drop-shadow-lg">
+            {data.title}
           </h1>
           <p className="mt-4 max-w-3xl text-base sm:text-lg leading-relaxed text-white/95 drop-shadow-md">
-          Geniş alanlarda kolonsuz özgürlük; yüksek mühendislik ürünü dayanıklı çatı çözümleri.
+            {data.heroDescription}
           </p>
         </div>
       </section>
@@ -105,17 +109,40 @@ export default function WideSpanRoofsPage() {
         <div className="container mx-auto px-4 lg:px-6">
           <div className="grid gap-6 lg:gap-8 lg:grid-cols-[minmax(0,2.1fr)_minmax(0,0.9fr)]">
             <div>
-              {/* 1. Bölüm: Kısa ve Öz Tanıtım */}
-              <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                Kullanım alanları
-              </h2>
-              <div className="about-title-underline mt-4 h-1 w-20 bg-[#FF5A3C]" />
-              <p className="mt-6 text-base leading-relaxed text-gray-700">
-                Fabrika ve endüstriyel tesisler, lojistik depolar, spor salonları ve
-                hangarlar gibi yapılarda; kar, rüzgâr ve deprem yükleri dikkate alınarak
-                ekonomik ve güvenli çelik çatı çözümleri geliştiriyoruz. Geniş açıklıkları
-                ara kolon gerektirmeden geçerek operasyonel alan kayıplarını azaltıyoruz.
-              </p>
+              {/* 1. Bölüm: Öne Çıkan Tanım Bloğu */}
+              <section className="rounded-3xl border border-gray-100/80 bg-white px-6 py-7 shadow-[0_18px_45px_rgba(15,23,42,0.08)] sm:px-8 sm:py-9">
+                <p className="inline-flex items-center rounded-full bg-[#FFF1EC] px-4 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-[#FF5A3C]">
+                  Geniş açıklıklı çatı hizmeti
+                </p>
+                <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                Endüstriyel Çatı Çözümleri
+                </h2>
+                <div className="mt-3 h-1 w-24 rounded-full bg-[#FF5A3C]" />
+                <p className="mt-6 text-base leading-relaxed text-gray-700">
+                  {data.introParagraph}
+                </p>
+
+                <div className="mt-8 grid gap-5 sm:grid-cols-2">
+                  <div className="rounded-2xl bg-[#FFF7F5] px-5 py-5 shadow-sm">
+                    <h3 className="text-sm font-semibold text-gray-900">
+                      {steps[0]?.title ?? ""}
+                    </h3>
+                    <div className="mt-2 h-0.5 w-10 rounded-full bg-[#FF5A3C]" />
+                    <p className="mt-3 text-sm leading-relaxed text-gray-700">
+                      {steps[0]?.desc ?? ""}
+                    </p>
+                  </div>
+                  <div className="rounded-2xl bg-[#F9FAFB] px-5 py-5 shadow-sm">
+                    <h3 className="text-sm font-semibold text-gray-900">
+                      {steps[1]?.title ?? ""}
+                    </h3>
+                    <div className="mt-2 h-0.5 w-10 rounded-full bg-[#FF5A3C]" />
+                    <p className="mt-3 text-sm leading-relaxed text-gray-700">
+                      {steps[1]?.desc ?? ""}
+                    </p>
+                  </div>
+                </div>
+              </section>
 
               {/* 2. Bölüm: Proje Vitrini */}
               <section className="mt-12">
@@ -124,34 +151,25 @@ export default function WideSpanRoofsPage() {
                 </h3>
                 <div className="about-title-underline mt-3 h-1 w-20 bg-[#FF5A3C]" />
                 <p className="mt-4 text-base leading-relaxed text-gray-700">
-                  Geniş açıklıklı çelik çatı projelerimizden seçtiğimiz birkaç örnek:
+                  Geniş açıklıklı çelik çatı projelerimizden seçtiğimiz örnekler. Tüm projelerimizi incelemek için{" "}
+                  <Link
+                    href="/projects"
+                    className="font-semibold text-[#FF5A3C] hover:underline"
+                  >
+                    tıklayınız.
+                  </Link>
                 </p>
-                <div className="mt-6 grid gap-6 sm:grid-cols-2">
-                  {[
+                <ProjectLightboxGrid
+                  items={[
                     "Fabrika Üretim Hattı Çelik Çatısı",
                     "Lojistik Depo Geniş Açıklıklı Çatısı",
                     "Spor Salonu ve Çok Amaçlı Salon Çatısı",
                     "Hangar ve Araç Park Alanı Çelik Çatısı",
-                  ].map((title) => (
-                    <div
-                      key={title}
-                      className="overflow-hidden rounded-2xl border border-gray-200/80 bg-white shadow-sm"
-                    >
-                      <div className="relative h-52 w-full overflow-hidden">
-                        <Image
-                          src={arkaplanNav.src}
-                          alt={title}
-                          fill
-                          sizes="(min-width: 1024px) 320px, 100vw"
-                          className="object-cover"
-                        />
-                      </div>
-                      <div className="p-4">
-                        <h4 className="text-sm font-semibold text-gray-900">{title}</h4>
-                      </div>
-                    </div>
-                  ))}
-                </div>
+                  ].map((title) => ({
+                    title,
+                    imageSrc: arkaplanNav.src,
+                  }))}
+                />
                 <div className="mt-8">
                   <Link
                     href="/projects"
@@ -163,31 +181,26 @@ export default function WideSpanRoofsPage() {
               </section>
 
               {/* 3. Bölüm: Teknik Detay ve Neden Biz */}
-              <section className="mt-14">
+              <section className="mt-16 sm:mt-18 rounded-3xl bg-[#F9FAFB] px-6 py-7 sm:px-8 sm:py-8">
                 <h3 className="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
-                  Teknik Avantajlar ve Neden Tezel Çelik?
+                Çatı Sistemlerinde Mühendislik Farkımız
                 </h3>
                 <div className="about-title-underline mt-3 h-1 w-20 bg-[#FF5A3C]" />
-                <p className="mt-4 max-w-3xl text-base leading-relaxed text-gray-700">
-                  Geniş açıklıklı çelik çatılarda; yapının hem hafif hem de depreme karşı
-                  güvenli olmasını sağlayan mühendislik çözümleri geliştiriyoruz.
-                </p>
                 <ul className="mt-6 max-w-3xl list-disc space-y-3 pl-5 text-base leading-relaxed text-gray-700">
                   <li>
-                    Milimetrik montaj hassasiyeti ile sızdırmaz ve düzgün çatı yüzeyleri
+                    <span className="font-semibold text-[#FF5A3C]">Kesintisiz Alan Verimliliği:</span> Gelişmiş makas tasarımlarımızla iç mekanlarda geniş açıklıkları kolonsuz geçerek operasyonel hareket alanınızı maksimize ediyoruz.
                   </li>
                   <li>
-                    Kar, rüzgâr ve deprem yüklerine göre optimize edilmiş çelik makas ve
-                    uzay kafes sistemleri
+                    <span className="font-semibold text-[#FF5A3C]">Bölgesel Yük Optimizasyonu:</span> Kurulum yapılacak bölgenin kar ve rüzgar haritasına göre optimize edilmiş statik hesaplarla yapısal güvenliği garanti altına alıyoruz.
                   </li>
                   <li>
-                    Hafif taşıyıcı sistem sayesinde daha ekonomik temel ve zemin
-                    çözümleri
+                    <span className="font-semibold text-[#FF5A3C]">Hafif ve Sismik Direnç:</span> Betonarmeye oranla çok daha hafif olan çelik çatı sistemlerimizle, bina ana taşıyıcılarına binen yükü azaltarak deprem güvenliğini artırıyoruz.
                   </li>
-                  <li>Hızlı kurulum ile üretim ve depo operasyonlarında minimum kesinti</li>
                   <li>
-                    Kumlama, boya veya galvaniz ile uzun ömürlü korozyon dayanımı ve düşük
-                    bakım ihtiyacı
+                    <span className="font-semibold text-[#FF5A3C]">Doğal Aydınlatma Entegrasyonu:</span> Tasarıma dahil edilebilen polikarbon ışıklık sistemleriyle gün ışığından maksimum yararlanma ve enerji tasarrufu sağlıyoruz.
+                  </li>
+                  <li>
+                    <span className="font-semibold text-[#FF5A3C]">Korozyon ve İzolasyon Uyumu:</span> Çelik iskeleti dış etkenlerden koruyan özel boya uygulamaları ve farklı çatı kaplama (panel/sac) sistemlerine tam uyumlu altyapı sunuyoruz.
                   </li>
                 </ul>
               </section>
@@ -202,4 +215,3 @@ export default function WideSpanRoofsPage() {
     </main>
   );
 }
-

@@ -4,6 +4,7 @@ import Link from "next/link";
 import arkaplanNav from "@/images/arkaplan_faaliyet.png";
 import "../../about/about.css";
 import { ServicesSidebar } from "@/app/components/ServicesSidebar/ServicesSidebar";
+import { ProjectLightboxGrid } from "../../components/ProjectLightboxGrid/ProjectLightboxGrid";
 import { getServicePageData, type ServiceId } from "@/app/lib/service-page-data";
 import { getBlogPost } from "@/app/lib/blog-data";
 
@@ -32,7 +33,7 @@ function RelatedBlogsSection({ serviceId }: { serviceId: ServiceId }) {
   if (relatedPosts.length === 0) return null;
 
   return (
-    <section className="mt-14">
+    <section className="mt-16 sm:mt-18">
       <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-gray-900">
         Bu alanla ilgili teknik rehberlerimizi inceleyin
       </h2>
@@ -69,6 +70,9 @@ function RelatedBlogsSection({ serviceId }: { serviceId: ServiceId }) {
 }
 
 export default function SteelStairsPage() {
+  const data = getServicePageData("steel-stairs");
+  const steps = data.howWeWorkSteps;
+
   return (
     <main className="about-page-enter min-h-screen bg-white">
       <section
@@ -92,13 +96,11 @@ export default function SteelStairsPage() {
           <p className="about-eyebrow text-white/90 drop-shadow-md">
             Tezel Çelik Sistemleri
           </p>
-          <h1 className="text-4xl sm:text-5xl font-extrabold tracking-wide text-white text-center leading-tight drop-shadow-lg">
-            Çelik Merdiven
+          <h1 className="text-5xl sm:text-6xl font-extrabold tracking-wide text-white text-center leading-tight drop-shadow-lg">
+            {data.title}
           </h1>
           <p className="mt-4 max-w-3xl text-base sm:text-lg leading-relaxed text-white/95 drop-shadow-md">
-          Yangın kaçış ve mimari merdivenler için yönetmeliklere uygun 
-            çelik merdiven
-            çözümleri sunuyoruz.
+            {data.heroDescription}
           </p>
         </div>
       </section>
@@ -107,17 +109,40 @@ export default function SteelStairsPage() {
         <div className="container mx-auto px-4 lg:px-6">
           <div className="grid gap-6 lg:gap-8 lg:grid-cols-[minmax(0,2.1fr)_minmax(0,0.9fr)]">
             <div>
-              {/* 1. Bölüm: Kısa ve Öz Tanıtım */}
-              <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                Farklı merdiven tipleri
-              </h2>
-              <div className="about-title-underline mt-4 h-1 w-20 bg-[#FF5A3C]" />
-              <p className="mt-6 text-base leading-relaxed text-gray-700">
-                Düz kollu, döner, dairesel yangın merdivenleri ve iç mekân dekoratif
-                merdivenler için çelik taşıyıcı sistemler tasarlıyor, kaplama ve
-                korkuluk detaylarını birlikte ele alıyoruz. Hem endüstriyel hem de
-                mimari projeleriniz için ölçüye özel çözümler geliştiriyoruz.
-              </p>
+              {/* 1. Bölüm: Öne Çıkan Tanım Bloğu */}
+              <section className="rounded-3xl border border-gray-100/80 bg-white px-6 py-7 shadow-[0_18px_45px_rgba(15,23,42,0.08)] sm:px-8 sm:py-9">
+                <p className="inline-flex items-center rounded-full bg-[#FFF1EC] px-4 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-[#FF5A3C]">
+                  Çelik merdiven hizmeti
+                </p>
+                <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                  Çelik merdiven çözümleri
+                </h2>
+                <div className="mt-3 h-1 w-24 rounded-full bg-[#FF5A3C]" />
+                <p className="mt-6 text-base leading-relaxed text-gray-700">
+                  {data.introParagraph}
+                </p>
+
+                <div className="mt-8 grid gap-5 sm:grid-cols-2">
+                  <div className="rounded-2xl bg-[#FFF7F5] px-5 py-5 shadow-sm">
+                    <h3 className="text-sm font-semibold text-gray-900">
+                      {steps[0]?.title ?? ""}
+                    </h3>
+                    <div className="mt-2 h-0.5 w-10 rounded-full bg-[#FF5A3C]" />
+                    <p className="mt-3 text-sm leading-relaxed text-gray-700">
+                      {steps[0]?.desc ?? ""}
+                    </p>
+                  </div>
+                  <div className="rounded-2xl bg-[#F9FAFB] px-5 py-5 shadow-sm">
+                    <h3 className="text-sm font-semibold text-gray-900">
+                      {steps[1]?.title ?? ""}
+                    </h3>
+                    <div className="mt-2 h-0.5 w-10 rounded-full bg-[#FF5A3C]" />
+                    <p className="mt-3 text-sm leading-relaxed text-gray-700">
+                      {steps[1]?.desc ?? ""}
+                    </p>
+                  </div>
+                </div>
+              </section>
 
               {/* 2. Bölüm: Proje Vitrini */}
               <section className="mt-12">
@@ -126,34 +151,25 @@ export default function SteelStairsPage() {
                 </h3>
                 <div className="about-title-underline mt-3 h-1 w-20 bg-[#FF5A3C]" />
                 <p className="mt-4 text-base leading-relaxed text-gray-700">
-                  Çelik merdiven projelerimizden bazı örnekler:
+                  Çelik merdiven projelerimizden bazı örnekler. Tüm projelerimizi incelemek için{" "}
+                  <Link
+                    href="/projects"
+                    className="font-semibold text-[#FF5A3C] hover:underline"
+                  >
+                    tıklayınız.
+                  </Link>
                 </p>
-                <div className="mt-6 grid gap-6 sm:grid-cols-2">
-                  {[
+                <ProjectLightboxGrid
+                  items={[
                     "Endüstriyel Yangın Kaçış Merdiveni",
                     "Loft Daire Dekoratif Çelik Merdiven",
                     "Fabrika İç Geçiş Servis Merdiveni",
                     "Ofis Binası Cam Korkuluklu Merdiven",
-                  ].map((title) => (
-                    <div
-                      key={title}
-                      className="overflow-hidden rounded-2xl border border-gray-200/80 bg-white shadow-sm"
-                    >
-                      <div className="relative h-52 w-full overflow-hidden">
-                        <Image
-                          src={arkaplanNav.src}
-                          alt={title}
-                          fill
-                          sizes="(min-width: 1024px) 320px, 100vw"
-                          className="object-cover"
-                        />
-                      </div>
-                      <div className="p-4">
-                        <h4 className="text-sm font-semibold text-gray-900">{title}</h4>
-                      </div>
-                    </div>
-                  ))}
-                </div>
+                  ].map((title) => ({
+                    title,
+                    imageSrc: arkaplanNav.src,
+                  }))}
+                />
                 <div className="mt-8">
                   <Link
                     href="/projects"
@@ -165,34 +181,26 @@ export default function SteelStairsPage() {
               </section>
 
               {/* 3. Bölüm: Teknik Detay ve Neden Biz */}
-              <section className="mt-14">
+              <section className="mt-16 sm:mt-18 rounded-3xl bg-[#F9FAFB] px-6 py-7 sm:px-8 sm:py-8">
                 <h3 className="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
-                  Teknik Avantajlar ve Neden Tezel Çelik?
+                  Teknik Avantajlar ve Mühendislik Yaklaşımımız
                 </h3>
                 <div className="about-title-underline mt-3 h-1 w-20 bg-[#FF5A3C]" />
-                <p className="mt-4 max-w-3xl text-base leading-relaxed text-gray-700">
-                  Çelik merdivenlerde; güvenlik, ergonomi ve mimari uyumu birlikte ele
-                  alıyoruz.
-                </p>
                 <ul className="mt-6 max-w-3xl list-disc space-y-3 pl-5 text-base leading-relaxed text-gray-700">
                   <li>
-                    Yönetmeliklere uygun basamak yüksekliği, genişliği ve sahanlık
-                    çözümleri
+                    <span className="font-semibold text-[#FF5A3C]">Yönetmelik Uyumu:</span> Basamak yüksekliği, genişliği ve sahanlık çözümlerinde tam uyum.
                   </li>
                   <li>
-                    Yangın kaçış merdivenleri için yüksek taşıma kapasitesi ve güvenli
-                    tahliye kurgusu
+                    <span className="font-semibold text-[#FF5A3C]">Yangın Kaçış:</span> Yüksek taşıma kapasitesi ve güvenli tahliye kurgusu.
                   </li>
                   <li>
-                    Dekoratif merdivenlerde çelik gövde ile cam, ahşap ve taş kaplama
-                    entegrasyonu
+                    <span className="font-semibold text-[#FF5A3C]">Kaplama Entegrasyonu:</span> Çelik gövde ile cam, ahşap ve taş kaplama seçenekleri.
                   </li>
                   <li>
-                    Kaymaz basamak yüzeyleri ve sağlam korkuluk-küpeşte detayları ile
-                    kullanıcı güvenliği
+                    <span className="font-semibold text-[#FF5A3C]">Kullanıcı Güvenliği:</span> Kaymaz basamak yüzeyleri ve sağlam korkuluk-küpeşte detayları.
                   </li>
                   <li>
-                    Fabrika üretimi sayesinde temiz, hızlı ve kontrollü montaj süreçleri
+                    <span className="font-semibold text-[#FF5A3C]">Fabrika Üretimi:</span> Temiz, hızlı ve kontrollü montaj süreçleri.
                   </li>
                 </ul>
               </section>
@@ -207,4 +215,3 @@ export default function SteelStairsPage() {
     </main>
   );
 }
-
