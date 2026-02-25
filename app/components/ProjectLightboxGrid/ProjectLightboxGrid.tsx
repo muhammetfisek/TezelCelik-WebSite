@@ -106,7 +106,9 @@ export function ProjectLightboxGrid({ items }: ProjectLightboxGridProps) {
             </div>
             <div className="p-4">
               <h4 className="text-sm font-semibold text-gray-900">{item.title}</h4>
-              
+              <p className="mt-1 text-xs font-medium text-gray-500">
+                Büyütmek için tıklayın
+              </p>
             </div>
           </button>
         ))}
@@ -123,53 +125,66 @@ export function ProjectLightboxGrid({ items }: ProjectLightboxGridProps) {
               className="relative w-full max-w-5xl"
               onClick={(event) => event.stopPropagation()}
             >
-              <div className="relative h-[80vh] max-h-[80vh] w-full overflow-hidden rounded-2xl bg-black">
-                <Image
-                  src={items[activeIndex].imageSrc}
-                  alt={items[activeIndex].title}
-                  fill
-                  sizes="(min-width: 1024px) 900px, 100vw"
-                  className="object-contain"
-                  priority
-                />
+              <div className="relative flex h-[86vh] max-h-[86vh] w-full flex-col rounded-3xl bg-gray-200 px-1.5 py-1.5 shadow-2xl sm:px-2 sm:py-2">
+                {/* Üst kısım: oklar + foto */}
+                <div className="flex flex-1 items-center">
+                  {/* Sol ok - beyaz alan üzerinde */}
+                  {items.length > 1 && (
+                    <button
+                      type="button"
+                      onClick={showPrev}
+                      className="mr-2 hidden h-9 w-9 items-center justify-center rounded-full bg-gray-900/80 text-base font-semibold text-white shadow-md hover:bg-gray-900 sm:inline-flex"
+                      aria-label="Önceki fotoğraf"
+                    >
+                      ‹
+                    </button>
+                  )}
+
+                  {/* Fotoğraf alanı */}
+                  <div className="relative h-full flex-1 overflow-hidden rounded-2xl">
+                    <Image
+                      src={items[activeIndex].imageSrc}
+                      alt={items[activeIndex].title}
+                      fill
+                      sizes="(min-width: 1024px) 900px, 100vw"
+                      className="object-contain"
+                      priority
+                    />
+                  </div>
+
+                  {/* Sağ ok - beyaz alan üzerinde */}
+                  {items.length > 1 && (
+                    <button
+                      type="button"
+                      onClick={showNext}
+                      className="ml-2 hidden h-9 w-9 items-center justify-center rounded-full bg-gray-900/80 text-base font-semibold text-white shadow-md hover:bg-gray-900 sm:inline-flex"
+                      aria-label="Sonraki fotoğraf"
+                    >
+                      ›
+                    </button>
+                  )}
+                </div>
+
+                {/* Alt kısım: başlık + sayaç, fotoğrafın altında beyaz zeminde ortalanmış */}
+                <div className="mt-4 flex flex-col items-center text-sm sm:text-base font-semibold">
+                  <span className="max-w-xl text-center text-lg sm:text-xl font-extrabold tracking-wide text-[#FF5A3C]">
+                    {items[activeIndex].title}
+                  </span>
+                  <span className="mt-1 text-[11px] sm:text-xs text-gray-500">
+                    {activeIndex + 1} / {items.length}
+                  </span>
+                </div>
+
+                {/* Kapat butonu - beyaz kutunun sağ üst köşesi */}
+                <button
+                  type="button"
+                  onClick={close}
+                  className="absolute right-4 top-4 inline-flex h-9 w-9 items-center justify-center rounded-full bg-gray-900/80 text-sm font-semibold text-white shadow-md hover:bg-gray-900"
+                  aria-label="Kapat"
+                >
+                  ×
+                </button>
               </div>
-
-              <div className="mt-4 flex items-center justify-between text-xs font-medium text-white/80">
-                <span>{items[activeIndex].title}</span>
-                <span>
-                  {activeIndex + 1} / {items.length}
-                </span>
-              </div>
-
-              <button
-                type="button"
-                onClick={close}
-                className="absolute right-3 top-3 inline-flex h-8 w-8 items-center justify-center rounded-full bg-black/70 text-sm font-semibold text-white shadow-sm hover:bg-black/90"
-                aria-label="Kapat"
-              >
-                ×
-              </button>
-
-              {items.length > 1 && (
-                <>
-                  <button
-                    type="button"
-                    onClick={showPrev}
-                    className="absolute left-2 top-1/2 inline-flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-black/70 text-base font-semibold text-white shadow-sm hover:bg-black/90"
-                    aria-label="Önceki fotoğraf"
-                  >
-                    ‹
-                  </button>
-                  <button
-                    type="button"
-                    onClick={showNext}
-                    className="absolute right-2 top-1/2 inline-flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-black/70 text-base font-semibold text-white shadow-sm hover:bg-black/90"
-                    aria-label="Sonraki fotoğraf"
-                  >
-                    ›
-                  </button>
-                </>
-              )}
             </div>
           </div>,
           document.body
