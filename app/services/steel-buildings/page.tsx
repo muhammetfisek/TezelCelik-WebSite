@@ -33,7 +33,7 @@ function RelatedBlogsSection({ serviceId }: { serviceId: ServiceId }) {
   if (relatedPosts.length === 0) return null;
 
   return (
-    <section className="mt-14">
+    <section className="mt-16 sm:mt-18">
       <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-gray-900">
         Bu alanla ilgili teknik rehberlerimizi inceleyin
       </h2>
@@ -188,7 +188,7 @@ export default function SteelBuildingsPage() {
               </section>
 
               {/* 3. Bölüm: Teknik Detay ve Neden Biz */}
-              <section className="mt-14">
+              <section className="mt-16 sm:mt-18 rounded-3xl bg-[#F9FAFB] px-6 py-7 sm:px-8 sm:py-8">
                 <h3 className="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
                   Teknik Avantajlar ve Neden Tezel Çelik?
                 </h3>
