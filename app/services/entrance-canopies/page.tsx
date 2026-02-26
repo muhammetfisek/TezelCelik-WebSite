@@ -6,6 +6,7 @@ import { ServicesSidebar } from "@/app/components/ServicesSidebar/ServicesSideba
 import { ProjectLightboxGrid } from "../../components/ProjectLightboxGrid/ProjectLightboxGrid";
 import { getServicePageData, type ServiceId } from "@/app/lib/service-page-data";
 import { RelatedBlogsSection } from "@/app/components/RelatedBlogsSection/RelatedBlogsSection";
+import { ServicesCtaBanner } from "@/app/components/ServicesCtaBanner/ServicesCtaBanner";
 
 const NAVBAR_HEIGHT = 90;
 const HERO_MIN_HEIGHT = 330;
@@ -166,6 +167,7 @@ export default function EntranceCanopiesPage() {
           </div>
         </div>
       </section>
+      <ServicesCtaBanner />
     </main>
   );
 }

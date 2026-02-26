@@ -1,0 +1,154 @@
+/* Faaliyet sayfaları CTA – daha çarpıcı, aktif görünüm */
+
+.services-cta-banner {
+  width: 100%;
+  padding: 3rem 1.5rem 3.5rem;
+  background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #1e293b 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.services-cta-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, #ff5a3c, #ff8a73, transparent);
+  opacity: 0.9;
+}
+
+.services-cta-banner__inner {
+  max-width: 960px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2.5rem;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Sol blok – metin */
+.services-cta-banner__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  text-align: left;
+  padding-left: 1.25rem;
+  border-left: 4px solid #ff5a3c;
+}
+
+.services-cta-banner__eyebrow {
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #ff5a3c;
+  margin: 0;
+}
+
+.services-cta-banner__title {
+  font-size: 1.85rem;
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: -0.03em;
+  color: #fff;
+  margin: 0;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.services-cta-banner__desc {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0;
+  max-width: 40ch;
+}
+
+/* Buton – daha büyük, daha vurgulu */
+.services-cta-banner__action {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-shrink: 0;
+}
+
+.services-cta-banner__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 1rem 1.75rem;
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background: #ff5a3c;
+  border-radius: 9999px;
+  text-decoration: none;
+  border: none;
+  box-shadow: 0 6px 20px rgba(255, 90, 60, 0.45), 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.services-cta-banner__btn:hover {
+  background: #ff6b4a;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(255, 90, 60, 0.5), 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.services-cta-banner__btn:focus-visible {
+  outline: 2px solid #ff5a3c;
+  outline-offset: 3px;
+}
+
+.services-cta-banner__btn-icon {
+  width: 1rem;
+  height: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.services-cta-banner__btn:hover .services-cta-banner__btn-icon {
+  transform: translateX(4px);
+}
+
+/* Mobil */
+@media (max-width: 768px) {
+  .services-cta-banner {
+    padding: 2.5rem 1.25rem 3rem;
+  }
+
+  .services-cta-banner__inner {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+    text-align: center;
+  }
+
+  .services-cta-banner__text {
+    text-align: center;
+    padding-left: 0;
+    border-left: none;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-top: 4px solid #ff5a3c;
+  }
+
+  .services-cta-banner__title {
+    font-size: 1.5rem;
+  }
+
+  .services-cta-banner__desc {
+    max-width: none;
+  }
+
+  .services-cta-banner__action {
+    justify-content: center;
+  }
+
+  .services-cta-banner__btn {
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
+  }
+}

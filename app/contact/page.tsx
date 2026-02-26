@@ -39,7 +39,7 @@ export default function ContactPage() {
       </section>
 
       {/* Ana İçerik Bölümü */}
-      <section className="container mx-auto px-4 py-16 lg:px-8">
+      <section id="contact-form" className="container mx-auto px-4 py-16 lg:px-8 scroll-mt-24">
         <div className="grid gap-8 lg:grid-cols-2 lg:gap-16 relative">
           {/* Ayırıcı Çizgi - Sadece masaüstünde görünür */}
           <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-gray-300 to-transparent transform -translate-x-1/2"></div>
