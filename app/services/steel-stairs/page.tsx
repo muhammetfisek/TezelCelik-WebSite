@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import arkaplanNav from "@/images/arkaplan_faaliyet.png";
 import "../../about/about.css";
 import { ServicesSidebar } from "@/app/components/ServicesSidebar/ServicesSidebar";
 import { ProjectLightboxGrid } from "../../components/ProjectLightboxGrid/ProjectLightboxGrid";
 import { getServicePageData, type ServiceId } from "@/app/lib/service-page-data";
-import { getBlogPost } from "@/app/lib/blog-data";
+import { RelatedBlogsSection } from "@/app/components/RelatedBlogsSection/RelatedBlogsSection";
 
 const NAVBAR_HEIGHT = 90;
 const HERO_MIN_HEIGHT = 330;
@@ -23,51 +22,6 @@ export const metadata: Metadata = {
     locale: "tr_TR",
   },
 };
-
-function RelatedBlogsSection({ serviceId }: { serviceId: ServiceId }) {
-  const data = getServicePageData(serviceId);
-  const relatedPosts = data.relatedBlogSlugs
-    .map((slug) => getBlogPost(slug))
-    .filter((post): post is NonNullable<ReturnType<typeof getBlogPost>> => Boolean(post));
-
-  if (relatedPosts.length === 0) return null;
-
-  return (
-    <section className="mt-16 sm:mt-18">
-      <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-gray-900">
-        Bu alanla ilgili teknik rehberlerimizi inceleyin
-      </h2>
-      <div className="about-title-underline mt-3 h-1 w-20 bg-[#FF5A3C]" />
-      <div className="mt-8 grid gap-6 md:grid-cols-3">
-        {relatedPosts.map((post) => (
-          <Link
-            key={post.slug}
-            href={`/blog/${post.slug}`}
-            className="group block overflow-hidden rounded-2xl border border-gray-200/80 bg-white shadow-sm transition-shadow hover:shadow-md"
-          >
-            <div className="relative h-40 w-full overflow-hidden">
-              <Image
-                src={post.image}
-                alt={post.imageAlt ?? post.title}
-                fill
-                sizes="(min-width: 1024px) 300px, 100vw"
-                className="object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-            </div>
-            <div className="p-4">
-              <h3 className="text-sm font-semibold text-gray-900 group-hover:text-[#FF5A3C]">
-                {post.title}
-              </h3>
-              <p className="mt-2 text-xs leading-relaxed text-gray-600">
-                {post.excerpt}
-              </p>
-            </div>
-          </Link>
-        ))}
-      </div>
-    </section>
-  );
-}
 
 export default function SteelStairsPage() {
   const data = getServicePageData("steel-stairs");
