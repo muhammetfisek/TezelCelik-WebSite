@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import {
   FaBullseye,
   FaCheckCircle,
@@ -15,6 +14,7 @@ import aboutImage from "@/images/anasayfa_arkaplan.jpeg";
 
 import "./about.css";
 import { StatsSection } from "./StatsSection";
+import { ServicesCtaBanner } from "@/app/components/ServicesCtaBanner/ServicesCtaBanner";
 
 const NAVBAR_HEIGHT = 90;
 const HERO_MIN_HEIGHT = 360;
@@ -286,34 +286,7 @@ export default function AboutPage() {
       {/* Rakamlarla Tezel Çelik */}
       <StatsSection />
 
-      {/* CTA */}
-      <section className="about-cta py-16">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="about-cta-card mx-auto max-w-4xl rounded-3xl px-6 py-12 text-center shadow-xl ring-1 ring-black/5 sm:px-10">
-            <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-              Projenizi birlikte hayata geçirelim
-            </h2>
-            <p className="mt-4 text-base leading-relaxed text-gray-700">
-              Çelik konstrüksiyon ihtiyacınızı hızlıca değerlendirelim; doğru
-              çözümü, net bir planla sunalım.
-            </p>
-            <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-              <Link
-                href="/contact"
-                className="rounded-full bg-[#FF5A3C] px-9 py-3 text-sm font-bold uppercase tracking-wide text-white shadow-md transition-transform hover:-translate-y-0.5 hover:shadow-lg"
-              >
-                İletişime Geç
-              </Link>
-              <Link
-                href="/services"
-                className="rounded-full border border-gray-900/15 bg-white/60 px-9 py-3 text-sm font-bold uppercase tracking-wide text-gray-900 shadow-md backdrop-blur transition-colors hover:bg-white"
-              >
-                Hizmetler
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ServicesCtaBanner />
     </main>
   );
 }
