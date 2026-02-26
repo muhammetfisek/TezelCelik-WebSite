@@ -115,7 +115,7 @@ export default function PedestrianBridgesPage() {
                   Yaya köprüsü hizmeti
                 </p>
                 <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                  Yaya geçiş köprüsü çözümleri
+                Güvenli ve Fonksiyonel Yaya Geçiş Köprüleri
                 </h2>
                 <div className="mt-3 h-1 w-24 rounded-full bg-[#FF5A3C]" />
                 <p className="mt-6 text-base leading-relaxed text-gray-700">
@@ -183,7 +183,7 @@ export default function PedestrianBridgesPage() {
               {/* 3. Bölüm: Teknik Detay ve Neden Biz */}
               <section className="mt-16 sm:mt-18 rounded-3xl bg-[#F9FAFB] px-6 py-7 sm:px-8 sm:py-8">
                 <h3 className="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
-                  Teknik Avantajlar ve Mühendislik Yaklaşımımız
+                Köprü Sistemlerinde Mühendislik Farkımız
                 </h3>
                 <div className="about-title-underline mt-3 h-1 w-20 bg-[#FF5A3C]" />
                 <ul className="mt-6 max-w-3xl list-disc space-y-3 pl-5 text-base leading-relaxed text-gray-700">
@@ -194,7 +194,7 @@ export default function PedestrianBridgesPage() {
                     <span className="font-semibold text-[#FF5A3C]">Geniş Açıklık:</span> Minimum ara destekle geçebilen optimize çelik taşıyıcı sistemler.
                   </li>
                   <li>
-                    <span className="font-semibold text-[#FF5A3C]">Engelli Erişimi:</span> Rampa ve asansör entegrasyonuna hazır tasarımlar.
+                    <span className="font-semibold text-[#FF5A3C]">Engelsiz Erişilebilirlik:</span> Engelli ve yaşlı erişimine uygun rampa eğimleri, asansör entegrasyonu ve kaydırmaz zemin detaylarıyla kapsayıcı ulaşım çözümleri sunuyoruz.
                   </li>
                   <li>
                     <span className="font-semibold text-[#FF5A3C]">Bütüncül Güvenlik:</span> Kaymaz zemin kaplamaları, güvenli korkuluk ve aydınlatma detayları.

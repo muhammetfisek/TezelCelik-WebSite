@@ -115,7 +115,7 @@ export default function ElevatorStructuresPage() {
                   Asansör çelikleri hizmeti
                 </p>
                 <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                  Asansör bölme ve taşıyıcı çözümleri
+                Asansör Taşıyıcı ve Bölme Çelik Sistemleri
                 </h2>
                 <div className="mt-3 h-1 w-24 rounded-full bg-[#FF5A3C]" />
                 <p className="mt-6 text-base leading-relaxed text-gray-700">
@@ -183,24 +183,24 @@ export default function ElevatorStructuresPage() {
               {/* 3. Bölüm: Teknik Detay ve Neden Biz */}
               <section className="mt-16 sm:mt-18 rounded-3xl bg-[#F9FAFB] px-6 py-7 sm:px-8 sm:py-8">
                 <h3 className="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
-                  Teknik Avantajlar ve Mühendislik Yaklaşımımız
+                Asansör Sistemlerinde Mühendislik Farkımız
                 </h3>
                 <div className="about-title-underline mt-3 h-1 w-20 bg-[#FF5A3C]" />
                 <ul className="mt-6 max-w-3xl list-disc space-y-3 pl-5 text-base leading-relaxed text-gray-700">
                   <li>
-                    <span className="font-semibold text-[#FF5A3C]">Milimetrik Doğruluk:</span> Lazerli ölçüm ve hassas montaj sayesinde ray hizasında tam uyum.
+                    <span className="font-semibold text-[#FF5A3C]">Maksimum Rijitlik ve Sarsıntı Kontrolü:</span> Taşıyıcı iskeleti, kabin hareketinden kaynaklanan vibrasyonu absorbe edecek şekilde tasarlayarak konforlu ve gürültüsüz bir seyir konforu sağlıyoruz.
                   </li>
                   <li>
-                    <span className="font-semibold text-[#FF5A3C]">Standart Uyumu:</span> EN 81-20/50 gibi güncel asansör standartlarına uyumlu statik tasarım ve detaylar.
+                    <span className="font-semibold text-[#FF5A3C]">Mevcut Binalara Hasarsız Uygulama:</span> Asansör boşluğu bulunmayan mevcut yapılarda, bina dışına veya galeri boşluklarına, yapısal bütünlüğe zarar vermeyen bağımsız çelik kule çözümleri sunuyoruz.
                   </li>
                   <li>
-                    <span className="font-semibold text-[#FF5A3C]">Mevcut Yapı Entegrasyonu:</span> Betonarme yapılara minimum müdahale ile entegre edilebilen çelik karkas çözümleri.
+                    <span className="font-semibold text-[#FF5A3C]">Yönetmeliklere Tam Uyumluluk:</span> Statik hesaplardan kumlama ve yangın geciktirici boya uygulamalarına kadar tüm süreçleri güncel asansör ve deprem yönetmelikleri çerçevesinde yürütüyoruz.
                   </li>
                   <li>
-                    <span className="font-semibold text-[#FF5A3C]">Korozyon Koruması:</span> Kuyu içi antipas boya veya galvaniz kaplama ile uzun ömürlü koruma.
+                    <span className="font-semibold text-[#FF5A3C]">Milimetrik Ray Toleransı:</span> Ray konsollarının montajında sıfıra yakın hata payı ile çalışarak, asansör ekipmanlarının aşınmasını engelliyor ve sistem ömrünü uzatıyoruz.
                   </li>
                   <li>
-                    <span className="font-semibold text-[#FF5A3C]">Koordineli Süreç:</span> Asansör montaj ekipleriyle koordineli çalışma sayesinde hızlı ve sorunsuz devreye alma.
+                    <span className="font-semibold text-[#FF5A3C]">Modüler ve Esnek Tasarım:</span> Dar şantiye alanlarında ve kısıtlı kuyu boşluklarında hızlı kuruluma imkan tanıyan, yerinde cıvatalı veya sertifikalı kaynaklı birleşim çözümleri üretiyoruz.
                   </li>
                 </ul>
               </section>

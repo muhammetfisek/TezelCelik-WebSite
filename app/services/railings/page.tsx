@@ -115,7 +115,7 @@ export default function RailingsPage() {
                   Korkuluk hizmeti
                 </p>
                 <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                  Korkuluk ve küpeşte çözümleri
+                Estetik ve Güvenli Korkuluk Sistemleri
                 </h2>
                 <div className="mt-3 h-1 w-24 rounded-full bg-[#FF5A3C]" />
                 <p className="mt-6 text-base leading-relaxed text-gray-700">
@@ -183,24 +183,24 @@ export default function RailingsPage() {
               {/* 3. Bölüm: Teknik Detay ve Neden Biz */}
               <section className="mt-16 sm:mt-18 rounded-3xl bg-[#F9FAFB] px-6 py-7 sm:px-8 sm:py-8">
                 <h3 className="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
-                  Teknik Avantajlar ve Mühendislik Yaklaşımımız
+                Korkuluk Tasarımlarında Mühendislik Farkımız
                 </h3>
                 <div className="about-title-underline mt-3 h-1 w-20 bg-[#FF5A3C]" />
                 <ul className="mt-6 max-w-3xl list-disc space-y-3 pl-5 text-base leading-relaxed text-gray-700">
                   <li>
-                    <span className="font-semibold text-[#FF5A3C]">Yönetmelik Uyumu:</span> Yükseklik, doluluk oranı ve çocuk güvenliği kriterlerine tam uyum.
+                    <span className="font-semibold text-[#FF5A3C]">Maksimum Yatay Yük Dayanımı:</span> Kalabalık alanlarda ve yüksek katlı yapılarda, yönetmeliklerin öngördüğü itme ve çarpma yüklerine karşı üstün direnç gösteren taşıyıcı detaylar tasarlıyoruz.
                   </li>
                   <li>
-                    <span className="font-semibold text-[#FF5A3C]">Endüstriyel Çözümler:</span> Tekmelik (toe board) ve çift sıra emniyet şeritli sistemler.
+                    <span className="font-semibold text-[#FF5A3C]">Kapsamlı Malzeme Seçenekleri:</span> Çelik iskeleti; cam, paslanmaz çelik, halat veya kompozit panellerle birleştirerek mekanın estetik ihtiyacına yönelik modern çözümler üretiyoruz.
                   </li>
                   <li>
-                    <span className="font-semibold text-[#FF5A3C]">Malzeme Seçenekleri:</span> Paslanmaz çelik, galvaniz ve boyalı sistemlerle projeye özel seçim.
+                    <span className="font-semibold text-[#FF5A3C]">Korozyon ve Dış Ortam Koruması:</span> Dış mekanlarda kullanılan korkuluklarda sıcak daldırma galvaniz veya elektrostatik toz boya ile hava koşullarına karşı yıllarca süren dayanıklılık sağlıyoruz.
                   </li>
                   <li>
-                    <span className="font-semibold text-[#FF5A3C]">Estetik ve Güvenlik:</span> Camlı ve halatlı korkuluk seçenekleriyle manzarayı kesmeden güvenlik.
+                    <span className="font-semibold text-[#FF5A3C]">Yönetmelik Uyumu (İSG):</span> Basamak, balkon ve teras alanları için yürürlükteki iş sağlığı ve güvenliği (İSG) kriterlerine ve bina yönetmeliklerine %100 uyumlu üretim yapıyoruz.
                   </li>
                   <li>
-                    <span className="font-semibold text-[#FF5A3C]">Uzun Ömürlü Tasarım:</span> Sağlam kaynak ve bağlantı detaylarıyla minimum bakım ihtiyacı.
+                    <span className="font-semibold text-[#FF5A3C]">Eksiz ve Pürüzsüz Yüzeyler:</span> Birleşim noktalarında uyguladığımız hassas taşlama ve finiş teknikleriyle, kullanıcı güvenliğini artıran ve görsel kusur barındırmayan yüzey kalitesi sunuyoruz.
                   </li>
                 </ul>
               </section>

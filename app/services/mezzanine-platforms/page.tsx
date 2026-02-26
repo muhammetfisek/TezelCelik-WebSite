@@ -115,7 +115,7 @@ export default function MezzaninePlatformsPage() {
                   Arakat ve platform hizmeti
                 </p>
                 <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                  Arakat ve platform çözümleri
+                  Arakat ve Platform Çözümleri
                 </h2>
                 <div className="mt-3 h-1 w-24 rounded-full bg-[#FF5A3C]" />
                 <p className="mt-6 text-base leading-relaxed text-gray-700">
@@ -183,24 +183,24 @@ export default function MezzaninePlatformsPage() {
               {/* 3. Bölüm: Teknik Detay ve Neden Biz */}
               <section className="mt-16 sm:mt-18 rounded-3xl bg-[#F9FAFB] px-6 py-7 sm:px-8 sm:py-8">
                 <h3 className="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
-                  Teknik Avantajlar ve Mühendislik Yaklaşımımız
+                Platform Sistemlerinde Mühendislik Farkımız
                 </h3>
                 <div className="about-title-underline mt-3 h-1 w-20 bg-[#FF5A3C]" />
                 <ul className="mt-6 max-w-3xl list-disc space-y-3 pl-5 text-base leading-relaxed text-gray-700">
                   <li>
-                    <span className="font-semibold text-[#FF5A3C]">Yük Kapasitesi:</span> Metrekare başına yük için detaylı statik hesap ve uygun profil seçimi.
+                    <span className="font-semibold text-[#FF5A3C]">Dinamik Yük Dayanımı:</span> Platform kullanım amacına göre (ofis, depo veya ağır makine) belirlenen kg/m² değerlerine uygun, sarsıntısız ve güvenli taşıyıcı iskelet tasarımı sunuyoruz.
                   </li>
                   <li>
-                    <span className="font-semibold text-[#FF5A3C]">Esnek Montaj:</span> Depo operasyonlarını aksatmayacak hızda montaj ve demonte edilebilir sistem tasarımı.
+                    <span className="font-semibold text-[#FF5A3C]">Modüler ve Genişletilebilir Yapı:</span> Cıvatalı birleşim teknolojimiz sayesinde, ihtiyaç duyulduğunda sistemin yerini değiştirebilir veya eklemeler yaparak alanınızı daha da büyütebilirsiniz.
                   </li>
                   <li>
-                    <span className="font-semibold text-[#FF5A3C]">İş Güvenliği:</span> Korkuluk, merdiven ve yürüyüş yolu çözümleriyle standartlara tam uyum.
+                    <span className="font-semibold text-[#FF5A3C]">Mevcut Yapı Entegrasyonu:</span> Binanızın ana taşıyıcı sistemini yormayan, kendi ayakları üzerinde durabilen veya statik onayı alınmış kolonlara entegre edilen hafif ama dayanıklı çözümler üretiyoruz.
                   </li>
                   <li>
-                    <span className="font-semibold text-[#FF5A3C]">Yüzey Koruması:</span> Galvaniz veya endüstriyel boya seçenekleriyle uzun ömürlü koruma.
+                    <span className="font-semibold text-[#FF5A3C]">Yüzey ve Kaplama Çeşitliliği:</span> Kullanım alanına göre baklavalı sac, MDF, ızgara veya plywood gibi farklı zemin seçenekleriyle fonksiyonel üst yüzeyler oluşturuyoruz.
                   </li>
                   <li>
-                    <span className="font-semibold text-[#FF5A3C]">Genişletilebilirlik:</span> Gelecekteki kapasite artışlarına göre modüler kurgular.
+                    <span className="font-semibold text-[#FF5A3C]">İSG Standartlı Detaylar:</span> Platform güvenliğini tamamlayan, yönetmeliklere uygun korkuluk, merdiven ve yükleme kapılarıyla tam bir paket çözüm sunuyoruz.
                   </li>
                 </ul>
               </section>

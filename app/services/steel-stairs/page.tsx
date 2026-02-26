@@ -115,7 +115,7 @@ export default function SteelStairsPage() {
                   Çelik merdiven hizmeti
                 </p>
                 <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                  Çelik merdiven çözümleri
+                Modern ve Endüstriyel Çelik Merdiven Sistemleri
                 </h2>
                 <div className="mt-3 h-1 w-24 rounded-full bg-[#FF5A3C]" />
                 <p className="mt-6 text-base leading-relaxed text-gray-700">
@@ -183,18 +183,18 @@ export default function SteelStairsPage() {
               {/* 3. Bölüm: Teknik Detay ve Neden Biz */}
               <section className="mt-16 sm:mt-18 rounded-3xl bg-[#F9FAFB] px-6 py-7 sm:px-8 sm:py-8">
                 <h3 className="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
-                  Teknik Avantajlar ve Mühendislik Yaklaşımımız
+                Merdiven Tasarımlarında Mühendislik Farkımız
                 </h3>
                 <div className="about-title-underline mt-3 h-1 w-20 bg-[#FF5A3C]" />
                 <ul className="mt-6 max-w-3xl list-disc space-y-3 pl-5 text-base leading-relaxed text-gray-700">
                   <li>
-                    <span className="font-semibold text-[#FF5A3C]">Yönetmelik Uyumu:</span> Basamak yüksekliği, genişliği ve sahanlık çözümlerinde tam uyum.
+                    <span className="font-semibold text-[#FF5A3C]">Sarsıntısız ve Sessiz Yapı::</span> Merdiven iskeletini, kullanım sırasında vibrasyonu ve metal sesini minimize edecek özel detaylarla ve yüksek rijitlikte tasarlıyoruz.
                   </li>
                   <li>
                     <span className="font-semibold text-[#FF5A3C]">Yangın Kaçış:</span> Yüksek taşıma kapasitesi ve güvenli tahliye kurgusu.
                   </li>
                   <li>
-                    <span className="font-semibold text-[#FF5A3C]">Kaplama Entegrasyonu:</span> Çelik gövde ile cam, ahşap ve taş kaplama seçenekleri.
+                    <span className="font-semibold text-[#FF5A3C]">Maksimum Alan Tasarrufu:</span> Döner, helisel veya omurgalı gibi farklı formlarda, dar alanlarda bile maksimum kullanım verimliliği sağlayan kompakt çözümler üretiyoruz.
                   </li>
                   <li>
                     <span className="font-semibold text-[#FF5A3C]">Kullanıcı Güvenliği:</span> Kaymaz basamak yüzeyleri ve sağlam korkuluk-küpeşte detayları.

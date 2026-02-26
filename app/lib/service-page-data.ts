@@ -243,15 +243,15 @@ export const servicePageData: Record<ServiceId, ServicePageData> = {
     heroDescription:
       "Mevcut binaların içine çelik taşıyıcılarla ilave kat ve çalışma platformları kurarak alan verimliliğinizi artırıyoruz.",
     introParagraph:
-      "Raf üstü platformlar, ofis arakatları, makine bakım platformları ve üretim hatları için statik hesaplara uygun, güvenli ve sökülebilir çelik arakat sistemleri tasarlıyoruz. Böylece yeni bina yatırımına gerek kalmadan mevcut hacminizi dikeyde büyütmenize yardımcı oluyoruz.",
+      "Mevcut yapılarınızda dikey alanı kazanca dönüştüren, bina hacmini ikiye katlayan yüksek taşıma kapasiteli çelik arakat sistemleri inşa ediyoruz. İşletmenizin operasyonel süreçlerini aksatmadan, mevcut yapıya minimum yük bindirecek şekilde tasarladığımız platformlarla depolama ve çalışma alanlarınızı optimize ediyoruz",
     howWeWorkSteps: [
       {
-        title: "Alan ve Yük Analizi",
-        desc: "Mevcut bina ölçüleri, zemin durumu ve kullanım amacı değerlendirilir; metrekare başına yük kapasitesi belirlenir.",
+        title: "Yük Analizi & Planlama",
+        desc: "Arakatın üzerine binecek hareketli ve sabit yükleri (makine, raf, personel) hesaplayarak, mevcut binanın zemin ve kolon statiğine tam uyumlu projeler geliştiriyoruz.",
       },
       {
-        title: "Statik Proje ve Detaylandırma",
-        desc: "Kolon yerleşimi, kiriş hatları, merdiven ve korkuluk detayları mühendislik yazılımlarıyla projelendirilir.",
+        title: "Hızlı ve Temiz Montaj",
+        desc: "Fabrikada hazırlanan modüler ve cıvatalı parçalar sayesinde, şantiyede kaynak ve kirlilik yaratmadan, işleyişinizi durdurmadan kurulumu tamamlıyoruz.",
       },
       {
         title: "İmalat ve Yüzey Hazırlığı",
@@ -284,12 +284,12 @@ export const servicePageData: Record<ServiceId, ServicePageData> = {
       "Cepheyle uyumlu, hafif ve şeffaf görünümlü sistemlerden; tam kapalı ve endüstriyel kanopilere kadar geniş bir yelpazede çelik saçak çözümleri geliştiriyoruz. Cam, kompozit panel ve polikarbon gibi kaplamalarla hem estetik hem de uzun ömürlü giriş alanları tasarlıyoruz.",
     howWeWorkSteps: [
       {
-        title: "Mimari ve Fonksiyonel Analiz",
-        desc: "Bina cephesi, giriş trafiği ve iklim koşulları değerlendirilerek uygun kanopi tipi belirlenir.",
+        title: "Mimari Uyum & Tasarım",
+        desc: "Mevcut bina cephesiyle bütünleşen, rüzgar ve kar yükü analizleri yapılmış, fonksiyonel ve estetik çelik formlar projelendiriyoruz.",
       },
       {
-        title: "Statik Hesap ve Detay Projeleri",
-        desc: "Taşıyıcı sistem, bağlantı detayları ve kaplama alt konstrüksiyonu yönetmeliklere uygun şekilde projelendirilir.",
+        title: "Detaycı İmalat & Montaj",
+        desc: "Paslanmaz detaylar, cam veya kompozit kaplama seçenekleriyle fabrikada hazırlanan modüler sistemleri, bina giriş trafiğini aksatmadan titizlikle monte ediyoruz.",
       },
       {
         title: "İmalat ve Yüzey Koruma",
@@ -319,15 +319,15 @@ export const servicePageData: Record<ServiceId, ServicePageData> = {
     heroDescription:
       "Yeni ve mevcut binalarda asansör kuyusu için çelik taşıyıcı sistemleri mühendislik hesaplarıyla tasarlayıp uyguluyoruz.",
     introParagraph:
-      "Mevcut betonarme binalara sonradan asansör eklenmesi veya yeni projelerde çelik asansör kulelerinin imalatı için statik hesap, detay çizimi ve sahada montaj süreçlerini üstleniyoruz. Asansör firmalarıyla koordineli çalışarak güvenli ve yönetmeliklere uygun çözümler üretiyoruz.",
+      "Yeni inşa edilen veya mevcut binalarda, asansör ray ve kabin sistemleri için uluslararası emniyet standartlarına tam uyumlu çelik taşıyıcı kurgular inşa ediyoruz. Mühendislik hesaplarıyla optimize ettiğimiz sistemlerimiz, yüksek hızlarda bile sarsıntısız ve güvenli bir seyir deneyimi için gereken rijit yapıyı sunar.",
     howWeWorkSteps: [
       {
-        title: "Mevcut Yapı Analizi",
-        desc: "Bina taşıyıcı sistemi, kuyu geometrisi ve asansör projesi birlikte değerlendirilir; en uygun çelik sistem tipi seçilir.",
+        title: "Hassas Statik Projelendirme",
+        desc: "Asansör kuyusu ölçüleri ve asansör tipine (insan, yük, sedye) göre dinamik yük analizleri yapıyor, ray kılavuzları için milimetrik toleranslı statik projeler hazırlıyoruz.",
       },
       {
-        title: "Statik Proje ve Detaylar",
-        desc: "Ray taşıyıcı consollar, bölme kirişleri ve çelik kule sistemi için statik hesaplar ve detay projeler hazırlanır.",
+        title: "Sertifikalı ve Güvenli Montaj",
+        desc: "Dar alanlarda çalışma güvenliğini ön planda tutarak, asansör firmalarının teknik şartnamelerine ve asansör yönetmeliklerine (EN 81-20/50) tam uyumlu, hassas montaj gerçekleştiriyoruz.",
       },
       {
         title: "İmalat ve Koruma",
@@ -357,7 +357,7 @@ export const servicePageData: Record<ServiceId, ServicePageData> = {
     heroDescription:
       "Sanayi tesisleri ve kampüsler için güvenli ve konforlu çelik yaya köprüleri tasarlayıp uyguluyoruz.",
     introParagraph:
-      "Yoğun trafik, üretim hatları veya farklı kotlardaki yapılar arasında güvenli ve konforlu geçişler için çelik yaya köprüleri tasarlıyoruz. Engelli erişimine uygun rampalar, asansör çözümleri ve aydınlatma detayları ile hem fonksiyonel hem de estetik yapılar oluşturuyoruz.",
+      "Şehir trafiğini rahatlatan, yaya güvenliğini en üst seviyeye çıkaran ve mimari dokuyla uyumlu çelik geçiş sistemleri inşa ediyoruz. Dinamik yük analizleri titizlikle yapılmış köprü projelerimizle, modern ulaşım ağlarına estetik, dayanıklı ve uzun ömürlü çözümler sunuyoruz.",
     howWeWorkSteps: [
       {
         title: "Güzergâh ve Fonksiyon Analizi",
@@ -395,7 +395,7 @@ export const servicePageData: Record<ServiceId, ServicePageData> = {
     heroDescription:
       "Yangın kaçış ve mimari merdivenler için yönetmeliklere uygun çelik merdiven çözümleri sunuyoruz.",
     introParagraph:
-      "Endüstriyel tesislerden ofis ve konut projelerine kadar farklı kullanım senaryoları için çelik merdiven sistemleri tasarlıyoruz. Yangın merdivenleri, servis merdivenleri ve mimari dekoratif merdivenlerde hem güvenlik hem de estetik beklentilerini bir arada karşılıyoruz.",
+      "Yaşam ve çalışma alanlarınıza modern bir kimlik kazandıran, estetik ile güvenliği birleştiren yüksek dayanımlı çelik merdivenler tasarlıyoruz. Mekanın ruhuna uygun formlarda, ergonomik standartlara tam uyumlu ve uzun ömürlü taşıyıcı çözümler sunuyoruz.",
     howWeWorkSteps: [
       {
         title: "İhtiyaç ve Yönetmelik Analizi",
@@ -425,7 +425,7 @@ export const servicePageData: Record<ServiceId, ServicePageData> = {
   },
   railings: {
     id: "railings",
-    title: "Korkuluk ve Küpeşte Sistemleri",
+    title: "Korkuluk Sistemleri",
     shortTitle: "Korkuluk",
     metaTitle: "Çelik Korkuluk ve Küpeşte Sistemleri | Tezel Çelik",
     metaDescription:

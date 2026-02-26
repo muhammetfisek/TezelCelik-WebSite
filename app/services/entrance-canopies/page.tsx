@@ -115,7 +115,7 @@ export default function EntranceCanopiesPage() {
                   Giriş saçağı ve kanopi hizmeti
                 </p>
                 <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                  Giriş saçağı ve kanopi çözümleri
+                Modern Giriş Saçağı ve Kanopi Çözümleri
                 </h2>
                 <div className="mt-3 h-1 w-24 rounded-full bg-[#FF5A3C]" />
                 <p className="mt-6 text-base leading-relaxed text-gray-700">
@@ -183,21 +183,21 @@ export default function EntranceCanopiesPage() {
               {/* 3. Bölüm: Teknik Detay ve Neden Biz */}
               <section className="mt-16 sm:mt-18 rounded-3xl bg-[#F9FAFB] px-6 py-7 sm:px-8 sm:py-8">
                 <h3 className="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
-                  Teknik Avantajlar ve Mühendislik Yaklaşımımız
+                Kanopi Tasarımlarında Mühendislik Farkımız
                 </h3>
                 <div className="about-title-underline mt-3 h-1 w-20 bg-[#FF5A3C]" />
                 <ul className="mt-6 max-w-3xl list-disc space-y-3 pl-5 text-base leading-relaxed text-gray-700">
                   <li>
-                    <span className="font-semibold text-[#FF5A3C]">Hafif Taşıyıcı Sistem:</span> İnce kesitli çelik profillerle yüksek taşıma kapasiteli tasarımlar.
+                    <span className="font-semibold text-[#FF5A3C]">Hava Koşullarına Maksimum Direnç:</span> Bölgesel rüzgar vakumlama ve kar birikme yüklerine karşı, yapının cephe statiğini bozmayan özel taşıyıcı hesaplar uyguluyoruz.
                   </li>
                   <li>
-                    <span className="font-semibold text-[#FF5A3C]">Statik Çözümler:</span> Kar ve rüzgâr yükleri için hesaplanmış, yönetmeliklere uygun projeler.
+                    <span className="font-semibold text-[#FF5A3C]">Geniş Malzeme Kombinasyonu:</span> Çelik iskeleti; cam, polikarbonat, alüminyum kompozit veya paslanmaz çelik detaylarla birleştirerek yapınıza özgün bir kimlik kazandırıyoruz.
                   </li>
                   <li>
-                    <span className="font-semibold text-[#FF5A3C]">Kaplama Uyumu:</span> Cam, kompozit ve polikarbon kaplamalarla uyumlu alt konstrüksiyon detayları.
+                    <span className="font-semibold text-[#FF5A3C]">Gizli Tahliye Sistemleri:</span> Tasarıma entegre edilen gizli dere ve iniş borusu detaylarıyla, yağmur sularının estetik bir şekilde tahliye edilmesini sağlıyoruz.
                   </li>
                   <li>
-                    <span className="font-semibold text-[#FF5A3C]">Su Tahliye:</span> Gizli dere ve yağmur suyu tahliye çözümleriyle cepheyi koruyan uygulamalar.
+                    <span className="font-semibold text-[#FF5A3C]">Korozyon ve Dış Ortam Dayanımı:</span> Dış mekana maruz kalan tüm çelik yüzeylerde sıcak daldırma galvaniz veya elektrostatik boya kullanarak yıllarca bakım gerektirmeyen yüzeyler sunuyoruz.
                   </li>
                   <li>
                     <span className="font-semibold text-[#FF5A3C]">Dayanıklılık:</span> Hızlı montaj ve minimum müdahale gerektiren yüzey kaplamaları.
