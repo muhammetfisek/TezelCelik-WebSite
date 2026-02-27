@@ -25,6 +25,9 @@ export const metadata: Metadata = {
 };
 
 export default function SteelBuildingsPage() {
+  const data = getServicePageData("steel-buildings");
+  const steps = data.howWeWorkSteps;
+
   return (
     <main className="about-page-enter min-h-screen bg-white">
       <section
@@ -49,10 +52,10 @@ export default function SteelBuildingsPage() {
             Tezel Çelik Sistemleri
           </p>
           <h1 className="text-5xl sm:text-6xl font-extrabold tracking-wide text-white text-center leading-tight drop-shadow-lg">
-            Çelik Binalar
+            {data.title}
           </h1>
           <p className="mt-4 max-w-3xl text-base sm:text-lg leading-relaxed text-white/95 drop-shadow-md">
-          Uluslararası standartlarda, depreme dayanıklı ve anahtar teslim çelik bina çözümleri.
+            {data.heroDescription}
           </p>
         </div>
       </section>
@@ -71,26 +74,26 @@ export default function SteelBuildingsPage() {
                 </h2>
                 <div className="mt-3 h-1 w-24 rounded-full bg-[#FF5A3C]" />
                 <p className="mt-6 text-base leading-relaxed text-gray-700">
-                Geniş açıklık ve yüksek taşıma kapasitesi gerektiren endüstriyel projelerde, statik hesaplardan anahtar teslim montaja kadar tüm süreci mühendislik disipliniyle yönetiyoruz. Çelik binalarımız, deprem yüklerini minimize eden hafif iskelet yapısıyla maksimum güvenlik sunarken; vinç yolları ve ağır yük raf sistemlerine tam uyumlu altyapısı sayesinde operasyonel verimliliğinizi en üst seviyeye taşır.
+                  {data.introParagraph}
                 </p>
 
                 <div className="mt-8 grid gap-5 sm:grid-cols-2">
                   <div className="rounded-2xl bg-[#FFF7F5] px-5 py-5 shadow-sm">
                     <h3 className="text-sm font-semibold text-gray-900">
-                      Mühendislik &amp; Proje
+                      {steps[0]?.title ?? ""}
                     </h3>
                     <div className="mt-2 h-0.5 w-10 rounded-full bg-[#FF5A3C]" />
                     <p className="mt-3 text-sm leading-relaxed text-gray-700">
-                    Statik hesap, detay çizim ve vinç yolları dahil endüstriyel projeler için deprem yönetmeliğine tam uyumlu, net ve kontrol edilebilir bir yapı kurgusu oluşturuyoruz.
+                      {steps[0]?.desc ?? ""}
                     </p>
                   </div>
                   <div className="rounded-2xl bg-[#F9FAFB] px-5 py-5 shadow-sm">
                     <h3 className="text-sm font-semibold text-gray-900">
-                      İmalat &amp; Montaj
+                      {steps[1]?.title ?? ""}
                     </h3>
                     <div className="mt-2 h-0.5 w-10 rounded-full bg-[#FF5A3C]" />
                     <p className="mt-3 text-sm leading-relaxed text-gray-700">
-                    Sertifikalı malzemelerle fabrikada hassas üretim; sahada ise planlanan takvime uygun, cıvatalı birleşim avantajıyla hızlı ve güvenli bina kurulumu gerçekleştiriyoruz.
+                      {steps[1]?.desc ?? ""}
                     </p>
                   </div>
                 </div>

@@ -4,9 +4,6 @@
  */
 
 export type ServiceId =
-  | "earthquake-cabins"
-  | "steel-construction"
-  | "construction-contract"
   | "steel-buildings"
   | "wide-span-roofs"
   | "mezzanine-platforms"
@@ -43,120 +40,6 @@ export interface ServicePageData {
 }
 
 export const servicePageData: Record<ServiceId, ServicePageData> = {
-  "earthquake-cabins": {
-    id: "earthquake-cabins",
-    title: "Deprem Kabinleri",
-    shortTitle: "Deprem Kabinleri",
-    metaTitle: "Deprem Kabini Hizmeti | Çelik Deprem Kafesi Üretim ve Montaj | Tezel Çelik",
-    metaDescription:
-      "Deprem kabini ve deprem kafesi projelendirme, imalat ve montaj. Okul, hastane, fabrika ve kamu binaları için standartlara uygun çelik acil durum kabinleri. Tezel Çelik Sistemleri.",
-    heroDescription:
-      "Deprem ve acil durumlarda güvenli barınma ve çalışma alanı sunan deprem kabinleri; dayanıklı çelik konstrüksiyon ve standartlara uygun tasarım ile üretilmektedir.",
-    introParagraph:
-      "Deprem kabinleri; okul, hastane, fabrika ve kamu binalarında acil durum toplanma ve yönetim alanı olarak kullanılmak üzere tasarlanır. Çelik taşıyıcı sistem, yangına dayanıklı kaplama ve gerekli donanımlarla güvenli alanlar oluşturuyoruz. Tezel Çelik olarak statik analiz raporları ve sertifikalı malzemelerle her kabini yaşam güvenliği standartlarına göre projelendiriyoruz.",
-    howWeWorkSteps: [
-      {
-        title: "İhtiyaç ve Yerleşim Analizi",
-        desc: "Bina planı ve kullanım amacına göre kabin sayısı, boyutları ve konumları belirlenir; deprem yönetmeliği gereksinimleri kontrol edilir.",
-      },
-      {
-        title: "Statik Projelendirme",
-        desc: "Yük kapasitesi, ankraj ve kaplama detayları mühendislik yazılımlarıyla hesaplanır; proje onayı alınır.",
-      },
-      {
-        title: "İmalat ve Kalite Kontrol",
-        desc: "Atölyede çelik konstrüksiyon imalatı, kumlama-boya ve iç donanım montajı tamamlanır; sertifikalı malzeme kullanılır.",
-      },
-      {
-        title: "Saha Montajı ve Devreye Alma",
-        desc: "Döşemeye ankraj, kabin montajı ve gerekli elektrik/iletişim bağlantıları yapılır; teslim ve kullanım eğitimi verilir.",
-      },
-    ],
-    relatedBlogSlugs: [
-      "celik-binalar-rehberi-depreme-dayanikli-ve-ekonomik-yapi-cozumleri",
-      "celik-yapilarda-deprem-dayanikliligi-neden-en-guvenli-secenek",
-      "celik-vs-betonarme-maliyet-ve-hiz-karsilastirmasi",
-    ],
-    projectsCtaTitle: "Deprem Kabini ve Güvenlik Projelerimiz",
-    projectsCtaDescription: "Okul, hastane ve kamu binaları için gerçekleştirdiğimiz deprem kabini projelerini inceleyin.",
-    projectsHref: "/projects",
-  },
-  "steel-construction": {
-    id: "steel-construction",
-    title: "Çelik Konstrüksiyon",
-    shortTitle: "Çelik Konstrüksiyon",
-    metaTitle: "Çelik Konstrüksiyon | Fabrika, Hangar, Depo İmalat ve Montaj | Tezel Çelik",
-    metaDescription:
-      "Endüstriyel çelik konstrüksiyon: fabrika, hangar, depo, çelik çatı ve platform projelendirme, imalat ve montaj. Deprem dayanımlı, hızlı teslimat. Tezel Çelik Sistemleri.",
-    heroDescription:
-      "Endüstriyel tesisler, depo ve hangarlar, çelik çatı ve platformlar için projelendirme, imalat ve montaj hizmetleri. Mühendislik disiplini ve kalite odaklı üretim ile uzun ömürlü yapılar.",
-    introParagraph:
-      "Çelik konstrüksiyon; hızlı inşaat süresi, dayanıklılık ve esnek tasarım imkânları ile endüstriyel ve ticari yapıların vazgeçilmez tercihidir. Tezel Çelik olarak projelendirmeden sahada montaja kadar tüm süreçleri yönetiyoruz. Geniş açıklıklar, vinç yolları ve özel teknik gereksinimler için statik hesaplar ve detaylı uygulama projeleri sunuyoruz.",
-    howWeWorkSteps: [
-      {
-        title: "Keşif ve Proje Kapsamı",
-        desc: "Saha ziyareti, ihtiyaç analizi ve rüzgar/kar/deprem yükleri için bölge verileri toplanır; ön boyutlandırma yapılır.",
-      },
-      {
-        title: "Statik ve Uygulama Projeleri",
-        desc: "Taşıyıcı sistem, birleşim detayları ve imalat çizimleri hazırlanır; gerekirse mimari ile koordinasyon sağlanır.",
-      },
-      {
-        title: "Fabrika İmalatı",
-        desc: "Kesim, kaynak, kumlama ve boya işlemleri kalite kontrol altında yapılır; sevkiyat planı oluşturulur.",
-      },
-      {
-        title: "Montaj ve Teslim",
-        desc: "Sahada montaj, cıvata/kaynak birleşimleri ve son kontroller tamamlanır; devreye alma dokümanları teslim edilir.",
-      },
-    ],
-    relatedBlogSlugs: [
-      "celik-konstruksiyon-rehberi-dayaniklilik-hiz-ve-estetigin-bulustugu-nokta",
-      "fabrika-ve-hangar-yapimi-endustriyel-tesislerde-celik-gucu",
-      "celik-vs-betonarme-maliyet-ve-hiz-karsilastirmasi",
-    ],
-    projectsCtaTitle: "Çelik Konstrüksiyon Projelerimiz",
-    projectsCtaDescription: "Fabrika, hangar, depo ve endüstriyel tesis projelerimizi inceleyin.",
-    projectsHref: "/projects",
-  },
-  "construction-contract": {
-    id: "construction-contract",
-    title: "İnşaat Taahhüt",
-    shortTitle: "İnşaat Taahhüt",
-    metaTitle: "İnşaat Taahhüt | Anahtar Teslim Çelik Yapı Projeleri | Tezel Çelik",
-    metaDescription:
-      "Çelik konstrüksiyon ve inşaat taahhüt: ana yüklenici veya alt yüklenici olarak proje yönetimi, şantiye organizasyonu ve zamanında teslimat. Tezel Çelik.",
-    heroDescription:
-      "Çelik konstrüksiyon ve inşaat işlerinde ana yüklenici veya alt yüklenici olarak taahhüt hizmeti. Proje yönetimi, şantiye organizasyonu ve zamanında teslimat.",
-    introParagraph:
-      "Çelik yapıların projelendirilmesi, imalatı ve montajını tek elden veya mevcut inşaat projelerine entegre taahhüt ediyoruz. Keşif, planlama, tedarik ve sahada uygulama süreçlerini yönetiyoruz. Anahtar teslim modelle tek muhatap güveni, bütçe ve süre kontrolü sunuyoruz.",
-    howWeWorkSteps: [
-      {
-        title: "Keşif ve Teklif",
-        desc: "Proje incelemesi, maliyet analizi ve sözleşme koşulları netleştirilir; iş programı taslağı çıkarılır.",
-      },
-      {
-        title: "Planlama ve Ruhsat",
-        desc: "Projelendirme, tedarik planı ve gerekli resmi izinlerin takibi yapılır; şantiye organizasyonu kurulur.",
-      },
-      {
-        title: "İmalat ve Şantiye Yönetimi",
-        desc: "Fabrika üretimi ile paralel sahada hazırlık ve montaj başlar; iş güvenliği ve kalite denetimi sürer.",
-      },
-      {
-        title: "Teslimat ve Devir",
-        desc: "Son kontroller, denetim ve dokümantasyon tamamlanır; anahtar teslim veya kısmi teslim yapılır.",
-      },
-    ],
-    relatedBlogSlugs: [
-      "celik-konstruksiyon-rehberi-dayaniklilik-hiz-ve-estetigin-bulustugu-nokta",
-      "celik-vs-betonarme-maliyet-ve-hiz-karsilastirmasi",
-      "celik-binalar-rehberi-depreme-dayanikli-ve-ekonomik-yapi-cozumleri",
-    ],
-    projectsCtaTitle: "İnşaat Taahhüt Projelerimiz",
-    projectsCtaDescription: "Anahtar teslim ve taahhüt kapsamında tamamladığımız projelere göz atın.",
-    projectsHref: "/projects",
-  },
   "steel-buildings": {
     id: "steel-buildings",
     title: "Çelik Binalar",
@@ -165,31 +48,22 @@ export const servicePageData: Record<ServiceId, ServicePageData> = {
     metaDescription:
       "Endüstriyel ve ticari yapılar için çelik bina tasarımı, imalatı ve montajı. Hızlı, güvenli ve uzun ömürlü çözümler.",
     heroDescription:
-      "Endüstriyel tesisler, depolar ve ticari yapılar için dayanıklı çelik bina çözümleri sunuyoruz.",
+      "Uluslararası standartlarda, depreme dayanıklı ve anahtar teslim çelik bina çözümleri.",
     introParagraph:
-      "Çelik binalar; uzun açıklık gerektiren, yüksek taşıma kapasitesi isteyen ve hızlı devreye alınması gereken projeler için en uygun yapı sistemlerinden biridir. Statik projelendirme, imalat ve montaj süreçlerinin tamamını mühendislik disipliniyle yönetiyor, sahada minimum duruşla yapınızı teslim ediyoruz.",
+      "Geniş açıklık ve yüksek taşıma kapasitesi gerektiren endüstriyel projelerde, statik hesaplardan anahtar teslim montaja kadar tüm süreci mühendislik disipliniyle yönetiyoruz. Çelik binalarımız, deprem yüklerini minimize eden hafif iskelet yapısıyla maksimum güvenlik sunarken; vinç yolları ve ağır yük raf sistemlerine tam uyumlu altyapısı sayesinde operasyonel verimliliğinizi en üst seviyeye taşır.",
     howWeWorkSteps: [
       {
-        title: "Keşif ve Proje Kapsamı",
-        desc: "Saha ziyareti, ihtiyaç analizi ve rüzgar/kar/deprem yükleri için bölge verileri toplanır; ön boyutlandırma yapılır.",
+        title: "Mühendislik & Proje",
+        desc: "Statik hesap, detay çizim ve vinç yolları dahil endüstriyel projeler için deprem yönetmeliğine tam uyumlu, net ve kontrol edilebilir bir yapı kurgusu oluşturuyoruz.",
       },
       {
-        title: "Statik ve Uygulama Projeleri",
-        desc: "Taşıyıcı sistem, birleşim detayları ve imalat çizimleri hazırlanır; gerekirse mimari ile koordinasyon sağlanır.",
-      },
-      {
-        title: "Fabrika İmalatı",
-        desc: "Kesim, kaynak, kumlama ve boya işlemleri kalite kontrol altında yapılır; sevkiyat planı oluşturulur.",
-      },
-      {
-        title: "Montaj ve Teslim",
-        desc: "Sahada montaj, cıvata/kaynak birleşimleri ve son kontroller tamamlanır; devreye alma dokümanları teslim edilir.",
+        title: "İmalat & Montaj",
+        desc: "Sertifikalı malzemelerle fabrikada hassas üretim; sahada ise planlanan takvime uygun, cıvatalı birleşim avantajıyla hızlı ve güvenli bina kurulumu gerçekleştiriyoruz.",
       },
     ],
     relatedBlogSlugs: [
       "celik-binalar-rehberi-depreme-dayanikli-ve-ekonomik-yapi-cozumleri",
       "celik-yapilarda-deprem-dayanikliligi-neden-en-guvenli-secenek",
-      "celik-vs-betonarme-maliyet-ve-hiz-karsilastirmasi",
     ],
     projectsCtaTitle: "Çelik Bina Projelerimiz",
     projectsCtaDescription: "Endüstriyel tesis, depo ve ticari yapı projelerimizi inceleyin.",
@@ -215,19 +89,10 @@ export const servicePageData: Record<ServiceId, ServicePageData> = {
         title: "Hassas İmalat & Kurulum",
         desc: "Fabrika ortamında hazırlanan yüksek mukavemetli çelik makas sistemlerini, sahada iş güvenliği standartlarına uygun olarak hızlı ve hatasız bir şekilde monte ediyoruz.",
       },
-      {
-        title: "Fabrika İmalatı",
-        desc: "Çelik makas ve taşıyıcılar atölyede üretilir, kumlama ve boya işlemleri tamamlanır.",
-      },
-      {
-        title: "Montaj ve Son Kontroller",
-        desc: "Şantiyede montaj, kaplama entegrasyonu ve su sızdırmazlık detayları ile birlikte teslim edilir.",
-      },
     ],
     relatedBlogSlugs: [
       "genis-aciklikli-celik-catilar-verimlilik-ve-estetik",
       "celik-konstruksiyon-rehberi-dayaniklilik-hiz-ve-estetigin-bulustugu-nokta",
-      "celik-yapilarda-deprem-dayanikliligi-neden-en-guvenli-secenek",
     ],
     projectsCtaTitle: "Geniş Açıklıklı Çatı Projelerimiz",
     projectsCtaDescription: "Fabrika, depo, spor salonu ve hangar çatı projelerimizi inceleyin.",
@@ -253,19 +118,10 @@ export const servicePageData: Record<ServiceId, ServicePageData> = {
         title: "Hızlı ve Temiz Montaj",
         desc: "Fabrikada hazırlanan modüler ve cıvatalı parçalar sayesinde, şantiyede kaynak ve kirlilik yaratmadan, işleyişinizi durdurmadan kurulumu tamamlıyoruz.",
       },
-      {
-        title: "İmalat ve Yüzey Hazırlığı",
-        desc: "Profil kesim, kaynak, kumlama ve boya/galvaniz işlemleri tamamlanır; modüler sistemler sevkiyata hazırlanır.",
-      },
-      {
-        title: "Montaj ve Devreye Alma",
-        desc: "Sahada montaj, döşeme kaplamaları ve korkuluklar tamamlanır; iş güvenliği kontrolleri sonrası teslim edilir.",
-      },
     ],
     relatedBlogSlugs: [
       "celik-arakat-ve-platform-sistemleri-ile-alan-yonetimi",
       "celik-konstruksiyon-rehberi-dayaniklilik-hiz-ve-estetigin-bulustugu-nokta",
-      "celik-vs-betonarme-maliyet-ve-hiz-karsilastirmasi",
     ],
     projectsCtaTitle: "Arakat ve Platform Projelerimiz",
     projectsCtaDescription: "Depo, fabrika ve lojistik tesisler için gerçekleştirdiğimiz arakat ve platform uygulamalarını inceleyin.",
@@ -291,19 +147,10 @@ export const servicePageData: Record<ServiceId, ServicePageData> = {
         title: "Detaycı İmalat & Montaj",
         desc: "Paslanmaz detaylar, cam veya kompozit kaplama seçenekleriyle fabrikada hazırlanan modüler sistemleri, bina giriş trafiğini aksatmadan titizlikle monte ediyoruz.",
       },
-      {
-        title: "İmalat ve Yüzey Koruma",
-        desc: "Çelik taşıyıcılar fabrikada üretilir, kumlama ve boya/galvaniz işlemleri ile korozyona karşı korunur.",
-      },
-      {
-        title: "Montaj ve Su Tahliye Çözümleri",
-        desc: "Sahada montaj, gizli dere ve yağmur suyu tahliye detayları ile birlikte tamamlanır.",
-      },
     ],
     relatedBlogSlugs: [
       "giris-sacagi-ve-kanopi-sistemleri-estetik-ve-koruma",
       "genis-aciklikli-celik-catilar-verimlilik-ve-estetik",
-      "celik-konstruksiyon-rehberi-dayaniklilik-hiz-ve-estetigin-bulustugu-nokta",
     ],
     projectsCtaTitle: "Giriş Saçağı ve Kanopi Projelerimiz",
     projectsCtaDescription: "Otel, ofis, AVM ve endüstriyel tesisler için gerçekleştirdiğimiz giriş saçağı ve kanopi projelerini inceleyin.",
@@ -329,19 +176,10 @@ export const servicePageData: Record<ServiceId, ServicePageData> = {
         title: "Sertifikalı ve Güvenli Montaj",
         desc: "Dar alanlarda çalışma güvenliğini ön planda tutarak, asansör firmalarının teknik şartnamelerine ve asansör yönetmeliklerine (EN 81-20/50) tam uyumlu, hassas montaj gerçekleştiriyoruz.",
       },
-      {
-        title: "İmalat ve Koruma",
-        desc: "Çelik elemanlar fabrikada üretilir, antipas boya veya galvaniz kaplama ile korozyona karşı korunur.",
-      },
-      {
-        title: "Montaj ve Hassas Ayar",
-        desc: "Sahada montaj lazerli ölçümle yapılır, asansör montaj ekibi ile koordineli şekilde sistem devreye alınır.",
-      },
     ],
     relatedBlogSlugs: [
       "asansor-bolme-celikleri-ve-tasiyici-sistemler-guvenli-dikey-tasimacilik",
       "celik-yapilarda-deprem-dayanikliligi-neden-en-guvenli-secenek",
-      "celik-konstruksiyon-rehberi-dayaniklilik-hiz-ve-estetigin-bulustugu-nokta",
     ],
     projectsCtaTitle: "Asansör Çelik Konstrüksiyon Projelerimiz",
     projectsCtaDescription: "Asansör kuleleri, kuyu içi çelik karkas ve bölme çelikleri projelerimizi inceleyin.",
@@ -367,19 +205,10 @@ export const servicePageData: Record<ServiceId, ServicePageData> = {
         title: "Taşıyıcı Sistem Tasarımı",
         desc: "Kafes sistem, kemer veya gergili sistem gibi uygun taşıyıcı tip seçilir; statik analizler yapılır.",
       },
-      {
-        title: "İmalat ve Koruyucu Kaplama",
-        desc: "Köprü elemanları fabrikada üretilir, galvaniz veya boya sistemleri ile dış etkenlere karşı korunur.",
-      },
-      {
-        title: "Montaj ve Devreye Alma",
-        desc: "Saha montajı, zemin kaplaması, korkuluk ve aydınlatma entegrasyonu ile birlikte tamamlanır.",
-      },
     ],
     relatedBlogSlugs: [
       "celik-yaya-gecis-kopru-projeleri-sehirleri-baglayan-estetik",
       "asansor-bolme-celikleri-ve-tasiyici-sistemler-guvenli-dikey-tasimacilik",
-      "celik-yapilarda-deprem-dayanikliligi-neden-en-guvenli-secenek",
     ],
     projectsCtaTitle: "Yaya Geçiş Köprüsü Projelerimiz",
     projectsCtaDescription: "Sanayi tesisleri, kampüsler ve şehir içi alanlar için gerçekleştirdiğimiz çelik yaya köprüsü projelerini inceleyin.",
@@ -405,19 +234,10 @@ export const servicePageData: Record<ServiceId, ServicePageData> = {
         title: "Geometri ve Statik Tasarım",
         desc: "Basamak ölçüleri, sahanlık yerleşimi ve taşıyıcı sistem profilleri ergonomi ve statik gereksinimlere göre tasarlanır.",
       },
-      {
-        title: "İmalat ve Yüzey İşlemleri",
-        desc: "Merdiven gövdesi, basamaklar ve korkuluklar fabrikada üretilir; boya veya galvaniz ile korozyon koruması sağlanır.",
-      },
-      {
-        title: "Montaj ve Son Kontroller",
-        desc: "Saha montajı, korkuluk ve küpeşte montajı tamamlanır; titreşim ve konfor kontrolleri sonrası teslim edilir.",
-      },
     ],
     relatedBlogSlugs: [
       "celik-merdiven-sistemleri-dayaniklilik-guvenlik-ve-modern-tasarim",
       "celik-korkuluk-ve-kupeste-sistemleri-guvenligin-en-sik-hali",
-      "celik-konstruksiyon-rehberi-dayaniklilik-hiz-ve-estetigin-bulustugu-nokta",
     ],
     projectsCtaTitle: "Çelik Merdiven Projelerimiz",
     projectsCtaDescription: "Endüstriyel ve mimari çelik merdiven projelerimizi inceleyin.",
@@ -443,19 +263,10 @@ export const servicePageData: Record<ServiceId, ServicePageData> = {
         title: "Detay Tasarım ve Malzeme Seçimi",
         desc: "Dikme, küpeşte ve ara eleman detayları ile birlikte paslanmaz, boyalı çelik veya cam kombinasyonları seçilir.",
       },
-      {
-        title: "İmalat ve Yüzey Kalitesi",
-        desc: "Profil kesim, kaynak ve zımparalama sonrası elektrostatik boya, galvaniz veya polisaj işlemleri uygulanır.",
-      },
-      {
-        title: "Montaj ve Güvenlik Kontrolü",
-        desc: "Sahada montaj, ankraj ve bağlantılar tamamlanır; yük testleri ve güvenlik kontrolleri sonrası teslim edilir.",
-      },
     ],
     relatedBlogSlugs: [
       "celik-korkuluk-ve-kupeste-sistemleri-guvenligin-en-sik-hali",
       "celik-merdiven-sistemleri-dayaniklilik-guvenlik-ve-modern-tasarim",
-      "celik-konstruksiyon-rehberi-dayaniklilik-hiz-ve-estetigin-bulustugu-nokta",
     ],
     projectsCtaTitle: "Korkuluk Projelerimiz",
     projectsCtaDescription: "Endüstriyel ve mimari çelik korkuluk projelerimizi inceleyin.",
