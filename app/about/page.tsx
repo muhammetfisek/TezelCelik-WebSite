@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import {
   FaBullseye,
@@ -18,6 +19,12 @@ import { ServicesCtaBanner } from "@/app/components/ServicesCtaBanner/ServicesCt
 
 const NAVBAR_HEIGHT = 90;
 const HERO_MIN_HEIGHT = 360;
+
+export const metadata: Metadata = {
+  title: "Hakkımızda | Tezel Çelik Sistemleri",
+  description:
+    "Tezel Çelik Sistemleri; İstanbul Pendik merkezli, endüstriyel çelik konstrüksiyon, çelik çatı, platform ve özel çelik imalat projelerinde mühendislik odaklı çözümler sunan firmadır. Türkiye geneli projelendirme ve montaj hizmeti sağlıyoruz.",
+};
 
 export default function AboutPage() {
   return (

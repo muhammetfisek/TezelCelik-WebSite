@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { FaFileAlt } from "react-icons/fa";
@@ -8,6 +9,12 @@ import "./blog.css";
 const NAVBAR_HEIGHT = 90;
 const HERO_MIN_HEIGHT = 320;
 const POSTS_PER_PAGE = 6;
+
+export const metadata: Metadata = {
+  title: "Blog | Çelik Konstrüksiyon Rehberleri ve Proje Yazıları",
+  description:
+    "Çelik konstrüksiyon, çelik binalar, geniş açıklıklı çatılar, fabrika inşaat maliyeti ve çelik ev çözümleri hakkında mühendislik odaklı rehber yazılar. Tezel Çelik Sistemleri blogunda Türkiye geneli projelerden örnekler ve uzman içerikler.",
+};
 
 interface BlogPageProps {
   searchParams?: Promise<{

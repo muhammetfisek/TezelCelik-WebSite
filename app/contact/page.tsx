@@ -1,12 +1,26 @@
 "use client";
 
-import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaInstagram, FaLinkedinIn, FaDirections } from "react-icons/fa";
+import type { Metadata } from "next";
+import {
+  FaMapMarkerAlt,
+  FaPhoneAlt,
+  FaEnvelope,
+  FaInstagram,
+  FaLinkedinIn,
+  FaDirections,
+} from "react-icons/fa";
 import { ContactForm } from "@/app/components/ContactForm/ContactForm";
 import arkaplanNav from "@/images/arkaplan_nav.png";
 import "./contact.css";
 
 const NAVBAR_HEIGHT = 90;
 const HERO_MIN_HEIGHT = 320;
+
+export const metadata: Metadata = {
+  title: "İletişim | Tezel Çelik Sistemleri İstanbul Pendik",
+  description:
+    "Tezel Çelik Sistemleri ile çelik konstrüksiyon, çelik bina, çatı ve platform projeleriniz için iletişime geçin. Yayalar Mah. Ankara Cd, Nezaket Sk. No:7, 34870 Pendik/İstanbul adresimiz ve telefonlarımız üzerinden Türkiye geneli projelendirme ve montaj desteği sağlıyoruz.",
+};
 
 export default function ContactPage() {
   return (
