@@ -158,9 +158,9 @@ export const servicePageData: Record<ServiceId, ServicePageData> = {
   },
   "elevator-structures": {
     id: "elevator-structures",
-    title: "Asansör Bölme Çelikleri ve Taşıyıcıları",
+    title: "Asansör Çelikleri ve Taşıyıcıları",
     shortTitle: "Asansör Çelikleri",
-    metaTitle: "Asansör Bölme Çelikleri ve Taşıyıcı Sistemler | Tezel Çelik",
+    metaTitle: "Asansör Çelikleri ve Taşıyıcı Sistemler | Tezel Çelik",
     metaDescription:
       "Yeni ve mevcut binalar için asansör kuyusu çelik taşıyıcıları, bölme çelikleri ve bağlantı detayları ile güvenli dikey taşımacılık çözümleri.",
     heroDescription:

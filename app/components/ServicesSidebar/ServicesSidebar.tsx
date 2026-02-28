@@ -11,7 +11,7 @@ const SERVICE_ITEMS: ServiceItem[] = [
   { label: "Arakat ve Platform", href: "/services/mezzanine-platforms" },
   { label: "Giriş Saçağı ve Kanopiler", href: "/services/entrance-canopies" },
   {
-    label: "Asansör Bölme Çelikleri ve Taşıyıcıları",
+    label: "Asansör Çelikleri ve Taşıyıcıları",
     href: "/services/elevator-structures",
   },
   { label: "Yaya Geçiş Köprüleri", href: "/services/pedestrian-bridges" },

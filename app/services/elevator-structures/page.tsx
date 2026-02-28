@@ -12,11 +12,11 @@ const NAVBAR_HEIGHT = 90;
 const HERO_MIN_HEIGHT = 330;
 
 export const metadata: Metadata = {
-  title: "Asansör Bölme Çelikleri ve Taşıyıcıları | Tezel Çelik",
+  title: "Asansör Çelikleri ve Taşıyıcıları | Tezel Çelik",
   description:
     "Yeni ve mevcut binalar için asansör kuyusu çelik taşıyıcıları, bölme çelikleri ve bağlantı detayları.",
   openGraph: {
-    title: "Asansör Bölme Çelikleri ve Taşıyıcıları | Tezel Çelik",
+    title: "Asansör Çelikleri ve Taşıyıcıları | Tezel Çelik",
     description:
       "Yeni ve mevcut binalar için asansör kuyusu çelik taşıyıcıları, bölme çelikleri ve bağlantı detayları.",
     type: "website",

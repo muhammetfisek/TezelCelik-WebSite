@@ -45,9 +45,7 @@ export default function AboutPage() {
         <div className="about-hero-overlay pointer-events-none absolute inset-0 bg-black/45" />
 
         <div className="about-hero-content relative z-10 mx-auto flex w-full max-w-5xl flex-col items-center">
-          <p className="about-eyebrow text-white/90">
-            Tezel Çelik Sistemleri
-          </p>
+          
           <h1 className="text-5xl font-extrabold tracking-wide text-white sm:text-6xl">
             Hakkımızda
           </h1>

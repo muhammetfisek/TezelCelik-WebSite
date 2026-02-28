@@ -239,17 +239,17 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "asansor-bolme-celikleri-ve-tasiyici-sistemler-guvenli-dikey-tasimacilik",
     title:
-      "Asansör Bölme Çelikleri ve Taşıyıcı Sistemler: Güvenli Dikey Taşımacılık",
+      "Asansör Çelikleri ve Taşıyıcı Sistemler: Güvenli Dikey Taşımacılık",
     excerpt:
       "Asansörler modern yapıların can damarıdır. Ancak sessiz, sarsıntısız ve güvenli bir dikey taşımacılık için asansör kuyusu içindeki çelik bölme ve taşıyıcı sistemlerin, ray konsollarından bölme kirişlerine kadar, kusursuz bir mühendislikle tasarlanıp uygulanması gerekir.",
     metaDescription:
-      "Asansör bölme çelikleri ve taşıyıcı sistemler ile güvenli dikey taşımacılık. Asansör kuyu içi çelik karkas, ray taşıyıcı konsollar, çelik asansör kulesi imalatı ve EN 81-20/50 standartlarına uygun çözümler.",
+      "Asansör çelikleri ve taşıyıcı sistemler ile güvenli dikey taşımacılık. Asansör kuyu içi çelik karkas, ray taşıyıcı konsollar, çelik asansör kulesi imalatı ve EN 81-20/50 standartlarına uygun çözümler.",
     imageAlt:
       "Çelik Asansör Kulesi ve Asansör Kuyu İçi Çelik Taşıyıcı Sistem",
     content: `Asansörler, modern yapıların can damarıdır. Ancak bir asansörün sessiz, sarsıntısız ve güvenli çalışması için asansör kuyusu içerisindeki çelik bölme ve taşıyıcı sistemlerin kusursuz bir mühendislikle tasarlanmış olması gerekir.`,
     contentHtml: `<p>Asansörler, modern yapıların can damarıdır. Özellikle çok katlı konut, ofis ve AVM projelerinde, kullanıcı konforu kadar güvenlik de doğrudan asansör sisteminin kalitesiyle ilişkilidir. Ancak bir asansörün sessiz, sarsıntısız ve en önemlisi güvenli çalışması için; asansör kuyusu içerisindeki <strong>çelik bölme</strong> ve <strong>taşıyıcı sistemlerin</strong> kusursuz bir mühendislikle tasarlanmış olması gerekir. Tezel Çelik olarak, asansör ray taşıyıcılarından bölme kirişlerine ve tam çelik asansör kulelerine kadar tüm konstrüksiyon süreçlerinde yüksek hassasiyetle çözümler sunuyoruz.</p>
 
-<h2>Asansör Bölme Çeliği Nedir, Neden Gereklidir?</h2>
+<h2>Asansör Çeliği Nedir, Neden Gereklidir?</h2>
 <p>Özellikle birden fazla asansörün aynı kuyu (şaft) içerisinde çalıştığı projelerde, her bir asansörün çalışma alanını birbirinden ayırmak hayati önem taşır.</p>
 <ul>
   <li><strong>Güvenlik separasyonu:</strong> Kuyu içinde bakım yapılırken diğer asansörün güvenli şekilde çalışmaya devam etmesine imkân tanır ve bakım personelini korur.</li>
@@ -275,7 +275,7 @@ export const blogPosts: BlogPost[] = [
 </ul>
 
 <h2>Tezel Çelik ile Standartlara Uygun Asansör Çözümleri</h2>
-<p>Asansör bölme çelikleri ve taşıyıcı sistemlerimiz, güncel asansör yönetmeliklerine (örneğin <strong>EN 81-20/50</strong>) tam uyumlu olarak projelendirilir ve üretilir. Proje aşamasından montaja kadar her adımda, asansör montaj ekibinin işini kolaylaştıracak ve son kullanıcının güvenliğini garanti altına alacak çözümler geliştiriyoruz.</p>
+<p>Asansör çelikleri ve taşıyıcı sistemlerimiz, güncel asansör yönetmeliklerine (örneğin <strong>EN 81-20/50</strong>) tam uyumlu olarak projelendirilir ve üretilir. Proje aşamasından montaja kadar her adımda, asansör montaj ekibinin işini kolaylaştıracak ve son kullanıcının güvenliğini garanti altına alacak çözümler geliştiriyoruz.</p>
 
 <p>Yeni inşaat projelerinizde ya da asansör revizyon çalışmalarınızda; kuyu içi çelik karkas, ray taşıyıcı konsolları veya dış cephe çelik asansör kuleleri için statik hesaplamalı, belgeli ve uzun ömürlü çelik çözümler sunuyoruz. <strong>Asansör revizyon projeleriniz veya yeni inşaatlarınız için statik hesaplamalı çelik çözümler</strong> arıyorsanız, <a href="/contact" style="color: #FF5A3C; font-weight: 600; text-decoration: none;">projenizi bize ileterek kısa sürede teklif ve mühendislik desteği alabilirsiniz.</a></p>`,
     date: "2026-02-24",
@@ -482,7 +482,7 @@ export const blogPosts: BlogPost[] = [
 </ul>
 
 <h2>Tezel Çelik ile Güvenli Geçişler</h2>
-<p>Projelendirmeden montaja kadar her aşamada uluslararası standartlara bağlı kalarak; belediyeler, organize sanayi bölgeleri ve özel projeler için anahtar teslim <strong>çelik yaya üst geçit</strong> çözümleri üretiyoruz. Üst geçitlerimizde kullanılan asansör ve taşıyıcı sistemler hakkında daha fazla bilgi için <a href="/blog/asansor-bolme-celikleri-ve-tasiyici-sistemler-guvenli-dikey-tasimacilik">Asansör Bölme Çelikleri</a> yazımıza da göz atabilirsiniz. Detaylı bilgi ve teklif için <a href="/contact" style="color: #FF5A3C; font-weight: 600; text-decoration: none;">bizimle iletişime geçebilirsiniz.</a></p>`,
+<p>Projelendirmeden montaja kadar her aşamada uluslararası standartlara bağlı kalarak; belediyeler, organize sanayi bölgeleri ve özel projeler için anahtar teslim <strong>çelik yaya üst geçit</strong> çözümleri üretiyoruz. Üst geçitlerimizde kullanılan asansör ve taşıyıcı sistemler hakkında daha fazla bilgi için <a href="/blog/asansor-bolme-celikleri-ve-tasiyici-sistemler-guvenli-dikey-tasimacilik">Asansör Çelikleri</a> yazımıza da göz atabilirsiniz. Detaylı bilgi ve teklif için <a href="/contact" style="color: #FF5A3C; font-weight: 600; text-decoration: none;">bizimle iletişime geçebilirsiniz.</a></p>`,
     date: "2026-02-24",
     image: sismikIzaImg.src,
   },
