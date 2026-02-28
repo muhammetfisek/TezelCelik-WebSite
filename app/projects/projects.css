@@ -1,0 +1,37 @@
+/* Projeler sayfası - filtre barı */
+
+.project-filter-section {
+  /* Yatay scroll - mobilde scrollbar gizle */
+  -webkit-overflow-scrolling: touch;
+}
+
+.project-filter-section .scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.project-filter-section .scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.project-filter-btn {
+  border: 1px solid transparent;
+}
+
+.project-filter-btn-active {
+  background: #ff5a3c;
+  color: white;
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 1px 4px rgba(255, 90, 60, 0.25);
+}
+
+.project-filter-btn-inactive {
+  background: #f3f4f6;
+  color: #4b5563;
+  border-color: rgba(0, 0, 0, 0.06);
+}
+
+.project-filter-btn-inactive:hover {
+  background: rgba(255, 90, 60, 0.12);
+  color: #ff5a3c;
+}

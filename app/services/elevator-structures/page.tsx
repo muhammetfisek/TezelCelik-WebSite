@@ -67,7 +67,7 @@ export default function ElevatorStructuresPage() {
               {/* 1. Bölüm: Öne Çıkan Tanım Bloğu */}
               <section className="rounded-3xl border border-gray-100/80 bg-white px-6 py-7 shadow-[0_18px_45px_rgba(15,23,42,0.08)] sm:px-8 sm:py-9">
                 <p className="inline-flex items-center rounded-full bg-[#FFF1EC] px-4 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-[#FF5A3C]">
-                  Asansör çelikleri hizmeti
+                  Asansör çelikleri ve taşıyıcıları hizmeti
                 </p>
                 <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
                 Asansör Taşıyıcı ve Bölme Çelik Sistemleri

@@ -2,10 +2,13 @@ import type { Metadata } from "next";
 
 import arkaplanNav from "@/images/arkaplan_nav.png";
 
+import { ProjectFilterBar } from "@/app/components/ProjectFilterBar/ProjectFilterBar";
+
 import "@/app/about/about.css";
+import "./projects.css";
 
 const NAVBAR_HEIGHT = 90;
-const HERO_MIN_HEIGHT = 360;
+const HERO_MIN_HEIGHT = 320;
 
 export const metadata: Metadata = {
   title: "Projeler | Tezel Çelik Sistemleri",
@@ -16,7 +19,7 @@ export const metadata: Metadata = {
 export default function ProjectsPage() {
   return (
     <main className="about-page-enter min-h-screen bg-white">
-      {/* Hero */}
+      {/* Hero Bölümü */}
       <section
         className="relative flex flex-col items-center justify-center overflow-hidden bg-cover bg-center px-4 text-center"
         style={{
@@ -29,23 +32,23 @@ export default function ProjectsPage() {
           className="about-hero-bg absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${arkaplanNav.src})` }}
         />
-        <div className="about-hero-overlay pointer-events-none absolute inset-0 bg-black/45" />
-
-        <div className="about-hero-content relative z-10 mx-auto flex w-full max-w-5xl flex-col items-center">
-        
-          <h1 className="text-5xl font-extrabold tracking-wide text-white sm:text-6xl">
+        <div className="about-hero-overlay pointer-events-none absolute inset-0 bg-black/40" />
+        <div className="about-hero-content relative z-10 flex flex-col items-center justify-center">
+          <h1 className="text-5xl font-bold tracking-wide text-white sm:text-6xl">
             Projeler
           </h1>
-          <p className="mt-4 max-w-3xl text-base leading-relaxed text-white/90 sm:text-lg">
+          <p className="mt-4 max-w-2xl text-base leading-relaxed text-white/95 sm:text-lg">
             Türkiye genelinde gerçekleştirdiğimiz çelik konstrüksiyon, çatı,
             platform ve özel imalat projelerimizi keşfedin.
           </p>
         </div>
       </section>
 
+      <ProjectFilterBar />
+
       <section className="py-14 sm:py-18">
         <div className="container mx-auto px-4 lg:px-8">
-          <p className="text-gray-600">Gerçekleştirdiğimiz projeler.</p>
+         
         </div>
       </section>
     </main>
