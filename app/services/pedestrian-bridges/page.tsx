@@ -106,7 +106,7 @@ export default function PedestrianBridgesPage() {
                 </h3>
                 <div className="about-title-underline mt-3 h-1 w-20 bg-[#FF5A3C]" />
                 <p className="mt-4 text-base leading-relaxed text-gray-700">
-                  Yaya geçiş köprüsü projelerimizden bazı örnekler. Tüm projelerimizi incelemek için{" "}
+                  Yaya geçiş köprüsü projelerimizden bazı örnekler. Tüm projelerimizi ve detaylarını incelemek için{" "}
                   <Link
                     href="/projects"
                     className="font-semibold text-[#FF5A3C] hover:underline"

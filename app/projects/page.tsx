@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 import arkaplanNav from "@/images/arkaplan_nav.png";
 
-import { ProjectFilterBar } from "@/app/components/ProjectFilterBar/ProjectFilterBar";
+import { ProjectsGrid } from "@/app/projects/ProjectsGrid";
 
 import "@/app/about/about.css";
 import "./projects.css";
@@ -44,13 +44,7 @@ export default function ProjectsPage() {
         </div>
       </section>
 
-      <ProjectFilterBar />
-
-      <section className="py-14 sm:py-18">
-        <div className="container mx-auto px-4 lg:px-8">
-         
-        </div>
-      </section>
+      <ProjectsGrid />
     </main>
   );
 }

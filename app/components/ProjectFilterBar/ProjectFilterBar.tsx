@@ -26,14 +26,20 @@ const CATEGORIES: { id: ProjectCategory; label: string }[] = [
 ];
 
 interface ProjectFilterBarProps {
+  /** Kontrollü mod: dışarıdan seçili kategori (örn. hizmet sayfasında alana göre) */
+  activeCategory?: ProjectCategory;
   onFilterChange?: (category: ProjectCategory) => void;
 }
 
-export function ProjectFilterBar({ onFilterChange }: ProjectFilterBarProps) {
-  const [activeId, setActiveId] = useState<ProjectCategory>("all");
+export function ProjectFilterBar({
+  activeCategory: controlledCategory,
+  onFilterChange,
+}: ProjectFilterBarProps) {
+  const [internalCategory, setInternalCategory] = useState<ProjectCategory>("all");
+  const activeId = controlledCategory ?? internalCategory;
 
   const handleClick = (id: ProjectCategory) => {
-    setActiveId(id);
+    setInternalCategory(id);
     onFilterChange?.(id);
   };
 
