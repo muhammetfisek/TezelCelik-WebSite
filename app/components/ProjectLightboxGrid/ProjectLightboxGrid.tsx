@@ -132,7 +132,7 @@ export function ProjectLightboxGrid({ items }: ProjectLightboxGridProps) {
                     <button
                       type="button"
                       onClick={showPrev}
-                      className="mr-2 hidden h-9 w-9 items-center justify-center rounded-full bg-gray-900/80 text-base font-semibold text-white shadow-md hover:bg-gray-900 sm:inline-flex"
+                      className="mr-2 inline-flex h-8 w-8 items-center justify-center rounded-full bg-gray-900/80 text-xs font-semibold text-white shadow-md hover:bg-gray-900 sm:h-9 sm:w-9 sm:text-base"
                       aria-label="Önceki fotoğraf"
                     >
                       ‹
@@ -156,7 +156,7 @@ export function ProjectLightboxGrid({ items }: ProjectLightboxGridProps) {
                     <button
                       type="button"
                       onClick={showNext}
-                      className="ml-2 hidden h-9 w-9 items-center justify-center rounded-full bg-gray-900/80 text-base font-semibold text-white shadow-md hover:bg-gray-900 sm:inline-flex"
+                      className="ml-2 inline-flex h-8 w-8 items-center justify-center rounded-full bg-gray-900/80 text-xs font-semibold text-white shadow-md hover:bg-gray-900 sm:h-9 sm:w-9 sm:text-base"
                       aria-label="Sonraki fotoğraf"
                     >
                       ›
