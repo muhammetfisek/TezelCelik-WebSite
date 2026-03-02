@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import arkaplanNav from "@/images/arkaplan_nav.png";
 
 import { ProjectsGrid } from "@/app/projects/ProjectsGrid";
+import { ServicesCtaBanner } from "@/app/components/ServicesCtaBanner/ServicesCtaBanner";
 
 import "@/app/about/about.css";
 import "./projects.css";
@@ -45,6 +46,8 @@ export default function ProjectsPage() {
       </section>
 
       <ProjectsGrid />
+
+      <ServicesCtaBanner />
     </main>
   );
 }
