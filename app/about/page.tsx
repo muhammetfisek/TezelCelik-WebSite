@@ -14,8 +14,8 @@ import arkaplanNav from "@/images/arkaplan_nav.png";
 import aboutImage from "@/images/anasayfa_arkaplan.jpeg";
 
 import "./about.css";
-import { StatsSection } from "./StatsSection";
 import { ServicesCtaBanner } from "@/app/components/ServicesCtaBanner/ServicesCtaBanner";
+import { StatsGrid } from "../components/NumberCard/StatsGrid";
 
 const NAVBAR_HEIGHT = 90;
 const HERO_MIN_HEIGHT = 360;
@@ -289,7 +289,22 @@ export default function AboutPage() {
       </section>
 
       {/* Rakamlarla Tezel Çelik */}
-      <StatsSection />
+      <section className="about-stats-section bg-gray-50 py-14 sm:py-18">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="about-eyebrow text-gray-600">Rakamlarla</p>
+            <h2 className="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+              Rakamlarla Tezel Çelik
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-gray-700">
+              Yılların deneyimi, başarıyla tamamlanan projeler ve mutlu müşteriler — sayılarla da
+              görünür olsun.
+            </p>
+          </div>
+
+          <StatsGrid />
+        </div>
+      </section>
 
       <ServicesCtaBanner />
     </main>
