@@ -138,6 +138,84 @@ export default function Home() {
       </section>
 
       <ServiceStripsSection />
+
+      {/* Vitruvius Sözü – Teknik Üstünlük ve 3 temel şart */}
+      <section className="bg-[#f6f8fc] py-18 sm:py-20">
+        <div className="mx-auto max-w-6xl px-4 sm:px-8">
+          {/* Başlık + alt başlık */}
+          <div className="text-center">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.25em] text-slate-400">
+              Neden Biz?
+            </p>
+            <h2 className="mt-2 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
+              Mühendisliğin Değişmeyen Üç Şartı
+            </h2>
+            <p className="mt-4 text-xs font-medium uppercase tracking-[0.2em] text-slate-500 sm:text-[13px]">
+              Vitruvius&apos;un 2000 yıllık prensibini modern çelikle buluşturuyoruz.
+            </p>
+          </div>
+
+          {/* Alıntı bloğu */}
+          <div className="mt-10 flex justify-center">
+            <div className="relative max-w-4xl rounded-3xl bg-white/90 px-6 py-7 text-left shadow-[0_18px_40px_rgba(15,23,42,0.10)] ring-1 ring-slate-200/70 sm:px-10 sm:py-9">
+              <div className="pointer-events-none absolute -top-6 left-6 hidden h-10 w-10 items-center justify-center rounded-2xl bg-[#FF5A3C] text-3xl font-serif text-white/95 sm:flex">
+                “
+              </div>
+              <div className="space-y-3 sm:space-y-4">
+                <p className="text-base font-semibold leading-relaxed text-slate-900 sm:text-lg">
+                  “İyi bir yapının her zaman üç temel şartı olmalıdır: Sağlamlık, İşlevsellik ve
+                  Estetik.”
+                </p>
+                <p className="text-sm font-medium text-slate-500">
+                  – Marcus Vitruvius Pollio
+                </p>
+                <p className="text-sm leading-relaxed text-slate-600 sm:text-[15px]">
+                  Tezel Çelik&apos;te her projeyi; depreme dirençli bir<strong> sağlamlık</strong>,
+                  iş süreçlerinizi hızlandıran<strong> işlevsellik</strong> ve uzun yıllar değerini
+                  koruyan<strong> endüstriyel estetik</strong> üçlüsüyle kurguluyoruz.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Üçlü kartlar – Sağlamlık / İşlevsellik / Estetik */}
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
+            <div className="group rounded-3xl border border-slate-200 bg-white px-6 py-6 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-[0_18px_40px_rgba(15,23,42,0.18)] sm:px-7 sm:py-7">
+              <h3 className="text-base font-semibold text-slate-900 sm:text-lg">
+                Sağlamlık
+              </h3>
+              <div className="mt-2 h-0.5 w-10 rounded-full bg-[#FF5A3C] group-hover:w-14 group-hover:bg-[#ff6a4e] transition-all" />
+              <p className="mt-3 text-sm leading-relaxed text-slate-600">
+                Deprem yönetmeliklerine uygun statik hesaplar ve yüksek mukavemetli çelik profillerle
+                yapınızın uzun yıllar güvenle ayakta kalmasını sağlıyoruz.
+              </p>
+            </div>
+
+            <div className="group rounded-3xl border border-slate-200 bg-white px-6 py-6 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-[0_18px_40px_rgba(15,23,42,0.18)] sm:px-7 sm:py-7">
+              <h3 className="text-base font-semibold text-slate-900 sm:text-lg">
+                İşlevsellik
+              </h3>
+              <div className="mt-2 h-0.5 w-10 rounded-full bg-[#FF5A3C] group-hover:w-14 group-hover:bg-[#ff6a4e] transition-all" />
+              <p className="mt-3 text-sm leading-relaxed text-slate-600">
+                Vinç yolları, lojistik akış ve arakat çözümlerini projeye baştan entegre ederek,
+                yapınızı operasyonlarınızı hızlandıran verimli bir sisteme dönüştürüyoruz.
+              </p>
+            </div>
+
+            <div className="group rounded-3xl border border-slate-200 bg-white px-6 py-6 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-[0_18px_40px_rgba(15,23,42,0.18)] sm:px-7 sm:py-7">
+              <h3 className="text-base font-semibold text-slate-900 sm:text-lg">
+                Estetik
+              </h3>
+              <div className="mt-2 h-0.5 w-10 rounded-full bg-[#FF5A3C] group-hover:w-14 group-hover:bg-[#ff6a4e] transition-all" />
+              <p className="mt-3 text-sm leading-relaxed text-slate-600">
+                Cephe oranları, taşıyıcı dizilimi ve detayları endüstriyel bir zarafetle
+                tasarlayarak, tesisinizin şirket kimliğinizi yıllarca güçlü bir şekilde yansıtmasını
+                hedefliyoruz.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
