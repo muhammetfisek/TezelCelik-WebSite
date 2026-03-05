@@ -53,14 +53,14 @@ export default function Home() {
               href="/about"
               className="rounded-full bg-[#FF5A3C] px-8 py-3 text-sm font-bold uppercase tracking-wide text-white shadow-md transition-transform transition-shadow hover:-translate-y-0.5 hover:shadow-lg"
             >
-              Detaylar
+             Neden Biz?
             </Link>
 
             <Link
               href="/contact"
               className="rounded-full border border-white/80 bg-transparent px-8 py-3 text-sm font-bold uppercase tracking-wide text-white shadow-md transition-colors transition-transform hover:-translate-y-0.5 hover:bg-white/10"
             >
-              Bize Ulaşın
+              Teklif Alın
             </Link>
           </div>
         </div>
