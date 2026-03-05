@@ -4,6 +4,7 @@ import Image from "next/image";
 import anasayfaArkaplan from "@/images/anasayfa_arkaplan.jpeg";
 import { StatsGrid } from "./components/NumberCard/StatsGrid";
 import { ServiceStripsSection } from "./components/ServiceStrips/ServiceStrips";
+import { HomepageProjectsShowcase } from "./components/HomepageProjectsShowcase/HomepageProjectsShowcase";
 
 const NAVBAR_HEIGHT = 90;
 
@@ -139,6 +140,8 @@ export default function Home() {
 
       <ServiceStripsSection />
 
+     
+
       {/* Vitruvius Sözü – Teknik Üstünlük ve 3 temel şart */}
       <section className="bg-[#f6f8fc] py-18 sm:py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-8">
@@ -148,7 +151,7 @@ export default function Home() {
               Neden Biz?
             </p>
             <h2 className="mt-2 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
-              Mühendisliğin Değişmeyen Üç Şartı
+            Çelik Sanatının Değişmeyen Üç İlkesi
             </h2>
             <p className="mt-4 text-xs font-medium uppercase tracking-[0.2em] text-slate-500 sm:text-[13px]">
               Vitruvius&apos;un 2000 yıllık prensibini modern çelikle buluşturuyoruz.
@@ -216,6 +219,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <HomepageProjectsShowcase />
     </>
   );
 }
