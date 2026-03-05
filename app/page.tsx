@@ -4,6 +4,7 @@ import Image from "next/image";
 import anasayfaArkaplan from "@/images/anasayfa_arkaplan.jpeg";
 import { StatsGrid } from "./components/NumberCard/StatsGrid";
 import { ServiceStripsSection } from "./components/ServiceStrips/ServiceStrips";
+import { ContactForm } from "./components/ContactForm/ContactForm";
 import { FaArrowRight } from "react-icons/fa";
 import { projectsData } from "@/app/lib/projects-data";
 import { getProjectImageSrc } from "@/app/lib/project-images";
@@ -229,7 +230,7 @@ export default function Home() {
       {/* Anasayfa Projeler Vitrini */}
       <section className="relative overflow-hidden bg-white">
         {/* Arka Plan Bölünmesi (sağ turuncu alan, üst-alt beyaz boşluklu) */}
-        <div className="absolute inset-y-8 inset-x-0 z-0 flex sm:inset-y-10">
+        <div className="absolute inset-y-8 inset-x-0 z-0 flex sm:inset-y-18">
           <div className="w-1/2 bg-white" />
           <div className="w-1/2 bg-[#FFE1D6]" />
         </div>
@@ -313,6 +314,48 @@ export default function Home() {
                 </p>
               </div>
             </aside>
+          </div>
+        </div>
+      </section>
+
+      {/* Harita + İletişim Kartı - Projelerimiz altında: sol tam harita, sağ iletişim formu */}
+      <section className="grid grid-cols-1 lg:grid-cols-2 min-h-[560px] lg:min-h-[640px]">
+        {/* Sol: Harita tamamen sol yarıyı kaplasın */}
+        <div className="relative w-full h-[320px] lg:h-auto lg:min-h-[640px] order-2 lg:order-1">
+          <iframe
+            src="https://www.google.com/maps?q=40.900322,29.269642&output=embed&hl=tr&zoom=16&markers=color:red%7Clabel:T%7C40.900322,29.269642"
+            width="100%"
+            height="100%"
+            className="absolute inset-0 w-full h-full"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Tezel Çelik Konum"
+          />
+        </div>
+        {/* Sağ: Başlık alanı + iletişim kutusu - geniş alan */}
+        <div className="flex flex-col justify-center py-10 px-6 sm:py-12 sm:px-10 lg:py-14 lg:px-12 xl:px-16 bg-[#f7f9fc] order-1 lg:order-2 overflow-auto">
+          <div className="w-full max-w-xl mx-auto lg:mx-0">
+            {/* Başlık bloğu - büyük tipografi */}
+            <div className="mb-8 sm:mb-10">
+              <p className="text-xs sm:text-sm font-semibold uppercase tracking-[0.28em] text-slate-500">
+                İletişim Bilgilerimiz
+              </p>
+              <h2 className="mt-3 text-3xl font-extrabold leading-tight tracking-tight text-slate-900 sm:text-4xl lg:text-4xl xl:text-[2.5rem]">
+                Size nasıl
+                <br />
+                yardımcı olabiliriz?
+              </h2>
+              <div className="mt-3 h-1 w-16 rounded-full bg-[#FF5A3C]" />
+              <p className="mt-5 text-sm sm:text-base leading-relaxed text-slate-600 max-w-lg">
+                Projeniz için teklif veya detaylı bilgi almak isterseniz aşağıdaki formu doldurun; uzman ekibimiz en kısa sürede sizinle iletişime geçecektir.
+              </p>
+            </div>
+            {/* İletişim formu kutusu - geniş */}
+            <div className="w-full">
+              <ContactForm hideTitle />
+            </div>
           </div>
         </div>
       </section>

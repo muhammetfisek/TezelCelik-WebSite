@@ -5,7 +5,12 @@ import "@/app/contact/contact.css";
 
 type SubmitStatus = "idle" | "success";
 
-export function ContactForm() {
+type ContactFormProps = {
+  /** Anasayfa gibi yerlerde üst başlık kullanılıyorsa form kartındaki "İletişim" başlığını gizler */
+  hideTitle?: boolean;
+};
+
+export function ContactForm({ hideTitle }: ContactFormProps = {}) {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -111,7 +116,9 @@ ${formData.message}
 
   return (
     <div className="contact-form-card bg-white rounded-2xl shadow-xl p-8 lg:p-10">
-      <h2 className="text-3xl font-bold text-gray-900 mb-8">İletişim</h2>
+      {!hideTitle && (
+        <h2 className="text-3xl font-bold text-gray-900 mb-8">İletişim</h2>
+      )}
 
       <form onSubmit={handleSubmit} className="space-y-6">
         {/* Ad ve Soyad */}
