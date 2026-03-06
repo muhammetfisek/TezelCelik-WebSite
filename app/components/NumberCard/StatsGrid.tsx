@@ -47,13 +47,13 @@ const stats: StatItem[] = [
   {
     label: "Yıllık Tecrübe",
     subLabel: "Sahada ve üretimde aktif deneyim",
-    value: 10,
+    value: 20,
     suffix: "+",
   },
   {
     label: "Tamamlanan Proje",
     subLabel: "Farklı ölçek ve ihtiyaçlara göre",
-    value: 198,
+    value: 118,
     suffix: "+",
   },
   {
