@@ -121,8 +121,8 @@ return (
             <Image
               src={logoImg}
               alt="Tezel Çelik"
-              width={350}
-              height={270}
+              width={193}
+              height={130}
               className="h-auto w-auto max-h-[90px] object-contain"
               priority
               onLoad={checkFit} // Logo yüklendiği an tekrar ölç
